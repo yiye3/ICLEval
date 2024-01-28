@@ -1,0 +1,802 @@
+[
+    {
+        "uid": 0,
+        "task": "check_order",
+        "task_type": "character",
+        "examples": "Input: \nString1: l, 6, h, v, Y\nString2: Y, v, h, 6, l\nOutput: True\n\nInput: \nString1: b, R, 2, 1, 5\nString2: 5, 1, 2, R, b\nOutput: True\n\nInput: \nString1: E, W, c, 1, Z\nString2: Z, 1, c, W, E\nOutput: True\n\nInput: \nString1: j, f, i, Y, Q\nString2: Q, Y, i, f, j\nOutput: True\n\nInput: \nString1: S, b, H, p, t\nString2: t, p, H, b, S\nOutput: True\n\nInput: \nString1: m, p, A, i, R\nString2: R, i, A, p, m\nOutput: True\n\nInput: \nString1: H, 9, D, z, m\nString2: H, 9, D, z, m\nOutput: False\n\nInput: \nString1: 6, 5, O, M, s\nString2: 6, 5, O, M, s\nOutput: False\n\n",
+        "prompt": "Input: \nString1: 1, l, H, F, E\nString2: E, F, H, l, 1\nOutput:",
+        "label": true
+    },
+    {
+        "uid": 1,
+        "task": "check_order",
+        "task_type": "character",
+        "examples": "Input: \nString1: Y, 7, x, O, 5\nString2: Y, 7, x, O, 5\nOutput: False\n\nInput: \nString1: r, e, d, u, t\nString2: r, e, d, u, t\nOutput: False\n\nInput: \nString1: a, C, j, 4, 2\nString2: a, C, j, 4, 2\nOutput: False\n\nInput: \nString1: n, I, 5, s, E\nString2: E, s, 5, I, n\nOutput: True\n\nInput: \nString1: O, H, T, e, r\nString2: r, e, T, H, O\nOutput: True\n\nInput: \nString1: A, N, M, D, g\nString2: A, N, M, D, g\nOutput: False\n\nInput: \nString1: i, x, h, f, 4\nString2: i, x, h, f, 4\nOutput: False\n\nInput: \nString1: Y, k, F, A, T\nString2: T, A, F, k, Y\nOutput: True\n\n",
+        "prompt": "Input: \nString1: c, G, p, 2, k\nString2: c, G, p, 2, k\nOutput:",
+        "label": false
+    },
+    {
+        "uid": 2,
+        "task": "check_order",
+        "task_type": "character",
+        "examples": "Input: \nString1: h, K, r, n, 3\nString2: 3, n, r, K, h\nOutput: True\n\nInput: \nString1: q, 2, p, K, P\nString2: P, K, p, 2, q\nOutput: True\n\nInput: \nString1: 4, D, w, y, a\nString2: 4, D, w, y, a\nOutput: False\n\nInput: \nString1: D, f, V, P, u\nString2: D, f, V, P, u\nOutput: False\n\nInput: \nString1: 9, G, 8, F, l\nString2: 9, G, 8, F, l\nOutput: False\n\nInput: \nString1: l, b, R, v, P\nString2: l, b, R, v, P\nOutput: False\n\nInput: \nString1: E, 8, W, V, 5\nString2: E, 8, W, V, 5\nOutput: False\n\nInput: \nString1: t, 7, 9, e, A\nString2: A, e, 9, 7, t\nOutput: True\n\n",
+        "prompt": "Input: \nString1: H, x, e, i, Z\nString2: H, x, e, i, Z\nOutput:",
+        "label": false
+    },
+    {
+        "uid": 3,
+        "task": "check_order",
+        "task_type": "character",
+        "examples": "Input: \nString1: Z, t, y, 0, h\nString2: Z, t, y, 0, h\nOutput: False\n\nInput: \nString1: h, u, Y, m, H\nString2: H, m, Y, u, h\nOutput: True\n\nInput: \nString1: 7, I, R, A, T\nString2: 7, I, R, A, T\nOutput: False\n\nInput: \nString1: z, k, u, G, W\nString2: W, G, u, k, z\nOutput: True\n\nInput: \nString1: W, w, 6, t, e\nString2: e, t, 6, w, W\nOutput: True\n\nInput: \nString1: r, e, W, c, C\nString2: r, e, W, c, C\nOutput: False\n\nInput: \nString1: N, m, A, Y, z\nString2: z, Y, A, m, N\nOutput: True\n\nInput: \nString1: c, K, V, 1, 7\nString2: 7, 1, V, K, c\nOutput: True\n\n",
+        "prompt": "Input: \nString1: c, 4, O, T, X\nString2: c, 4, O, T, X\nOutput:",
+        "label": false
+    },
+    {
+        "uid": 4,
+        "task": "check_order",
+        "task_type": "character",
+        "examples": "Input: \nString1: F, u, a, y, 5\nString2: 5, y, a, u, F\nOutput: True\n\nInput: \nString1: k, V, q, 4, m\nString2: m, 4, q, V, k\nOutput: True\n\nInput: \nString1: 8, g, U, y, Z\nString2: Z, y, U, g, 8\nOutput: True\n\nInput: \nString1: G, X, t, c, R\nString2: R, c, t, X, G\nOutput: True\n\nInput: \nString1: x, Y, m, k, i\nString2: i, k, m, Y, x\nOutput: True\n\nInput: \nString1: j, J, P, g, f\nString2: f, g, P, J, j\nOutput: True\n\nInput: \nString1: S, v, X, 7, F\nString2: S, v, X, 7, F\nOutput: False\n\nInput: \nString1: 4, L, 1, b, Z\nString2: Z, b, 1, L, 4\nOutput: True\n\n",
+        "prompt": "Input: \nString1: u, r, p, J, F\nString2: u, r, p, J, F\nOutput:",
+        "label": false
+    },
+    {
+        "uid": 5,
+        "task": "check_order",
+        "task_type": "character",
+        "examples": "Input: \nString1: E, 4, v, 2, t\nString2: t, 2, v, 4, E\nOutput: True\n\nInput: \nString1: 4, W, F, H, g\nString2: 4, W, F, H, g\nOutput: False\n\nInput: \nString1: D, Y, 8, k, x\nString2: D, Y, 8, k, x\nOutput: False\n\nInput: \nString1: F, o, U, p, Q\nString2: F, o, U, p, Q\nOutput: False\n\nInput: \nString1: 6, g, R, M, Q\nString2: Q, M, R, g, 6\nOutput: True\n\nInput: \nString1: t, k, 3, h, f\nString2: t, k, 3, h, f\nOutput: False\n\nInput: \nString1: 3, P, k, L, p\nString2: p, L, k, P, 3\nOutput: True\n\nInput: \nString1: F, C, Y, S, 8\nString2: 8, S, Y, C, F\nOutput: True\n\n",
+        "prompt": "Input: \nString1: b, E, 0, 4, j\nString2: j, 4, 0, E, b\nOutput:",
+        "label": true
+    },
+    {
+        "uid": 6,
+        "task": "check_order",
+        "task_type": "character",
+        "examples": "Input: \nString1: S, p, t, s, Z\nString2: Z, s, t, p, S\nOutput: True\n\nInput: \nString1: 3, f, Y, r, 0\nString2: 0, r, Y, f, 3\nOutput: True\n\nInput: \nString1: x, m, s, F, A\nString2: A, F, s, m, x\nOutput: True\n\nInput: \nString1: V, U, D, t, P\nString2: V, U, D, t, P\nOutput: False\n\nInput: \nString1: A, O, 0, G, x\nString2: x, G, 0, O, A\nOutput: True\n\nInput: \nString1: I, R, i, z, k\nString2: I, R, i, z, k\nOutput: False\n\nInput: \nString1: 9, C, I, D, z\nString2: 9, C, I, D, z\nOutput: False\n\nInput: \nString1: b, l, Y, 3, K\nString2: K, 3, Y, l, b\nOutput: True\n\n",
+        "prompt": "Input: \nString1: B, H, T, F, t\nString2: B, H, T, F, t\nOutput:",
+        "label": false
+    },
+    {
+        "uid": 7,
+        "task": "check_order",
+        "task_type": "character",
+        "examples": "Input: \nString1: 3, z, W, 5, s\nString2: s, 5, W, z, 3\nOutput: True\n\nInput: \nString1: 4, c, h, t, F\nString2: F, t, h, c, 4\nOutput: True\n\nInput: \nString1: 7, y, u, a, F\nString2: 7, y, u, a, F\nOutput: False\n\nInput: \nString1: d, 5, Q, g, b\nString2: b, g, Q, 5, d\nOutput: True\n\nInput: \nString1: x, G, D, g, j\nString2: x, G, D, g, j\nOutput: False\n\nInput: \nString1: F, G, P, 8, g\nString2: F, G, P, 8, g\nOutput: False\n\nInput: \nString1: T, K, x, m, 4\nString2: T, K, x, m, 4\nOutput: False\n\nInput: \nString1: T, d, a, 6, 4\nString2: 4, 6, a, d, T\nOutput: True\n\n",
+        "prompt": "Input: \nString1: 3, b, U, W, w\nString2: w, W, U, b, 3\nOutput:",
+        "label": true
+    },
+    {
+        "uid": 8,
+        "task": "check_order",
+        "task_type": "character",
+        "examples": "Input: \nString1: u, F, N, I, A\nString2: A, I, N, F, u\nOutput: True\n\nInput: \nString1: r, Y, j, J, d\nString2: r, Y, j, J, d\nOutput: False\n\nInput: \nString1: g, q, Z, J, x\nString2: x, J, Z, q, g\nOutput: True\n\nInput: \nString1: y, u, 8, G, 7\nString2: 7, G, 8, u, y\nOutput: True\n\nInput: \nString1: l, Z, 9, H, I\nString2: I, H, 9, Z, l\nOutput: True\n\nInput: \nString1: j, L, D, h, e\nString2: e, h, D, L, j\nOutput: True\n\nInput: \nString1: W, V, G, v, w\nString2: W, V, G, v, w\nOutput: False\n\nInput: \nString1: 5, e, R, r, H\nString2: H, r, R, e, 5\nOutput: True\n\n",
+        "prompt": "Input: \nString1: W, G, 8, x, M\nString2: M, x, 8, G, W\nOutput:",
+        "label": true
+    },
+    {
+        "uid": 9,
+        "task": "check_order",
+        "task_type": "character",
+        "examples": "Input: \nString1: A, l, S, Z, j\nString2: A, l, S, Z, j\nOutput: False\n\nInput: \nString1: Z, 0, 7, 4, y\nString2: Z, 0, 7, 4, y\nOutput: False\n\nInput: \nString1: Y, 2, r, N, b\nString2: b, N, r, 2, Y\nOutput: True\n\nInput: \nString1: R, 8, 2, J, N\nString2: N, J, 2, 8, R\nOutput: True\n\nInput: \nString1: v, M, D, h, F\nString2: F, h, D, M, v\nOutput: True\n\nInput: \nString1: M, n, Z, u, t\nString2: t, u, Z, n, M\nOutput: True\n\nInput: \nString1: d, l, 9, x, F\nString2: d, l, 9, x, F\nOutput: False\n\nInput: \nString1: p, B, u, Q, 1\nString2: 1, Q, u, B, p\nOutput: True\n\n",
+        "prompt": "Input: \nString1: 0, L, n, 8, e\nString2: e, 8, n, L, 0\nOutput:",
+        "label": true
+    },
+    {
+        "uid": 10,
+        "task": "check_order",
+        "task_type": "character",
+        "examples": "Input: \nString1: H, A, o, i, 6\nString2: 6, i, o, A, H\nOutput: True\n\nInput: \nString1: t, 2, s, U, E\nString2: t, 2, s, U, E\nOutput: False\n\nInput: \nString1: q, w, T, M, J\nString2: J, M, T, w, q\nOutput: True\n\nInput: \nString1: E, 1, g, C, P\nString2: P, C, g, 1, E\nOutput: True\n\nInput: \nString1: H, t, 4, z, n\nString2: H, t, 4, z, n\nOutput: False\n\nInput: \nString1: M, f, W, P, h\nString2: M, f, W, P, h\nOutput: False\n\nInput: \nString1: y, 1, 7, u, G\nString2: y, 1, 7, u, G\nOutput: False\n\nInput: \nString1: b, z, G, 2, 6\nString2: 6, 2, G, z, b\nOutput: True\n\n",
+        "prompt": "Input: \nString1: l, x, L, o, Q\nString2: Q, o, L, x, l\nOutput:",
+        "label": true
+    },
+    {
+        "uid": 11,
+        "task": "check_order",
+        "task_type": "character",
+        "examples": "Input: \nString1: O, v, a, C, G\nString2: G, C, a, v, O\nOutput: True\n\nInput: \nString1: j, R, 0, X, x\nString2: x, X, 0, R, j\nOutput: True\n\nInput: \nString1: N, R, 4, y, g\nString2: g, y, 4, R, N\nOutput: True\n\nInput: \nString1: d, K, g, s, 7\nString2: d, K, g, s, 7\nOutput: False\n\nInput: \nString1: W, J, g, Q, K\nString2: W, J, g, Q, K\nOutput: False\n\nInput: \nString1: i, I, Z, 8, C\nString2: i, I, Z, 8, C\nOutput: False\n\nInput: \nString1: g, y, O, h, l\nString2: g, y, O, h, l\nOutput: False\n\nInput: \nString1: d, a, J, P, Z\nString2: Z, P, J, a, d\nOutput: True\n\n",
+        "prompt": "Input: \nString1: M, k, o, K, R\nString2: M, k, o, K, R\nOutput:",
+        "label": false
+    },
+    {
+        "uid": 12,
+        "task": "check_order",
+        "task_type": "character",
+        "examples": "Input: \nString1: T, S, h, D, W\nString2: T, S, h, D, W\nOutput: False\n\nInput: \nString1: o, v, z, l, A\nString2: o, v, z, l, A\nOutput: False\n\nInput: \nString1: I, W, g, e, d\nString2: d, e, g, W, I\nOutput: True\n\nInput: \nString1: 5, q, y, m, F\nString2: 5, q, y, m, F\nOutput: False\n\nInput: \nString1: E, p, C, 9, 1\nString2: E, p, C, 9, 1\nOutput: False\n\nInput: \nString1: F, U, d, s, n\nString2: n, s, d, U, F\nOutput: True\n\nInput: \nString1: T, Q, u, e, a\nString2: a, e, u, Q, T\nOutput: True\n\nInput: \nString1: j, i, O, V, P\nString2: P, V, O, i, j\nOutput: True\n\n",
+        "prompt": "Input: \nString1: J, I, D, R, o\nString2: o, R, D, I, J\nOutput:",
+        "label": true
+    },
+    {
+        "uid": 13,
+        "task": "check_order",
+        "task_type": "character",
+        "examples": "Input: \nString1: n, R, E, B, p\nString2: p, B, E, R, n\nOutput: True\n\nInput: \nString1: 3, Z, F, w, s\nString2: 3, Z, F, w, s\nOutput: False\n\nInput: \nString1: T, 8, p, g, X\nString2: X, g, p, 8, T\nOutput: True\n\nInput: \nString1: y, m, v, S, d\nString2: y, m, v, S, d\nOutput: False\n\nInput: \nString1: r, w, Z, S, v\nString2: r, w, Z, S, v\nOutput: False\n\nInput: \nString1: l, t, U, S, G\nString2: G, S, U, t, l\nOutput: True\n\nInput: \nString1: r, e, H, n, X\nString2: X, n, H, e, r\nOutput: True\n\nInput: \nString1: e, F, H, S, 4\nString2: e, F, H, S, 4\nOutput: False\n\n",
+        "prompt": "Input: \nString1: 9, f, i, 0, v\nString2: v, 0, i, f, 9\nOutput:",
+        "label": true
+    },
+    {
+        "uid": 14,
+        "task": "check_order",
+        "task_type": "character",
+        "examples": "Input: \nString1: 8, 9, E, O, i\nString2: i, O, E, 9, 8\nOutput: True\n\nInput: \nString1: j, D, 4, Q, L\nString2: L, Q, 4, D, j\nOutput: True\n\nInput: \nString1: Q, 3, D, r, O\nString2: Q, 3, D, r, O\nOutput: False\n\nInput: \nString1: s, u, m, a, O\nString2: O, a, m, u, s\nOutput: True\n\nInput: \nString1: 0, y, M, J, m\nString2: 0, y, M, J, m\nOutput: False\n\nInput: \nString1: s, v, z, r, Q\nString2: s, v, z, r, Q\nOutput: False\n\nInput: \nString1: V, E, H, R, 1\nString2: 1, R, H, E, V\nOutput: True\n\nInput: \nString1: L, g, h, p, P\nString2: L, g, h, p, P\nOutput: False\n\n",
+        "prompt": "Input: \nString1: F, H, L, K, v\nString2: F, H, L, K, v\nOutput:",
+        "label": false
+    },
+    {
+        "uid": 15,
+        "task": "check_order",
+        "task_type": "character",
+        "examples": "Input: \nString1: w, P, b, a, g\nString2: g, a, b, P, w\nOutput: True\n\nInput: \nString1: 5, f, R, 8, t\nString2: t, 8, R, f, 5\nOutput: True\n\nInput: \nString1: B, 3, G, O, K\nString2: B, 3, G, O, K\nOutput: False\n\nInput: \nString1: T, K, L, m, u\nString2: u, m, L, K, T\nOutput: True\n\nInput: \nString1: H, m, y, r, Q\nString2: H, m, y, r, Q\nOutput: False\n\nInput: \nString1: r, 5, U, 1, l\nString2: r, 5, U, 1, l\nOutput: False\n\nInput: \nString1: y, M, E, f, 4\nString2: 4, f, E, M, y\nOutput: True\n\nInput: \nString1: m, 1, y, F, C\nString2: C, F, y, 1, m\nOutput: True\n\n",
+        "prompt": "Input: \nString1: r, T, w, 8, d\nString2: d, 8, w, T, r\nOutput:",
+        "label": true
+    },
+    {
+        "uid": 16,
+        "task": "check_order",
+        "task_type": "character",
+        "examples": "Input: \nString1: a, y, D, T, i\nString2: i, T, D, y, a\nOutput: True\n\nInput: \nString1: n, N, A, c, z\nString2: n, N, A, c, z\nOutput: False\n\nInput: \nString1: n, q, A, z, J\nString2: J, z, A, q, n\nOutput: True\n\nInput: \nString1: b, 1, x, J, a\nString2: a, J, x, 1, b\nOutput: True\n\nInput: \nString1: P, y, j, C, 4\nString2: P, y, j, C, 4\nOutput: False\n\nInput: \nString1: 6, i, n, J, s\nString2: s, J, n, i, 6\nOutput: True\n\nInput: \nString1: o, a, 2, M, Y\nString2: Y, M, 2, a, o\nOutput: True\n\nInput: \nString1: g, N, 4, W, f\nString2: g, N, 4, W, f\nOutput: False\n\n",
+        "prompt": "Input: \nString1: d, 9, F, 8, U\nString2: U, 8, F, 9, d\nOutput:",
+        "label": true
+    },
+    {
+        "uid": 17,
+        "task": "check_order",
+        "task_type": "character",
+        "examples": "Input: \nString1: R, z, N, e, v\nString2: v, e, N, z, R\nOutput: True\n\nInput: \nString1: j, 9, R, B, k\nString2: j, 9, R, B, k\nOutput: False\n\nInput: \nString1: d, p, w, Y, n\nString2: d, p, w, Y, n\nOutput: False\n\nInput: \nString1: T, R, q, k, b\nString2: T, R, q, k, b\nOutput: False\n\nInput: \nString1: K, s, F, r, x\nString2: K, s, F, r, x\nOutput: False\n\nInput: \nString1: H, u, S, F, m\nString2: m, F, S, u, H\nOutput: True\n\nInput: \nString1: a, d, g, O, L\nString2: a, d, g, O, L\nOutput: False\n\nInput: \nString1: V, s, K, B, D\nString2: D, B, K, s, V\nOutput: True\n\n",
+        "prompt": "Input: \nString1: 0, s, Q, q, V\nString2: 0, s, Q, q, V\nOutput:",
+        "label": false
+    },
+    {
+        "uid": 18,
+        "task": "check_order",
+        "task_type": "character",
+        "examples": "Input: \nString1: Z, 0, X, y, C\nString2: Z, 0, X, y, C\nOutput: False\n\nInput: \nString1: F, k, Q, V, Z\nString2: Z, V, Q, k, F\nOutput: True\n\nInput: \nString1: i, U, f, j, V\nString2: V, j, f, U, i\nOutput: True\n\nInput: \nString1: o, 1, 5, I, E\nString2: o, 1, 5, I, E\nOutput: False\n\nInput: \nString1: i, F, J, g, b\nString2: i, F, J, g, b\nOutput: False\n\nInput: \nString1: U, Z, X, M, R\nString2: U, Z, X, M, R\nOutput: False\n\nInput: \nString1: M, i, T, H, J\nString2: M, i, T, H, J\nOutput: False\n\nInput: \nString1: E, 7, k, C, K\nString2: E, 7, k, C, K\nOutput: False\n\n",
+        "prompt": "Input: \nString1: p, G, L, H, u\nString2: p, G, L, H, u\nOutput:",
+        "label": false
+    },
+    {
+        "uid": 19,
+        "task": "check_order",
+        "task_type": "character",
+        "examples": "Input: \nString1: C, D, l, U, H\nString2: H, U, l, D, C\nOutput: True\n\nInput: \nString1: 6, r, C, I, E\nString2: 6, r, C, I, E\nOutput: False\n\nInput: \nString1: B, J, 0, j, Y\nString2: B, J, 0, j, Y\nOutput: False\n\nInput: \nString1: H, 2, 3, Z, I\nString2: I, Z, 3, 2, H\nOutput: True\n\nInput: \nString1: e, t, m, V, 6\nString2: 6, V, m, t, e\nOutput: True\n\nInput: \nString1: a, I, U, S, L\nString2: L, S, U, I, a\nOutput: True\n\nInput: \nString1: z, 3, G, y, t\nString2: t, y, G, 3, z\nOutput: True\n\nInput: \nString1: 7, q, 4, P, V\nString2: 7, q, 4, P, V\nOutput: False\n\n",
+        "prompt": "Input: \nString1: l, Y, y, m, i\nString2: i, m, y, Y, l\nOutput:",
+        "label": true
+    },
+    {
+        "uid": 20,
+        "task": "check_order",
+        "task_type": "character",
+        "examples": "Input: \nString1: p, a, y, J, 5\nString2: 5, J, y, a, p\nOutput: True\n\nInput: \nString1: 7, Z, m, Q, c\nString2: c, Q, m, Z, 7\nOutput: True\n\nInput: \nString1: n, X, O, S, w\nString2: w, S, O, X, n\nOutput: True\n\nInput: \nString1: J, t, b, R, a\nString2: J, t, b, R, a\nOutput: False\n\nInput: \nString1: d, z, l, 6, y\nString2: y, 6, l, z, d\nOutput: True\n\nInput: \nString1: e, D, G, g, 5\nString2: 5, g, G, D, e\nOutput: True\n\nInput: \nString1: F, B, Z, 4, A\nString2: A, 4, Z, B, F\nOutput: True\n\nInput: \nString1: Q, S, i, c, U\nString2: U, c, i, S, Q\nOutput: True\n\n",
+        "prompt": "Input: \nString1: a, e, h, 3, 9\nString2: 9, 3, h, e, a\nOutput:",
+        "label": true
+    },
+    {
+        "uid": 21,
+        "task": "check_order",
+        "task_type": "character",
+        "examples": "Input: \nString1: 4, h, E, x, G\nString2: 4, h, E, x, G\nOutput: False\n\nInput: \nString1: R, 7, Y, E, f\nString2: f, E, Y, 7, R\nOutput: True\n\nInput: \nString1: w, H, q, 9, 4\nString2: 4, 9, q, H, w\nOutput: True\n\nInput: \nString1: A, o, J, c, l\nString2: l, c, J, o, A\nOutput: True\n\nInput: \nString1: S, 7, T, i, J\nString2: S, 7, T, i, J\nOutput: False\n\nInput: \nString1: y, H, W, Y, V\nString2: y, H, W, Y, V\nOutput: False\n\nInput: \nString1: 5, c, 2, u, R\nString2: 5, c, 2, u, R\nOutput: False\n\nInput: \nString1: c, G, 1, 5, E\nString2: c, G, 1, 5, E\nOutput: False\n\n",
+        "prompt": "Input: \nString1: 2, E, I, j, i\nString2: 2, E, I, j, i\nOutput:",
+        "label": false
+    },
+    {
+        "uid": 22,
+        "task": "check_order",
+        "task_type": "character",
+        "examples": "Input: \nString1: m, B, U, X, f\nString2: f, X, U, B, m\nOutput: True\n\nInput: \nString1: w, H, B, b, R\nString2: w, H, B, b, R\nOutput: False\n\nInput: \nString1: 5, U, M, Q, L\nString2: 5, U, M, Q, L\nOutput: False\n\nInput: \nString1: g, 6, s, A, L\nString2: g, 6, s, A, L\nOutput: False\n\nInput: \nString1: i, V, I, g, y\nString2: i, V, I, g, y\nOutput: False\n\nInput: \nString1: q, m, Z, 2, T\nString2: q, m, Z, 2, T\nOutput: False\n\nInput: \nString1: K, G, 7, n, P\nString2: P, n, 7, G, K\nOutput: True\n\nInput: \nString1: g, t, Y, T, Q\nString2: Q, T, Y, t, g\nOutput: True\n\n",
+        "prompt": "Input: \nString1: m, h, q, H, a\nString2: a, H, q, h, m\nOutput:",
+        "label": true
+    },
+    {
+        "uid": 23,
+        "task": "check_order",
+        "task_type": "character",
+        "examples": "Input: \nString1: e, S, m, 3, D\nString2: e, S, m, 3, D\nOutput: False\n\nInput: \nString1: Z, 8, x, I, S\nString2: Z, 8, x, I, S\nOutput: False\n\nInput: \nString1: 7, 1, e, c, p\nString2: 7, 1, e, c, p\nOutput: False\n\nInput: \nString1: j, A, J, Z, 0\nString2: 0, Z, J, A, j\nOutput: True\n\nInput: \nString1: 5, E, r, w, 7\nString2: 5, E, r, w, 7\nOutput: False\n\nInput: \nString1: y, 7, f, r, 9\nString2: y, 7, f, r, 9\nOutput: False\n\nInput: \nString1: x, j, I, W, H\nString2: x, j, I, W, H\nOutput: False\n\nInput: \nString1: r, U, F, T, Z\nString2: r, U, F, T, Z\nOutput: False\n\n",
+        "prompt": "Input: \nString1: C, X, N, d, m\nString2: m, d, N, X, C\nOutput:",
+        "label": true
+    },
+    {
+        "uid": 24,
+        "task": "check_order",
+        "task_type": "character",
+        "examples": "Input: \nString1: t, 4, H, n, o\nString2: o, n, H, 4, t\nOutput: True\n\nInput: \nString1: L, x, o, W, H\nString2: L, x, o, W, H\nOutput: False\n\nInput: \nString1: I, k, J, r, b\nString2: b, r, J, k, I\nOutput: True\n\nInput: \nString1: t, 9, S, Y, U\nString2: t, 9, S, Y, U\nOutput: False\n\nInput: \nString1: L, Z, m, Y, O\nString2: L, Z, m, Y, O\nOutput: False\n\nInput: \nString1: x, K, t, C, i\nString2: x, K, t, C, i\nOutput: False\n\nInput: \nString1: a, O, E, s, n\nString2: n, s, E, O, a\nOutput: True\n\nInput: \nString1: 2, K, l, U, j\nString2: 2, K, l, U, j\nOutput: False\n\n",
+        "prompt": "Input: \nString1: O, C, w, c, W\nString2: W, c, w, C, O\nOutput:",
+        "label": true
+    },
+    {
+        "uid": 25,
+        "task": "check_order",
+        "task_type": "character",
+        "examples": "Input: \nString1: V, z, 2, 8, W\nString2: W, 8, 2, z, V\nOutput: True\n\nInput: \nString1: t, 6, s, S, X\nString2: t, 6, s, S, X\nOutput: False\n\nInput: \nString1: 0, k, 9, Q, t\nString2: 0, k, 9, Q, t\nOutput: False\n\nInput: \nString1: 4, U, o, G, L\nString2: L, G, o, U, 4\nOutput: True\n\nInput: \nString1: f, 5, s, L, h\nString2: f, 5, s, L, h\nOutput: False\n\nInput: \nString1: z, K, e, j, u\nString2: z, K, e, j, u\nOutput: False\n\nInput: \nString1: t, Y, 2, d, 4\nString2: t, Y, 2, d, 4\nOutput: False\n\nInput: \nString1: e, h, w, I, E\nString2: E, I, w, h, e\nOutput: True\n\n",
+        "prompt": "Input: \nString1: O, g, o, q, f\nString2: O, g, o, q, f\nOutput:",
+        "label": false
+    },
+    {
+        "uid": 26,
+        "task": "check_order",
+        "task_type": "character",
+        "examples": "Input: \nString1: S, A, i, J, v\nString2: v, J, i, A, S\nOutput: True\n\nInput: \nString1: 2, K, o, 3, I\nString2: I, 3, o, K, 2\nOutput: True\n\nInput: \nString1: N, R, 9, F, X\nString2: N, R, 9, F, X\nOutput: False\n\nInput: \nString1: a, h, o, B, A\nString2: a, h, o, B, A\nOutput: False\n\nInput: \nString1: 5, d, t, O, h\nString2: h, O, t, d, 5\nOutput: True\n\nInput: \nString1: V, w, b, 9, E\nString2: E, 9, b, w, V\nOutput: True\n\nInput: \nString1: e, G, T, g, 0\nString2: e, G, T, g, 0\nOutput: False\n\nInput: \nString1: v, I, h, Y, A\nString2: v, I, h, Y, A\nOutput: False\n\n",
+        "prompt": "Input: \nString1: R, 6, m, e, j\nString2: j, e, m, 6, R\nOutput:",
+        "label": true
+    },
+    {
+        "uid": 27,
+        "task": "check_order",
+        "task_type": "character",
+        "examples": "Input: \nString1: i, G, T, s, J\nString2: i, G, T, s, J\nOutput: False\n\nInput: \nString1: O, s, U, 6, F\nString2: F, 6, U, s, O\nOutput: True\n\nInput: \nString1: a, M, I, i, 1\nString2: a, M, I, i, 1\nOutput: False\n\nInput: \nString1: H, 0, a, t, h\nString2: H, 0, a, t, h\nOutput: False\n\nInput: \nString1: w, c, l, V, r\nString2: r, V, l, c, w\nOutput: True\n\nInput: \nString1: n, p, E, c, M\nString2: n, p, E, c, M\nOutput: False\n\nInput: \nString1: e, C, d, G, h\nString2: h, G, d, C, e\nOutput: True\n\nInput: \nString1: e, 6, v, f, 2\nString2: 2, f, v, 6, e\nOutput: True\n\n",
+        "prompt": "Input: \nString1: S, y, M, b, J\nString2: J, b, M, y, S\nOutput:",
+        "label": true
+    },
+    {
+        "uid": 28,
+        "task": "check_order",
+        "task_type": "character",
+        "examples": "Input: \nString1: 5, w, I, K, l\nString2: l, K, I, w, 5\nOutput: True\n\nInput: \nString1: B, C, 8, o, Y\nString2: B, C, 8, o, Y\nOutput: False\n\nInput: \nString1: X, W, w, H, r\nString2: X, W, w, H, r\nOutput: False\n\nInput: \nString1: G, w, q, y, U\nString2: U, y, q, w, G\nOutput: True\n\nInput: \nString1: l, t, L, p, 7\nString2: l, t, L, p, 7\nOutput: False\n\nInput: \nString1: z, 4, 9, m, E\nString2: z, 4, 9, m, E\nOutput: False\n\nInput: \nString1: z, s, p, Z, N\nString2: z, s, p, Z, N\nOutput: False\n\nInput: \nString1: o, P, 0, G, Y\nString2: Y, G, 0, P, o\nOutput: True\n\n",
+        "prompt": "Input: \nString1: o, S, 2, b, N\nString2: o, S, 2, b, N\nOutput:",
+        "label": false
+    },
+    {
+        "uid": 29,
+        "task": "check_order",
+        "task_type": "character",
+        "examples": "Input: \nString1: q, e, y, N, 6\nString2: q, e, y, N, 6\nOutput: False\n\nInput: \nString1: U, 1, d, u, y\nString2: y, u, d, 1, U\nOutput: True\n\nInput: \nString1: w, d, E, f, 4\nString2: w, d, E, f, 4\nOutput: False\n\nInput: \nString1: w, i, J, f, Q\nString2: w, i, J, f, Q\nOutput: False\n\nInput: \nString1: 8, 2, y, J, V\nString2: V, J, y, 2, 8\nOutput: True\n\nInput: \nString1: 6, F, u, Y, 8\nString2: 8, Y, u, F, 6\nOutput: True\n\nInput: \nString1: T, N, g, y, l\nString2: T, N, g, y, l\nOutput: False\n\nInput: \nString1: b, l, k, 9, u\nString2: b, l, k, 9, u\nOutput: False\n\n",
+        "prompt": "Input: \nString1: T, N, h, l, G\nString2: G, l, h, N, T\nOutput:",
+        "label": true
+    },
+    {
+        "uid": 30,
+        "task": "check_order",
+        "task_type": "character",
+        "examples": "Input: \nString1: y, H, 2, i, N\nString2: y, H, 2, i, N\nOutput: False\n\nInput: \nString1: S, y, F, s, N\nString2: N, s, F, y, S\nOutput: True\n\nInput: \nString1: h, N, Y, v, f\nString2: f, v, Y, N, h\nOutput: True\n\nInput: \nString1: 3, P, H, C, z\nString2: 3, P, H, C, z\nOutput: False\n\nInput: \nString1: y, s, q, T, 5\nString2: 5, T, q, s, y\nOutput: True\n\nInput: \nString1: f, e, c, 1, 3\nString2: 3, 1, c, e, f\nOutput: True\n\nInput: \nString1: F, 8, o, a, D\nString2: F, 8, o, a, D\nOutput: False\n\nInput: \nString1: r, m, Z, D, b\nString2: b, D, Z, m, r\nOutput: True\n\n",
+        "prompt": "Input: \nString1: f, 6, r, V, d\nString2: f, 6, r, V, d\nOutput:",
+        "label": false
+    },
+    {
+        "uid": 31,
+        "task": "check_order",
+        "task_type": "character",
+        "examples": "Input: \nString1: o, v, c, 0, H\nString2: H, 0, c, v, o\nOutput: True\n\nInput: \nString1: 8, Y, G, p, B\nString2: B, p, G, Y, 8\nOutput: True\n\nInput: \nString1: g, t, 1, 8, 0\nString2: 0, 8, 1, t, g\nOutput: True\n\nInput: \nString1: o, F, b, K, 1\nString2: o, F, b, K, 1\nOutput: False\n\nInput: \nString1: G, 3, 8, l, Q\nString2: Q, l, 8, 3, G\nOutput: True\n\nInput: \nString1: l, 4, U, S, n\nString2: n, S, U, 4, l\nOutput: True\n\nInput: \nString1: W, b, 6, S, E\nString2: W, b, 6, S, E\nOutput: False\n\nInput: \nString1: k, o, w, t, g\nString2: g, t, w, o, k\nOutput: True\n\n",
+        "prompt": "Input: \nString1: q, t, E, L, n\nString2: n, L, E, t, q\nOutput:",
+        "label": true
+    },
+    {
+        "uid": 32,
+        "task": "check_order",
+        "task_type": "character",
+        "examples": "Input: \nString1: s, P, R, h, 6\nString2: s, P, R, h, 6\nOutput: False\n\nInput: \nString1: j, w, S, 4, v\nString2: j, w, S, 4, v\nOutput: False\n\nInput: \nString1: K, c, 9, 4, 8\nString2: 8, 4, 9, c, K\nOutput: True\n\nInput: \nString1: d, e, b, Z, j\nString2: d, e, b, Z, j\nOutput: False\n\nInput: \nString1: O, c, X, I, T\nString2: O, c, X, I, T\nOutput: False\n\nInput: \nString1: 6, o, i, 7, s\nString2: 6, o, i, 7, s\nOutput: False\n\nInput: \nString1: R, S, u, E, Q\nString2: Q, E, u, S, R\nOutput: True\n\nInput: \nString1: q, T, P, Q, k\nString2: q, T, P, Q, k\nOutput: False\n\n",
+        "prompt": "Input: \nString1: T, f, z, 1, 3\nString2: T, f, z, 1, 3\nOutput:",
+        "label": false
+    },
+    {
+        "uid": 33,
+        "task": "check_order",
+        "task_type": "character",
+        "examples": "Input: \nString1: h, x, U, 4, 5\nString2: 5, 4, U, x, h\nOutput: True\n\nInput: \nString1: 5, R, 6, l, N\nString2: N, l, 6, R, 5\nOutput: True\n\nInput: \nString1: Z, 3, b, z, L\nString2: L, z, b, 3, Z\nOutput: True\n\nInput: \nString1: Q, M, t, g, y\nString2: y, g, t, M, Q\nOutput: True\n\nInput: \nString1: t, w, k, 3, z\nString2: t, w, k, 3, z\nOutput: False\n\nInput: \nString1: c, J, M, 6, a\nString2: c, J, M, 6, a\nOutput: False\n\nInput: \nString1: 9, g, U, E, s\nString2: s, E, U, g, 9\nOutput: True\n\nInput: \nString1: M, s, Z, N, 7\nString2: 7, N, Z, s, M\nOutput: True\n\n",
+        "prompt": "Input: \nString1: K, R, g, G, N\nString2: N, G, g, R, K\nOutput:",
+        "label": true
+    },
+    {
+        "uid": 34,
+        "task": "check_order",
+        "task_type": "character",
+        "examples": "Input: \nString1: c, x, g, r, i\nString2: i, r, g, x, c\nOutput: True\n\nInput: \nString1: 1, B, H, i, m\nString2: 1, B, H, i, m\nOutput: False\n\nInput: \nString1: w, L, M, 0, B\nString2: w, L, M, 0, B\nOutput: False\n\nInput: \nString1: a, g, P, 4, 9\nString2: 9, 4, P, g, a\nOutput: True\n\nInput: \nString1: 5, l, X, D, O\nString2: O, D, X, l, 5\nOutput: True\n\nInput: \nString1: T, L, A, N, J\nString2: T, L, A, N, J\nOutput: False\n\nInput: \nString1: n, y, a, c, 5\nString2: n, y, a, c, 5\nOutput: False\n\nInput: \nString1: 9, A, m, d, 3\nString2: 3, d, m, A, 9\nOutput: True\n\n",
+        "prompt": "Input: \nString1: a, E, p, R, s\nString2: a, E, p, R, s\nOutput:",
+        "label": false
+    },
+    {
+        "uid": 35,
+        "task": "check_order",
+        "task_type": "character",
+        "examples": "Input: \nString1: Q, H, D, m, W\nString2: Q, H, D, m, W\nOutput: False\n\nInput: \nString1: M, R, 7, I, h\nString2: h, I, 7, R, M\nOutput: True\n\nInput: \nString1: X, g, J, 2, E\nString2: X, g, J, 2, E\nOutput: False\n\nInput: \nString1: c, 3, 0, D, J\nString2: c, 3, 0, D, J\nOutput: False\n\nInput: \nString1: n, 8, m, G, I\nString2: I, G, m, 8, n\nOutput: True\n\nInput: \nString1: 7, 0, V, l, R\nString2: 7, 0, V, l, R\nOutput: False\n\nInput: \nString1: 8, O, Y, j, E\nString2: E, j, Y, O, 8\nOutput: True\n\nInput: \nString1: 4, P, t, l, 2\nString2: 4, P, t, l, 2\nOutput: False\n\n",
+        "prompt": "Input: \nString1: H, S, g, R, V\nString2: V, R, g, S, H\nOutput:",
+        "label": true
+    },
+    {
+        "uid": 36,
+        "task": "check_order",
+        "task_type": "character",
+        "examples": "Input: \nString1: a, R, P, j, e\nString2: a, R, P, j, e\nOutput: False\n\nInput: \nString1: I, 7, P, 1, z\nString2: I, 7, P, 1, z\nOutput: False\n\nInput: \nString1: A, p, y, d, T\nString2: A, p, y, d, T\nOutput: False\n\nInput: \nString1: 5, R, s, 6, F\nString2: 5, R, s, 6, F\nOutput: False\n\nInput: \nString1: b, P, X, 5, t\nString2: b, P, X, 5, t\nOutput: False\n\nInput: \nString1: l, L, E, n, A\nString2: l, L, E, n, A\nOutput: False\n\nInput: \nString1: W, e, 7, X, C\nString2: C, X, 7, e, W\nOutput: True\n\nInput: \nString1: M, k, z, q, f\nString2: M, k, z, q, f\nOutput: False\n\n",
+        "prompt": "Input: \nString1: 1, T, w, 4, t\nString2: 1, T, w, 4, t\nOutput:",
+        "label": false
+    },
+    {
+        "uid": 37,
+        "task": "check_order",
+        "task_type": "character",
+        "examples": "Input: \nString1: c, 9, m, f, 4\nString2: 4, f, m, 9, c\nOutput: True\n\nInput: \nString1: y, n, e, V, T\nString2: T, V, e, n, y\nOutput: True\n\nInput: \nString1: h, x, u, a, f\nString2: h, x, u, a, f\nOutput: False\n\nInput: \nString1: t, e, K, 9, S\nString2: t, e, K, 9, S\nOutput: False\n\nInput: \nString1: U, S, e, J, o\nString2: o, J, e, S, U\nOutput: True\n\nInput: \nString1: b, 3, M, W, 4\nString2: b, 3, M, W, 4\nOutput: False\n\nInput: \nString1: T, S, 2, 3, N\nString2: T, S, 2, 3, N\nOutput: False\n\nInput: \nString1: 4, f, t, s, 5\nString2: 4, f, t, s, 5\nOutput: False\n\n",
+        "prompt": "Input: \nString1: F, 6, 9, G, C\nString2: C, G, 9, 6, F\nOutput:",
+        "label": true
+    },
+    {
+        "uid": 38,
+        "task": "check_order",
+        "task_type": "character",
+        "examples": "Input: \nString1: S, w, p, a, f\nString2: f, a, p, w, S\nOutput: True\n\nInput: \nString1: K, c, U, W, 9\nString2: 9, W, U, c, K\nOutput: True\n\nInput: \nString1: S, 6, p, v, r\nString2: r, v, p, 6, S\nOutput: True\n\nInput: \nString1: j, 5, W, f, B\nString2: j, 5, W, f, B\nOutput: False\n\nInput: \nString1: F, j, S, X, d\nString2: d, X, S, j, F\nOutput: True\n\nInput: \nString1: N, w, I, O, Q\nString2: Q, O, I, w, N\nOutput: True\n\nInput: \nString1: h, c, 3, o, e\nString2: h, c, 3, o, e\nOutput: False\n\nInput: \nString1: 4, L, 6, Z, h\nString2: 4, L, 6, Z, h\nOutput: False\n\n",
+        "prompt": "Input: \nString1: T, b, Z, z, o\nString2: T, b, Z, z, o\nOutput:",
+        "label": false
+    },
+    {
+        "uid": 39,
+        "task": "check_order",
+        "task_type": "character",
+        "examples": "Input: \nString1: L, 5, b, g, 9\nString2: 9, g, b, 5, L\nOutput: True\n\nInput: \nString1: J, z, f, i, g\nString2: J, z, f, i, g\nOutput: False\n\nInput: \nString1: 8, c, j, y, 5\nString2: 8, c, j, y, 5\nOutput: False\n\nInput: \nString1: Z, O, f, o, L\nString2: Z, O, f, o, L\nOutput: False\n\nInput: \nString1: g, i, r, y, l\nString2: l, y, r, i, g\nOutput: True\n\nInput: \nString1: f, g, R, W, N\nString2: N, W, R, g, f\nOutput: True\n\nInput: \nString1: N, J, B, y, D\nString2: D, y, B, J, N\nOutput: True\n\nInput: \nString1: y, n, V, C, E\nString2: y, n, V, C, E\nOutput: False\n\n",
+        "prompt": "Input: \nString1: I, G, k, s, g\nString2: I, G, k, s, g\nOutput:",
+        "label": false
+    },
+    {
+        "uid": 40,
+        "task": "check_order",
+        "task_type": "character",
+        "examples": "Input: \nString1: W, n, Y, r, l\nString2: l, r, Y, n, W\nOutput: True\n\nInput: \nString1: g, L, u, n, d\nString2: d, n, u, L, g\nOutput: True\n\nInput: \nString1: c, O, 9, A, B\nString2: B, A, 9, O, c\nOutput: True\n\nInput: \nString1: k, S, 2, Q, N\nString2: N, Q, 2, S, k\nOutput: True\n\nInput: \nString1: S, d, I, m, l\nString2: l, m, I, d, S\nOutput: True\n\nInput: \nString1: E, Y, F, J, z\nString2: E, Y, F, J, z\nOutput: False\n\nInput: \nString1: v, r, C, N, h\nString2: v, r, C, N, h\nOutput: False\n\nInput: \nString1: T, n, I, O, W\nString2: T, n, I, O, W\nOutput: False\n\n",
+        "prompt": "Input: \nString1: 9, 4, I, s, o\nString2: o, s, I, 4, 9\nOutput:",
+        "label": true
+    },
+    {
+        "uid": 41,
+        "task": "check_order",
+        "task_type": "character",
+        "examples": "Input: \nString1: t, G, 3, f, U\nString2: U, f, 3, G, t\nOutput: True\n\nInput: \nString1: Z, x, 6, j, s\nString2: Z, x, 6, j, s\nOutput: False\n\nInput: \nString1: I, 5, m, A, H\nString2: H, A, m, 5, I\nOutput: True\n\nInput: \nString1: v, W, 9, r, R\nString2: v, W, 9, r, R\nOutput: False\n\nInput: \nString1: y, w, E, q, S\nString2: S, q, E, w, y\nOutput: True\n\nInput: \nString1: x, 1, Q, 3, P\nString2: x, 1, Q, 3, P\nOutput: False\n\nInput: \nString1: F, O, 5, N, E\nString2: F, O, 5, N, E\nOutput: False\n\nInput: \nString1: K, x, 6, r, j\nString2: j, r, 6, x, K\nOutput: True\n\n",
+        "prompt": "Input: \nString1: z, A, q, C, p\nString2: z, A, q, C, p\nOutput:",
+        "label": false
+    },
+    {
+        "uid": 42,
+        "task": "check_order",
+        "task_type": "character",
+        "examples": "Input: \nString1: i, r, 8, m, j\nString2: i, r, 8, m, j\nOutput: False\n\nInput: \nString1: S, d, 0, v, 5\nString2: S, d, 0, v, 5\nOutput: False\n\nInput: \nString1: G, D, r, 9, Z\nString2: Z, 9, r, D, G\nOutput: True\n\nInput: \nString1: 7, n, I, F, J\nString2: 7, n, I, F, J\nOutput: False\n\nInput: \nString1: 3, F, Q, e, o\nString2: o, e, Q, F, 3\nOutput: True\n\nInput: \nString1: 4, 7, r, v, V\nString2: 4, 7, r, v, V\nOutput: False\n\nInput: \nString1: e, W, a, F, j\nString2: j, F, a, W, e\nOutput: True\n\nInput: \nString1: I, R, 0, d, M\nString2: M, d, 0, R, I\nOutput: True\n\n",
+        "prompt": "Input: \nString1: o, 9, 8, 2, I\nString2: o, 9, 8, 2, I\nOutput:",
+        "label": false
+    },
+    {
+        "uid": 43,
+        "task": "check_order",
+        "task_type": "character",
+        "examples": "Input: \nString1: 4, z, X, Y, W\nString2: 4, z, X, Y, W\nOutput: False\n\nInput: \nString1: O, t, U, 2, e\nString2: e, 2, U, t, O\nOutput: True\n\nInput: \nString1: N, G, l, 1, M\nString2: N, G, l, 1, M\nOutput: False\n\nInput: \nString1: M, F, k, g, e\nString2: e, g, k, F, M\nOutput: True\n\nInput: \nString1: n, b, l, m, L\nString2: L, m, l, b, n\nOutput: True\n\nInput: \nString1: 2, M, Y, L, q\nString2: q, L, Y, M, 2\nOutput: True\n\nInput: \nString1: r, n, h, T, i\nString2: i, T, h, n, r\nOutput: True\n\nInput: \nString1: e, B, p, 8, 4\nString2: e, B, p, 8, 4\nOutput: False\n\n",
+        "prompt": "Input: \nString1: a, Q, B, g, 5\nString2: 5, g, B, Q, a\nOutput:",
+        "label": true
+    },
+    {
+        "uid": 44,
+        "task": "check_order",
+        "task_type": "character",
+        "examples": "Input: \nString1: K, x, J, W, P\nString2: P, W, J, x, K\nOutput: True\n\nInput: \nString1: G, 2, m, f, C\nString2: G, 2, m, f, C\nOutput: False\n\nInput: \nString1: M, t, n, 3, f\nString2: M, t, n, 3, f\nOutput: False\n\nInput: \nString1: H, 7, p, N, R\nString2: H, 7, p, N, R\nOutput: False\n\nInput: \nString1: l, S, v, z, O\nString2: l, S, v, z, O\nOutput: False\n\nInput: \nString1: B, V, i, N, x\nString2: B, V, i, N, x\nOutput: False\n\nInput: \nString1: p, 5, k, R, c\nString2: p, 5, k, R, c\nOutput: False\n\nInput: \nString1: Y, I, K, 6, 5\nString2: 5, 6, K, I, Y\nOutput: True\n\n",
+        "prompt": "Input: \nString1: 2, I, C, o, u\nString2: 2, I, C, o, u\nOutput:",
+        "label": false
+    },
+    {
+        "uid": 45,
+        "task": "check_order",
+        "task_type": "character",
+        "examples": "Input: \nString1: A, i, S, M, 2\nString2: A, i, S, M, 2\nOutput: False\n\nInput: \nString1: d, R, H, e, o\nString2: d, R, H, e, o\nOutput: False\n\nInput: \nString1: 4, g, e, P, N\nString2: N, P, e, g, 4\nOutput: True\n\nInput: \nString1: y, 1, 9, s, c\nString2: c, s, 9, 1, y\nOutput: True\n\nInput: \nString1: 2, 8, 4, F, n\nString2: 2, 8, 4, F, n\nOutput: False\n\nInput: \nString1: N, O, y, a, 2\nString2: N, O, y, a, 2\nOutput: False\n\nInput: \nString1: h, S, y, N, m\nString2: m, N, y, S, h\nOutput: True\n\nInput: \nString1: a, 8, X, N, P\nString2: P, N, X, 8, a\nOutput: True\n\n",
+        "prompt": "Input: \nString1: g, I, J, S, c\nString2: g, I, J, S, c\nOutput:",
+        "label": false
+    },
+    {
+        "uid": 46,
+        "task": "check_order",
+        "task_type": "character",
+        "examples": "Input: \nString1: l, B, V, X, O\nString2: O, X, V, B, l\nOutput: True\n\nInput: \nString1: G, n, j, S, D\nString2: D, S, j, n, G\nOutput: True\n\nInput: \nString1: i, w, V, C, 7\nString2: i, w, V, C, 7\nOutput: False\n\nInput: \nString1: s, 4, S, B, v\nString2: v, B, S, 4, s\nOutput: True\n\nInput: \nString1: 5, p, h, z, s\nString2: 5, p, h, z, s\nOutput: False\n\nInput: \nString1: g, M, j, 4, Z\nString2: g, M, j, 4, Z\nOutput: False\n\nInput: \nString1: v, J, s, A, j\nString2: v, J, s, A, j\nOutput: False\n\nInput: \nString1: o, N, W, E, 7\nString2: 7, E, W, N, o\nOutput: True\n\n",
+        "prompt": "Input: \nString1: f, H, F, z, 7\nString2: f, H, F, z, 7\nOutput:",
+        "label": false
+    },
+    {
+        "uid": 47,
+        "task": "check_order",
+        "task_type": "character",
+        "examples": "Input: \nString1: Z, a, N, T, p\nString2: Z, a, N, T, p\nOutput: False\n\nInput: \nString1: d, u, 5, 4, J\nString2: J, 4, 5, u, d\nOutput: True\n\nInput: \nString1: j, k, U, X, Q\nString2: j, k, U, X, Q\nOutput: False\n\nInput: \nString1: q, a, 4, 8, K\nString2: q, a, 4, 8, K\nOutput: False\n\nInput: \nString1: S, T, h, X, M\nString2: M, X, h, T, S\nOutput: True\n\nInput: \nString1: u, r, n, Z, e\nString2: e, Z, n, r, u\nOutput: True\n\nInput: \nString1: n, z, 8, R, W\nString2: W, R, 8, z, n\nOutput: True\n\nInput: \nString1: r, 7, X, 9, J\nString2: J, 9, X, 7, r\nOutput: True\n\n",
+        "prompt": "Input: \nString1: o, 8, F, V, 1\nString2: 1, V, F, 8, o\nOutput:",
+        "label": true
+    },
+    {
+        "uid": 48,
+        "task": "check_order",
+        "task_type": "character",
+        "examples": "Input: \nString1: y, X, v, I, s\nString2: y, X, v, I, s\nOutput: False\n\nInput: \nString1: G, C, e, z, Z\nString2: Z, z, e, C, G\nOutput: True\n\nInput: \nString1: 8, e, J, d, Y\nString2: 8, e, J, d, Y\nOutput: False\n\nInput: \nString1: W, f, A, b, y\nString2: y, b, A, f, W\nOutput: True\n\nInput: \nString1: A, g, d, k, v\nString2: v, k, d, g, A\nOutput: True\n\nInput: \nString1: r, x, a, 2, q\nString2: r, x, a, 2, q\nOutput: False\n\nInput: \nString1: 5, 2, y, f, n\nString2: n, f, y, 2, 5\nOutput: True\n\nInput: \nString1: f, D, n, a, Q\nString2: f, D, n, a, Q\nOutput: False\n\n",
+        "prompt": "Input: \nString1: A, K, x, j, E\nString2: E, j, x, K, A\nOutput:",
+        "label": true
+    },
+    {
+        "uid": 49,
+        "task": "check_order",
+        "task_type": "character",
+        "examples": "Input: \nString1: U, F, p, h, P\nString2: U, F, p, h, P\nOutput: False\n\nInput: \nString1: T, 4, i, 3, A\nString2: T, 4, i, 3, A\nOutput: False\n\nInput: \nString1: Q, U, T, D, L\nString2: Q, U, T, D, L\nOutput: False\n\nInput: \nString1: K, t, j, k, M\nString2: M, k, j, t, K\nOutput: True\n\nInput: \nString1: 8, m, N, W, Z\nString2: 8, m, N, W, Z\nOutput: False\n\nInput: \nString1: K, F, T, 7, H\nString2: H, 7, T, F, K\nOutput: True\n\nInput: \nString1: F, 9, 6, 3, I\nString2: F, 9, 6, 3, I\nOutput: False\n\nInput: \nString1: t, d, Q, F, z\nString2: t, d, Q, F, z\nOutput: False\n\n",
+        "prompt": "Input: \nString1: V, u, e, Y, I\nString2: I, Y, e, u, V\nOutput:",
+        "label": true
+    },
+    {
+        "uid": 50,
+        "task": "check_order",
+        "task_type": "word",
+        "examples": "Input: \nString1: bike, welcome, proof, blame, style\nString2: style, blame, proof, welcome, bike\nOutput: True\n\nInput: \nString1: activity, situation, party, jacket, extension\nString2: activity, situation, party, jacket, extension\nOutput: False\n\nInput: \nString1: assistant, natural, track, growth, combination\nString2: combination, growth, track, natural, assistant\nOutput: True\n\nInput: \nString1: tackle, whole, conflict, constant, stomach\nString2: tackle, whole, conflict, constant, stomach\nOutput: False\n\nInput: \nString1: carpet, music, aspect, tone, awareness\nString2: carpet, music, aspect, tone, awareness\nOutput: False\n\nInput: \nString1: shine, ground, south, article, minimum\nString2: shine, ground, south, article, minimum\nOutput: False\n\nInput: \nString1: start, many, chest, target, rope\nString2: rope, target, chest, many, start\nOutput: True\n\nInput: \nString1: flight, red, fear, bag, priest\nString2: flight, red, fear, bag, priest\nOutput: False\n\n",
+        "prompt": "Input: \nString1: bottom, simple, concentrate, exchange, speech\nString2: speech, exchange, concentrate, simple, bottom\nOutput:",
+        "label": true
+    },
+    {
+        "uid": 51,
+        "task": "check_order",
+        "task_type": "word",
+        "examples": "Input: \nString1: principle, character, north, witness, file\nString2: file, witness, north, character, principle\nOutput: True\n\nInput: \nString1: establishment, fall, peak, progress, chair\nString2: chair, progress, peak, fall, establishment\nOutput: True\n\nInput: \nString1: article, technology, confusion, recover, morning\nString2: morning, recover, confusion, technology, article\nOutput: True\n\nInput: \nString1: candle, evening, leader, creative, yard\nString2: candle, evening, leader, creative, yard\nOutput: False\n\nInput: \nString1: choice, regular, cycle, measurement, net\nString2: net, measurement, cycle, regular, choice\nOutput: True\n\nInput: \nString1: professional, contact, mortgage, plane, zone\nString2: professional, contact, mortgage, plane, zone\nOutput: False\n\nInput: \nString1: convert, other, feature, aside, love\nString2: convert, other, feature, aside, love\nOutput: False\n\nInput: \nString1: address, drink, psychology, stable, physical\nString2: address, drink, psychology, stable, physical\nOutput: False\n\n",
+        "prompt": "Input: \nString1: rise, feed, complex, cancer, football\nString2: rise, feed, complex, cancer, football\nOutput:",
+        "label": false
+    },
+    {
+        "uid": 52,
+        "task": "check_order",
+        "task_type": "word",
+        "examples": "Input: \nString1: amount, formal, past, change, passenger\nString2: amount, formal, past, change, passenger\nOutput: False\n\nInput: \nString1: physical, coach, tooth, leather, private\nString2: private, leather, tooth, coach, physical\nOutput: True\n\nInput: \nString1: feedback, forever, air, security, she\nString2: feedback, forever, air, security, she\nOutput: False\n\nInput: \nString1: village, library, implement, fire, trick\nString2: trick, fire, implement, library, village\nOutput: True\n\nInput: \nString1: juice, smell, inspector, essay, collar\nString2: collar, essay, inspector, smell, juice\nOutput: True\n\nInput: \nString1: pop, shine, painting, struggle, elevator\nString2: pop, shine, painting, struggle, elevator\nOutput: False\n\nInput: \nString1: if, medium, print, brother, neck\nString2: neck, brother, print, medium, if\nOutput: True\n\nInput: \nString1: fire, accident, holiday, anger, star\nString2: fire, accident, holiday, anger, star\nOutput: False\n\n",
+        "prompt": "Input: \nString1: reveal, hang, private, definition, working\nString2: reveal, hang, private, definition, working\nOutput:",
+        "label": false
+    },
+    {
+        "uid": 53,
+        "task": "check_order",
+        "task_type": "word",
+        "examples": "Input: \nString1: return, golf, worker, process, rate\nString2: return, golf, worker, process, rate\nOutput: False\n\nInput: \nString1: indication, earth, class, split, profession\nString2: indication, earth, class, split, profession\nOutput: False\n\nInput: \nString1: frame, chip, lack, will, estimate\nString2: frame, chip, lack, will, estimate\nOutput: False\n\nInput: \nString1: mouse, mixture, long, solid, hell\nString2: mouse, mixture, long, solid, hell\nOutput: False\n\nInput: \nString1: sale, self, efficiency, plan, instance\nString2: sale, self, efficiency, plan, instance\nOutput: False\n\nInput: \nString1: resolve, message, couple, lecture, jump\nString2: resolve, message, couple, lecture, jump\nOutput: False\n\nInput: \nString1: bunch, apple, improvement, clock, house\nString2: bunch, apple, improvement, clock, house\nOutput: False\n\nInput: \nString1: construction, personality, reach, stretch, move\nString2: construction, personality, reach, stretch, move\nOutput: False\n\n",
+        "prompt": "Input: \nString1: soft, concentrate, forever, normal, brief\nString2: soft, concentrate, forever, normal, brief\nOutput:",
+        "label": false
+    },
+    {
+        "uid": 54,
+        "task": "check_order",
+        "task_type": "word",
+        "examples": "Input: \nString1: philosophy, percentage, limit, tool, swing\nString2: swing, tool, limit, percentage, philosophy\nOutput: True\n\nInput: \nString1: percentage, impress, construction, health, prize\nString2: percentage, impress, construction, health, prize\nOutput: False\n\nInput: \nString1: confidence, extreme, bet, branch, touch\nString2: touch, branch, bet, extreme, confidence\nOutput: True\n\nInput: \nString1: building, review, boat, spring, success\nString2: success, spring, boat, review, building\nOutput: True\n\nInput: \nString1: cry, play, speaker, boot, rip\nString2: rip, boot, speaker, play, cry\nOutput: True\n\nInput: \nString1: assumption, substance, chapter, thought, tree\nString2: tree, thought, chapter, substance, assumption\nOutput: True\n\nInput: \nString1: presence, nothing, boyfriend, reading, chicken\nString2: presence, nothing, boyfriend, reading, chicken\nOutput: False\n\nInput: \nString1: task, age, designer, meet, hell\nString2: hell, meet, designer, age, task\nOutput: True\n\n",
+        "prompt": "Input: \nString1: air, combination, kill, switch, lady\nString2: lady, switch, kill, combination, air\nOutput:",
+        "label": true
+    },
+    {
+        "uid": 55,
+        "task": "check_order",
+        "task_type": "word",
+        "examples": "Input: \nString1: wind, measurement, dear, gap, display\nString2: display, gap, dear, measurement, wind\nOutput: True\n\nInput: \nString1: upstairs, presence, software, quit, egg\nString2: upstairs, presence, software, quit, egg\nOutput: False\n\nInput: \nString1: might, minor, assistance, baseball, complex\nString2: might, minor, assistance, baseball, complex\nOutput: False\n\nInput: \nString1: pleasure, yard, choice, effort, minimum\nString2: pleasure, yard, choice, effort, minimum\nOutput: False\n\nInput: \nString1: perception, height, branch, account, job\nString2: job, account, branch, height, perception\nOutput: True\n\nInput: \nString1: word, factor, uncle, rice, practice\nString2: practice, rice, uncle, factor, word\nOutput: True\n\nInput: \nString1: rock, national, mine, specific, theory\nString2: rock, national, mine, specific, theory\nOutput: False\n\nInput: \nString1: push, distance, adult, youth, painting\nString2: push, distance, adult, youth, painting\nOutput: False\n\n",
+        "prompt": "Input: \nString1: awareness, fear, relief, test, writer\nString2: awareness, fear, relief, test, writer\nOutput:",
+        "label": false
+    },
+    {
+        "uid": 56,
+        "task": "check_order",
+        "task_type": "word",
+        "examples": "Input: \nString1: mention, steak, listen, figure, officer\nString2: mention, steak, listen, figure, officer\nOutput: False\n\nInput: \nString1: client, atmosphere, brother, resolution, dimension\nString2: dimension, resolution, brother, atmosphere, client\nOutput: True\n\nInput: \nString1: pipe, mobile, pen, string, cat\nString2: pipe, mobile, pen, string, cat\nOutput: False\n\nInput: \nString1: hand, feed, following, customer, neck\nString2: neck, customer, following, feed, hand\nOutput: True\n\nInput: \nString1: ship, royal, staff, lake, good\nString2: ship, royal, staff, lake, good\nOutput: False\n\nInput: \nString1: moment, motor, jacket, independence, she\nString2: she, independence, jacket, motor, moment\nOutput: True\n\nInput: \nString1: poetry, choice, cloud, layer, possession\nString2: possession, layer, cloud, choice, poetry\nOutput: True\n\nInput: \nString1: sweet, natural, opening, statement, row\nString2: row, statement, opening, natural, sweet\nOutput: True\n\n",
+        "prompt": "Input: \nString1: patient, profit, hair, angle, command\nString2: command, angle, hair, profit, patient\nOutput:",
+        "label": true
+    },
+    {
+        "uid": 57,
+        "task": "check_order",
+        "task_type": "word",
+        "examples": "Input: \nString1: make, soup, you, loan, constant\nString2: make, soup, you, loan, constant\nOutput: False\n\nInput: \nString1: prompt, investment, signal, radio, map\nString2: prompt, investment, signal, radio, map\nOutput: False\n\nInput: \nString1: past, driver, article, detail, friend\nString2: friend, detail, article, driver, past\nOutput: True\n\nInput: \nString1: entrance, apartment, president, towel, security\nString2: security, towel, president, apartment, entrance\nOutput: True\n\nInput: \nString1: dot, gate, candidate, meet, anybody\nString2: dot, gate, candidate, meet, anybody\nOutput: False\n\nInput: \nString1: edge, carry, telephone, option, letter\nString2: edge, carry, telephone, option, letter\nOutput: False\n\nInput: \nString1: round, deposit, comfort, anxiety, push\nString2: push, anxiety, comfort, deposit, round\nOutput: True\n\nInput: \nString1: agreement, error, cat, net, slice\nString2: agreement, error, cat, net, slice\nOutput: False\n\n",
+        "prompt": "Input: \nString1: disk, code, tension, till, peace\nString2: disk, code, tension, till, peace\nOutput:",
+        "label": false
+    },
+    {
+        "uid": 58,
+        "task": "check_order",
+        "task_type": "word",
+        "examples": "Input: \nString1: drink, usual, island, gold, tune\nString2: drink, usual, island, gold, tune\nOutput: False\n\nInput: \nString1: pollution, hand, horse, brush, tennis\nString2: pollution, hand, horse, brush, tennis\nOutput: False\n\nInput: \nString1: river, regret, argument, country, abuse\nString2: river, regret, argument, country, abuse\nOutput: False\n\nInput: \nString1: original, ability, study, piano, distribution\nString2: original, ability, study, piano, distribution\nOutput: False\n\nInput: \nString1: international, organization, rice, dance, claim\nString2: claim, dance, rice, organization, international\nOutput: True\n\nInput: \nString1: field, spell, university, project, finger\nString2: finger, project, university, spell, field\nOutput: True\n\nInput: \nString1: cow, birthday, nation, guest, diet\nString2: diet, guest, nation, birthday, cow\nOutput: True\n\nInput: \nString1: tale, delay, put, face, change\nString2: tale, delay, put, face, change\nOutput: False\n\n",
+        "prompt": "Input: \nString1: steal, funeral, two, society, chicken\nString2: chicken, society, two, funeral, steal\nOutput:",
+        "label": true
+    },
+    {
+        "uid": 59,
+        "task": "check_order",
+        "task_type": "word",
+        "examples": "Input: \nString1: limit, material, kind, education, tower\nString2: tower, education, kind, material, limit\nOutput: True\n\nInput: \nString1: unique, count, pain, station, trust\nString2: trust, station, pain, count, unique\nOutput: True\n\nInput: \nString1: friend, normal, win, weight, load\nString2: load, weight, win, normal, friend\nOutput: True\n\nInput: \nString1: rough, seat, doctor, leader, head\nString2: rough, seat, doctor, leader, head\nOutput: False\n\nInput: \nString1: manufacturer, champion, wheel, game, intention\nString2: manufacturer, champion, wheel, game, intention\nOutput: False\n\nInput: \nString1: wash, charity, mountain, soup, most\nString2: wash, charity, mountain, soup, most\nOutput: False\n\nInput: \nString1: stable, truck, specialist, awareness, vegetable\nString2: stable, truck, specialist, awareness, vegetable\nOutput: False\n\nInput: \nString1: course, inspection, tool, wait, message\nString2: message, wait, tool, inspection, course\nOutput: True\n\n",
+        "prompt": "Input: \nString1: work, rock, sample, abuse, counter\nString2: work, rock, sample, abuse, counter\nOutput:",
+        "label": false
+    },
+    {
+        "uid": 60,
+        "task": "check_order",
+        "task_type": "word",
+        "examples": "Input: \nString1: service, novel, drink, present, necessary\nString2: necessary, present, drink, novel, service\nOutput: True\n\nInput: \nString1: driver, revolution, let, refuse, attack\nString2: attack, refuse, let, revolution, driver\nOutput: True\n\nInput: \nString1: bunch, reaction, culture, act, power\nString2: power, act, culture, reaction, bunch\nOutput: True\n\nInput: \nString1: tea, stupid, steak, buddy, air\nString2: air, buddy, steak, stupid, tea\nOutput: True\n\nInput: \nString1: street, while, resort, room, cause\nString2: cause, room, resort, while, street\nOutput: True\n\nInput: \nString1: pause, award, flow, damage, style\nString2: pause, award, flow, damage, style\nOutput: False\n\nInput: \nString1: distance, surprise, bar, pause, collection\nString2: distance, surprise, bar, pause, collection\nOutput: False\n\nInput: \nString1: metal, inspection, title, exchange, luck\nString2: metal, inspection, title, exchange, luck\nOutput: False\n\n",
+        "prompt": "Input: \nString1: title, city, bug, refuse, village\nString2: title, city, bug, refuse, village\nOutput:",
+        "label": false
+    },
+    {
+        "uid": 61,
+        "task": "check_order",
+        "task_type": "word",
+        "examples": "Input: \nString1: rope, show, possible, brave, substance\nString2: rope, show, possible, brave, substance\nOutput: False\n\nInput: \nString1: refrigerator, contribution, shape, recognition, quarter\nString2: refrigerator, contribution, shape, recognition, quarter\nOutput: False\n\nInput: \nString1: boy, prize, eat, whereas, hope\nString2: hope, whereas, eat, prize, boy\nOutput: True\n\nInput: \nString1: native, prompt, release, silly, pin\nString2: native, prompt, release, silly, pin\nOutput: False\n\nInput: \nString1: satisfaction, female, theme, signature, guest\nString2: satisfaction, female, theme, signature, guest\nOutput: False\n\nInput: \nString1: manufacturer, grass, release, location, leather\nString2: manufacturer, grass, release, location, leather\nOutput: False\n\nInput: \nString1: magazine, hire, growth, meat, hour\nString2: hour, meat, growth, hire, magazine\nOutput: True\n\nInput: \nString1: western, shirt, office, upper, presentation\nString2: presentation, upper, office, shirt, western\nOutput: True\n\n",
+        "prompt": "Input: \nString1: other, ear, stupid, editor, economics\nString2: economics, editor, stupid, ear, other\nOutput:",
+        "label": true
+    },
+    {
+        "uid": 62,
+        "task": "check_order",
+        "task_type": "word",
+        "examples": "Input: \nString1: treat, mess, ability, meat, tune\nString2: treat, mess, ability, meat, tune\nOutput: False\n\nInput: \nString1: law, love, snow, male, matter\nString2: law, love, snow, male, matter\nOutput: False\n\nInput: \nString1: internet, comment, sick, guess, suit\nString2: internet, comment, sick, guess, suit\nOutput: False\n\nInput: \nString1: administration, photo, leather, homework, game\nString2: game, homework, leather, photo, administration\nOutput: True\n\nInput: \nString1: safe, plate, body, button, research\nString2: research, button, body, plate, safe\nOutput: True\n\nInput: \nString1: message, character, blue, grade, help\nString2: message, character, blue, grade, help\nOutput: False\n\nInput: \nString1: sad, lady, head, slide, association\nString2: association, slide, head, lady, sad\nOutput: True\n\nInput: \nString1: depth, angle, plenty, novel, ring\nString2: ring, novel, plenty, angle, depth\nOutput: True\n\n",
+        "prompt": "Input: \nString1: cheek, jacket, ease, character, apartment\nString2: apartment, character, ease, jacket, cheek\nOutput:",
+        "label": true
+    },
+    {
+        "uid": 63,
+        "task": "check_order",
+        "task_type": "word",
+        "examples": "Input: \nString1: brick, calendar, secret, address, go\nString2: go, address, secret, calendar, brick\nOutput: True\n\nInput: \nString1: ship, month, pollution, tongue, tie\nString2: tie, tongue, pollution, month, ship\nOutput: True\n\nInput: \nString1: house, goal, magazine, strip, site\nString2: house, goal, magazine, strip, site\nOutput: False\n\nInput: \nString1: farmer, pressure, ability, profession, pay\nString2: pay, profession, ability, pressure, farmer\nOutput: True\n\nInput: \nString1: permit, belt, dealer, design, measurement\nString2: measurement, design, dealer, belt, permit\nOutput: True\n\nInput: \nString1: being, appeal, wear, engineer, average\nString2: average, engineer, wear, appeal, being\nOutput: True\n\nInput: \nString1: silly, guest, initial, refuse, member\nString2: silly, guest, initial, refuse, member\nOutput: False\n\nInput: \nString1: communication, topic, district, speaker, teaching\nString2: communication, topic, district, speaker, teaching\nOutput: False\n\n",
+        "prompt": "Input: \nString1: energy, fail, method, ordinary, town\nString2: energy, fail, method, ordinary, town\nOutput:",
+        "label": false
+    },
+    {
+        "uid": 64,
+        "task": "check_order",
+        "task_type": "word",
+        "examples": "Input: \nString1: gain, answer, bag, pin, pizza\nString2: pizza, pin, bag, answer, gain\nOutput: True\n\nInput: \nString1: roof, fan, agent, poem, doubt\nString2: roof, fan, agent, poem, doubt\nOutput: False\n\nInput: \nString1: advice, active, figure, process, quote\nString2: advice, active, figure, process, quote\nOutput: False\n\nInput: \nString1: death, sense, session, skin, hide\nString2: hide, skin, session, sense, death\nOutput: True\n\nInput: \nString1: silly, chart, box, pair, solution\nString2: solution, pair, box, chart, silly\nOutput: True\n\nInput: \nString1: health, style, parking, feeling, boss\nString2: boss, feeling, parking, style, health\nOutput: True\n\nInput: \nString1: variation, expression, reception, tone, tip\nString2: tip, tone, reception, expression, variation\nOutput: True\n\nInput: \nString1: connection, community, responsibility, brain, scheme\nString2: connection, community, responsibility, brain, scheme\nOutput: False\n\n",
+        "prompt": "Input: \nString1: spend, independent, alternative, street, bit\nString2: spend, independent, alternative, street, bit\nOutput:",
+        "label": false
+    },
+    {
+        "uid": 65,
+        "task": "check_order",
+        "task_type": "word",
+        "examples": "Input: \nString1: luck, trip, mood, regret, it\nString2: luck, trip, mood, regret, it\nOutput: False\n\nInput: \nString1: general, counter, significance, wish, sort\nString2: sort, wish, significance, counter, general\nOutput: True\n\nInput: \nString1: employee, piece, purpose, service, shame\nString2: shame, service, purpose, piece, employee\nOutput: True\n\nInput: \nString1: attention, relation, coat, board, catch\nString2: catch, board, coat, relation, attention\nOutput: True\n\nInput: \nString1: golf, dealer, savings, value, heat\nString2: golf, dealer, savings, value, heat\nOutput: False\n\nInput: \nString1: international, serve, conclusion, farm, administration\nString2: international, serve, conclusion, farm, administration\nOutput: False\n\nInput: \nString1: dog, meat, signal, career, stay\nString2: stay, career, signal, meat, dog\nOutput: True\n\nInput: \nString1: machine, hole, table, suit, cancel\nString2: machine, hole, table, suit, cancel\nOutput: False\n\n",
+        "prompt": "Input: \nString1: working, dance, discipline, joint, bird\nString2: bird, joint, discipline, dance, working\nOutput:",
+        "label": true
+    },
+    {
+        "uid": 66,
+        "task": "check_order",
+        "task_type": "word",
+        "examples": "Input: \nString1: position, database, belt, face, tax\nString2: position, database, belt, face, tax\nOutput: False\n\nInput: \nString1: put, air, balance, lock, site\nString2: put, air, balance, lock, site\nOutput: False\n\nInput: \nString1: discount, contract, make, garbage, main\nString2: discount, contract, make, garbage, main\nOutput: False\n\nInput: \nString1: nobody, priest, safety, shine, husband\nString2: husband, shine, safety, priest, nobody\nOutput: True\n\nInput: \nString1: east, tax, adult, president, dot\nString2: dot, president, adult, tax, east\nOutput: True\n\nInput: \nString1: employer, comfortable, act, form, market\nString2: employer, comfortable, act, form, market\nOutput: False\n\nInput: \nString1: sink, crew, novel, length, tip\nString2: tip, length, novel, crew, sink\nOutput: True\n\nInput: \nString1: national, minimum, bitter, monitor, survey\nString2: national, minimum, bitter, monitor, survey\nOutput: False\n\n",
+        "prompt": "Input: \nString1: material, paint, positive, hate, honey\nString2: honey, hate, positive, paint, material\nOutput:",
+        "label": true
+    },
+    {
+        "uid": 67,
+        "task": "check_order",
+        "task_type": "word",
+        "examples": "Input: \nString1: personality, job, pass, anywhere, desire\nString2: desire, anywhere, pass, job, personality\nOutput: True\n\nInput: \nString1: brown, middle, university, use, spread\nString2: spread, use, university, middle, brown\nOutput: True\n\nInput: \nString1: average, suit, patience, food, collection\nString2: average, suit, patience, food, collection\nOutput: False\n\nInput: \nString1: fortune, row, cable, witness, today\nString2: fortune, row, cable, witness, today\nOutput: False\n\nInput: \nString1: profile, edge, land, mountain, dead\nString2: dead, mountain, land, edge, profile\nOutput: True\n\nInput: \nString1: self, media, expert, description, man\nString2: man, description, expert, media, self\nOutput: True\n\nInput: \nString1: advice, membership, brilliant, manager, function\nString2: advice, membership, brilliant, manager, function\nOutput: False\n\nInput: \nString1: voice, dress, potato, counter, floor\nString2: voice, dress, potato, counter, floor\nOutput: False\n\n",
+        "prompt": "Input: \nString1: highlight, basis, distance, lay, carpet\nString2: highlight, basis, distance, lay, carpet\nOutput:",
+        "label": false
+    },
+    {
+        "uid": 68,
+        "task": "check_order",
+        "task_type": "word",
+        "examples": "Input: \nString1: face, distribution, head, writing, funny\nString2: face, distribution, head, writing, funny\nOutput: False\n\nInput: \nString1: society, voice, display, personality, wear\nString2: wear, personality, display, voice, society\nOutput: True\n\nInput: \nString1: spell, number, alarm, arrival, resort\nString2: resort, arrival, alarm, number, spell\nOutput: True\n\nInput: \nString1: wind, can, mission, loan, sir\nString2: sir, loan, mission, can, wind\nOutput: True\n\nInput: \nString1: stop, meal, presence, handle, pass\nString2: stop, meal, presence, handle, pass\nOutput: False\n\nInput: \nString1: signal, management, representative, independent, dad\nString2: signal, management, representative, independent, dad\nOutput: False\n\nInput: \nString1: main, shop, appeal, government, split\nString2: main, shop, appeal, government, split\nOutput: False\n\nInput: \nString1: penalty, range, royal, politics, change\nString2: change, politics, royal, range, penalty\nOutput: True\n\n",
+        "prompt": "Input: \nString1: blow, studio, east, grand, rough\nString2: blow, studio, east, grand, rough\nOutput:",
+        "label": false
+    },
+    {
+        "uid": 69,
+        "task": "check_order",
+        "task_type": "word",
+        "examples": "Input: \nString1: contract, key, tap, parent, ruin\nString2: contract, key, tap, parent, ruin\nOutput: False\n\nInput: \nString1: working, vegetable, complex, mother, pay\nString2: working, vegetable, complex, mother, pay\nOutput: False\n\nInput: \nString1: front, taste, farm, beautiful, wife\nString2: wife, beautiful, farm, taste, front\nOutput: True\n\nInput: \nString1: leave, ask, mood, claim, awareness\nString2: leave, ask, mood, claim, awareness\nOutput: False\n\nInput: \nString1: union, money, scale, preparation, instruction\nString2: union, money, scale, preparation, instruction\nOutput: False\n\nInput: \nString1: crazy, mall, sandwich, vegetable, team\nString2: crazy, mall, sandwich, vegetable, team\nOutput: False\n\nInput: \nString1: high, factor, crew, poem, landscape\nString2: landscape, poem, crew, factor, high\nOutput: True\n\nInput: \nString1: script, ratio, parent, class, height\nString2: height, class, parent, ratio, script\nOutput: True\n\n",
+        "prompt": "Input: \nString1: carpet, proposal, ground, balance, courage\nString2: courage, balance, ground, proposal, carpet\nOutput:",
+        "label": true
+    },
+    {
+        "uid": 70,
+        "task": "check_order",
+        "task_type": "word",
+        "examples": "Input: \nString1: habit, comparison, chocolate, fruit, many\nString2: many, fruit, chocolate, comparison, habit\nOutput: True\n\nInput: \nString1: dot, whereas, request, pipe, fold\nString2: dot, whereas, request, pipe, fold\nOutput: False\n\nInput: \nString1: native, relation, discussion, help, week\nString2: native, relation, discussion, help, week\nOutput: False\n\nInput: \nString1: subject, exam, matter, indication, champion\nString2: champion, indication, matter, exam, subject\nOutput: True\n\nInput: \nString1: satisfaction, extension, go, temporary, tank\nString2: satisfaction, extension, go, temporary, tank\nOutput: False\n\nInput: \nString1: she, contract, sense, hell, minute\nString2: minute, hell, sense, contract, she\nOutput: True\n\nInput: \nString1: usual, implement, leg, cheek, kid\nString2: kid, cheek, leg, implement, usual\nOutput: True\n\nInput: \nString1: punch, push, hand, earth, exam\nString2: exam, earth, hand, push, punch\nOutput: True\n\n",
+        "prompt": "Input: \nString1: pressure, battle, negative, communication, damage\nString2: damage, communication, negative, battle, pressure\nOutput:",
+        "label": true
+    },
+    {
+        "uid": 71,
+        "task": "check_order",
+        "task_type": "word",
+        "examples": "Input: \nString1: salad, representative, increase, initial, spot\nString2: spot, initial, increase, representative, salad\nOutput: True\n\nInput: \nString1: procedure, rest, employer, potato, success\nString2: procedure, rest, employer, potato, success\nOutput: False\n\nInput: \nString1: zone, demand, working, clock, satisfaction\nString2: zone, demand, working, clock, satisfaction\nOutput: False\n\nInput: \nString1: royal, space, nothing, she, research\nString2: royal, space, nothing, she, research\nOutput: False\n\nInput: \nString1: candidate, fee, success, picture, jump\nString2: jump, picture, success, fee, candidate\nOutput: True\n\nInput: \nString1: lay, variation, point, efficiency, grab\nString2: grab, efficiency, point, variation, lay\nOutput: True\n\nInput: \nString1: hand, soft, net, parent, operation\nString2: hand, soft, net, parent, operation\nOutput: False\n\nInput: \nString1: final, milk, fan, bill, relationship\nString2: final, milk, fan, bill, relationship\nOutput: False\n\n",
+        "prompt": "Input: \nString1: light, function, expression, garage, steak\nString2: light, function, expression, garage, steak\nOutput:",
+        "label": false
+    },
+    {
+        "uid": 72,
+        "task": "check_order",
+        "task_type": "word",
+        "examples": "Input: \nString1: mess, bottom, current, information, female\nString2: mess, bottom, current, information, female\nOutput: False\n\nInput: \nString1: dare, fight, rich, advance, scratch\nString2: scratch, advance, rich, fight, dare\nOutput: True\n\nInput: \nString1: attention, bitter, wave, championship, shop\nString2: attention, bitter, wave, championship, shop\nOutput: False\n\nInput: \nString1: tackle, service, view, coast, hope\nString2: hope, coast, view, service, tackle\nOutput: True\n\nInput: \nString1: great, iron, capital, repeat, growth\nString2: growth, repeat, capital, iron, great\nOutput: True\n\nInput: \nString1: imagination, unique, holiday, economics, virus\nString2: virus, economics, holiday, unique, imagination\nOutput: True\n\nInput: \nString1: implement, emergency, history, score, independence\nString2: independence, score, history, emergency, implement\nOutput: True\n\nInput: \nString1: shoot, rock, dinner, focus, depth\nString2: depth, focus, dinner, rock, shoot\nOutput: True\n\n",
+        "prompt": "Input: \nString1: south, yard, garden, gather, register\nString2: register, gather, garden, yard, south\nOutput:",
+        "label": true
+    },
+    {
+        "uid": 73,
+        "task": "check_order",
+        "task_type": "word",
+        "examples": "Input: \nString1: medicine, spirit, pick, scale, rush\nString2: rush, scale, pick, spirit, medicine\nOutput: True\n\nInput: \nString1: shop, formal, statement, royal, grandmother\nString2: grandmother, royal, statement, formal, shop\nOutput: True\n\nInput: \nString1: analyst, border, lake, variation, professional\nString2: professional, variation, lake, border, analyst\nOutput: True\n\nInput: \nString1: candle, doubt, partner, method, music\nString2: music, method, partner, doubt, candle\nOutput: True\n\nInput: \nString1: engineering, consideration, escape, tension, breast\nString2: engineering, consideration, escape, tension, breast\nOutput: False\n\nInput: \nString1: platform, dish, reality, dare, agency\nString2: agency, dare, reality, dish, platform\nOutput: True\n\nInput: \nString1: eye, officer, design, confusion, carry\nString2: carry, confusion, design, officer, eye\nOutput: True\n\nInput: \nString1: meet, wear, recording, population, stroke\nString2: stroke, population, recording, wear, meet\nOutput: True\n\n",
+        "prompt": "Input: \nString1: type, death, bowl, advance, flow\nString2: type, death, bowl, advance, flow\nOutput:",
+        "label": false
+    },
+    {
+        "uid": 74,
+        "task": "check_order",
+        "task_type": "word",
+        "examples": "Input: \nString1: lift, promotion, finance, rest, dig\nString2: dig, rest, finance, promotion, lift\nOutput: True\n\nInput: \nString1: birthday, effort, percentage, guest, republic\nString2: birthday, effort, percentage, guest, republic\nOutput: False\n\nInput: \nString1: summer, shop, pressure, guest, experience\nString2: summer, shop, pressure, guest, experience\nOutput: False\n\nInput: \nString1: secret, insurance, job, rope, deal\nString2: secret, insurance, job, rope, deal\nOutput: False\n\nInput: \nString1: smell, definition, remote, question, menu\nString2: smell, definition, remote, question, menu\nOutput: False\n\nInput: \nString1: log, man, tough, chemistry, while\nString2: while, chemistry, tough, man, log\nOutput: True\n\nInput: \nString1: muscle, alcohol, game, brick, hello\nString2: muscle, alcohol, game, brick, hello\nOutput: False\n\nInput: \nString1: ship, law, savings, box, tension\nString2: tension, box, savings, law, ship\nOutput: True\n\n",
+        "prompt": "Input: \nString1: return, shoot, poetry, hole, summer\nString2: summer, hole, poetry, shoot, return\nOutput:",
+        "label": true
+    },
+    {
+        "uid": 75,
+        "task": "check_order",
+        "task_type": "word",
+        "examples": "Input: \nString1: string, driver, love, pay, entertainment\nString2: entertainment, pay, love, driver, string\nOutput: True\n\nInput: \nString1: force, bathroom, camera, apartment, belt\nString2: belt, apartment, camera, bathroom, force\nOutput: True\n\nInput: \nString1: mix, permit, clue, peace, detail\nString2: mix, permit, clue, peace, detail\nOutput: False\n\nInput: \nString1: death, handle, candy, champion, rest\nString2: death, handle, candy, champion, rest\nOutput: False\n\nInput: \nString1: access, inflation, craft, message, shock\nString2: shock, message, craft, inflation, access\nOutput: True\n\nInput: \nString1: basket, candy, black, kitchen, move\nString2: move, kitchen, black, candy, basket\nOutput: True\n\nInput: \nString1: half, strike, district, bear, money\nString2: money, bear, district, strike, half\nOutput: True\n\nInput: \nString1: part, blood, cap, membership, code\nString2: code, membership, cap, blood, part\nOutput: True\n\n",
+        "prompt": "Input: \nString1: public, blank, file, leg, round\nString2: public, blank, file, leg, round\nOutput:",
+        "label": false
+    },
+    {
+        "uid": 76,
+        "task": "check_order",
+        "task_type": "word",
+        "examples": "Input: \nString1: currency, bird, wash, construction, lay\nString2: lay, construction, wash, bird, currency\nOutput: True\n\nInput: \nString1: orange, assist, debate, knee, bite\nString2: bite, knee, debate, assist, orange\nOutput: True\n\nInput: \nString1: ratio, bowl, difficulty, piece, hurry\nString2: ratio, bowl, difficulty, piece, hurry\nOutput: False\n\nInput: \nString1: player, task, shop, term, lawyer\nString2: lawyer, term, shop, task, player\nOutput: True\n\nInput: \nString1: light, miss, common, final, dealer\nString2: dealer, final, common, miss, light\nOutput: True\n\nInput: \nString1: dress, sandwich, feeling, disk, brick\nString2: dress, sandwich, feeling, disk, brick\nOutput: False\n\nInput: \nString1: phase, church, course, college, play\nString2: play, college, course, church, phase\nOutput: True\n\nInput: \nString1: pizza, stretch, peak, information, university\nString2: university, information, peak, stretch, pizza\nOutput: True\n\n",
+        "prompt": "Input: \nString1: bank, double, stupid, pitch, spell\nString2: spell, pitch, stupid, double, bank\nOutput:",
+        "label": true
+    },
+    {
+        "uid": 77,
+        "task": "check_order",
+        "task_type": "word",
+        "examples": "Input: \nString1: explanation, policy, roof, resolve, spell\nString2: spell, resolve, roof, policy, explanation\nOutput: True\n\nInput: \nString1: hat, screen, job, seat, calm\nString2: hat, screen, job, seat, calm\nOutput: False\n\nInput: \nString1: house, lake, local, campaign, currency\nString2: house, lake, local, campaign, currency\nOutput: False\n\nInput: \nString1: farmer, gene, alarm, difference, path\nString2: path, difference, alarm, gene, farmer\nOutput: True\n\nInput: \nString1: package, case, inside, bottom, blood\nString2: blood, bottom, inside, case, package\nOutput: True\n\nInput: \nString1: music, register, grocery, side, make\nString2: music, register, grocery, side, make\nOutput: False\n\nInput: \nString1: silly, report, air, noise, reference\nString2: silly, report, air, noise, reference\nOutput: False\n\nInput: \nString1: conclusion, female, lip, fish, permission\nString2: conclusion, female, lip, fish, permission\nOutput: False\n\n",
+        "prompt": "Input: \nString1: part, difference, towel, author, dish\nString2: dish, author, towel, difference, part\nOutput:",
+        "label": true
+    },
+    {
+        "uid": 78,
+        "task": "check_order",
+        "task_type": "word",
+        "examples": "Input: \nString1: task, way, pass, lock, resist\nString2: resist, lock, pass, way, task\nOutput: True\n\nInput: \nString1: criticism, menu, specialist, water, bat\nString2: criticism, menu, specialist, water, bat\nOutput: False\n\nInput: \nString1: addition, operation, hide, future, county\nString2: addition, operation, hide, future, county\nOutput: False\n\nInput: \nString1: sir, clerk, juice, laugh, bridge\nString2: bridge, laugh, juice, clerk, sir\nOutput: True\n\nInput: \nString1: mood, major, heart, jacket, atmosphere\nString2: mood, major, heart, jacket, atmosphere\nOutput: False\n\nInput: \nString1: newspaper, main, might, painting, coat\nString2: newspaper, main, might, painting, coat\nOutput: False\n\nInput: \nString1: time, side, word, stress, net\nString2: net, stress, word, side, time\nOutput: True\n\nInput: \nString1: step, cake, page, sympathy, magazine\nString2: step, cake, page, sympathy, magazine\nOutput: False\n\n",
+        "prompt": "Input: \nString1: duty, story, surgery, fault, couple\nString2: couple, fault, surgery, story, duty\nOutput:",
+        "label": true
+    },
+    {
+        "uid": 79,
+        "task": "check_order",
+        "task_type": "word",
+        "examples": "Input: \nString1: winter, pause, position, breakfast, entry\nString2: entry, breakfast, position, pause, winter\nOutput: True\n\nInput: \nString1: professor, bill, style, mountain, top\nString2: professor, bill, style, mountain, top\nOutput: False\n\nInput: \nString1: skill, church, command, dog, split\nString2: split, dog, command, church, skill\nOutput: True\n\nInput: \nString1: assistant, choice, guitar, statement, grab\nString2: grab, statement, guitar, choice, assistant\nOutput: True\n\nInput: \nString1: foot, spirit, till, income, wear\nString2: wear, income, till, spirit, foot\nOutput: True\n\nInput: \nString1: group, appointment, week, ticket, bother\nString2: group, appointment, week, ticket, bother\nOutput: False\n\nInput: \nString1: foundation, loan, ad, guest, interaction\nString2: interaction, guest, ad, loan, foundation\nOutput: True\n\nInput: \nString1: moment, friendship, priority, desk, minimum\nString2: minimum, desk, priority, friendship, moment\nOutput: True\n\n",
+        "prompt": "Input: \nString1: climate, try, personality, basket, patience\nString2: patience, basket, personality, try, climate\nOutput:",
+        "label": true
+    },
+    {
+        "uid": 80,
+        "task": "check_order",
+        "task_type": "word",
+        "examples": "Input: \nString1: newspaper, investment, property, dad, spring\nString2: newspaper, investment, property, dad, spring\nOutput: False\n\nInput: \nString1: football, application, average, preference, month\nString2: football, application, average, preference, month\nOutput: False\n\nInput: \nString1: combination, satisfaction, play, bone, refuse\nString2: combination, satisfaction, play, bone, refuse\nOutput: False\n\nInput: \nString1: assist, player, carry, sing, mission\nString2: assist, player, carry, sing, mission\nOutput: False\n\nInput: \nString1: brain, assignment, reception, kind, future\nString2: future, kind, reception, assignment, brain\nOutput: True\n\nInput: \nString1: homework, physics, independent, negative, watch\nString2: homework, physics, independent, negative, watch\nOutput: False\n\nInput: \nString1: brown, figure, blame, finance, prize\nString2: prize, finance, blame, figure, brown\nOutput: True\n\nInput: \nString1: education, importance, reason, dish, construction\nString2: education, importance, reason, dish, construction\nOutput: False\n\n",
+        "prompt": "Input: \nString1: command, teach, secret, insurance, national\nString2: command, teach, secret, insurance, national\nOutput:",
+        "label": false
+    },
+    {
+        "uid": 81,
+        "task": "check_order",
+        "task_type": "word",
+        "examples": "Input: \nString1: carry, quote, damage, chip, island\nString2: island, chip, damage, quote, carry\nOutput: True\n\nInput: \nString1: challenge, go, comment, room, vegetable\nString2: challenge, go, comment, room, vegetable\nOutput: False\n\nInput: \nString1: gate, community, face, working, client\nString2: gate, community, face, working, client\nOutput: False\n\nInput: \nString1: demand, advertising, towel, snow, rain\nString2: rain, snow, towel, advertising, demand\nOutput: True\n\nInput: \nString1: drawing, percentage, experience, opposite, game\nString2: game, opposite, experience, percentage, drawing\nOutput: True\n\nInput: \nString1: award, reply, energy, consequence, put\nString2: award, reply, energy, consequence, put\nOutput: False\n\nInput: \nString1: click, airport, chapter, time, offer\nString2: click, airport, chapter, time, offer\nOutput: False\n\nInput: \nString1: resist, scratch, base, hold, development\nString2: resist, scratch, base, hold, development\nOutput: False\n\n",
+        "prompt": "Input: \nString1: examination, finish, neck, end, western\nString2: examination, finish, neck, end, western\nOutput:",
+        "label": false
+    },
+    {
+        "uid": 82,
+        "task": "check_order",
+        "task_type": "word",
+        "examples": "Input: \nString1: grass, war, baseball, pin, direction\nString2: grass, war, baseball, pin, direction\nOutput: False\n\nInput: \nString1: nation, stranger, worth, client, fact\nString2: fact, client, worth, stranger, nation\nOutput: True\n\nInput: \nString1: history, average, independent, impression, priority\nString2: history, average, independent, impression, priority\nOutput: False\n\nInput: \nString1: sweet, database, account, success, investment\nString2: sweet, database, account, success, investment\nOutput: False\n\nInput: \nString1: move, split, manager, selection, pension\nString2: pension, selection, manager, split, move\nOutput: True\n\nInput: \nString1: performance, club, senior, print, signal\nString2: performance, club, senior, print, signal\nOutput: False\n\nInput: \nString1: credit, rock, structure, comparison, church\nString2: church, comparison, structure, rock, credit\nOutput: True\n\nInput: \nString1: valuable, league, hit, frame, appointment\nString2: valuable, league, hit, frame, appointment\nOutput: False\n\n",
+        "prompt": "Input: \nString1: might, make, operation, use, revolution\nString2: might, make, operation, use, revolution\nOutput:",
+        "label": false
+    },
+    {
+        "uid": 83,
+        "task": "check_order",
+        "task_type": "word",
+        "examples": "Input: \nString1: invite, hunt, chance, drama, database\nString2: invite, hunt, chance, drama, database\nOutput: False\n\nInput: \nString1: mobile, specific, land, might, exam\nString2: exam, might, land, specific, mobile\nOutput: True\n\nInput: \nString1: fall, step, due, dirt, valuable\nString2: valuable, dirt, due, step, fall\nOutput: True\n\nInput: \nString1: assist, leadership, address, lake, water\nString2: water, lake, address, leadership, assist\nOutput: True\n\nInput: \nString1: item, restaurant, stand, payment, convert\nString2: item, restaurant, stand, payment, convert\nOutput: False\n\nInput: \nString1: rice, theory, amount, salad, point\nString2: rice, theory, amount, salad, point\nOutput: False\n\nInput: \nString1: plastic, size, attitude, calm, way\nString2: way, calm, attitude, size, plastic\nOutput: True\n\nInput: \nString1: muscle, east, female, bat, queen\nString2: queen, bat, female, east, muscle\nOutput: True\n\n",
+        "prompt": "Input: \nString1: gene, dark, individual, baseball, pack\nString2: gene, dark, individual, baseball, pack\nOutput:",
+        "label": false
+    },
+    {
+        "uid": 84,
+        "task": "check_order",
+        "task_type": "word",
+        "examples": "Input: \nString1: bunch, simple, cancel, divide, intention\nString2: intention, divide, cancel, simple, bunch\nOutput: True\n\nInput: \nString1: bed, flight, organization, chance, product\nString2: product, chance, organization, flight, bed\nOutput: True\n\nInput: \nString1: word, description, length, post, song\nString2: word, description, length, post, song\nOutput: False\n\nInput: \nString1: initiative, drunk, newspaper, mate, county\nString2: initiative, drunk, newspaper, mate, county\nOutput: False\n\nInput: \nString1: international, reserve, expert, senior, week\nString2: international, reserve, expert, senior, week\nOutput: False\n\nInput: \nString1: push, police, cost, cap, childhood\nString2: push, police, cost, cap, childhood\nOutput: False\n\nInput: \nString1: setting, address, menu, tea, dream\nString2: dream, tea, menu, address, setting\nOutput: True\n\nInput: \nString1: abuse, exercise, earth, film, perspective\nString2: abuse, exercise, earth, film, perspective\nOutput: False\n\n",
+        "prompt": "Input: \nString1: shame, park, summer, leg, fan\nString2: shame, park, summer, leg, fan\nOutput:",
+        "label": false
+    },
+    {
+        "uid": 85,
+        "task": "check_order",
+        "task_type": "word",
+        "examples": "Input: \nString1: pair, two, pleasure, importance, chance\nString2: chance, importance, pleasure, two, pair\nOutput: True\n\nInput: \nString1: examination, recipe, oven, potato, tooth\nString2: examination, recipe, oven, potato, tooth\nOutput: False\n\nInput: \nString1: customer, wheel, loss, style, wave\nString2: customer, wheel, loss, style, wave\nOutput: False\n\nInput: \nString1: opening, beat, top, statement, release\nString2: opening, beat, top, statement, release\nOutput: False\n\nInput: \nString1: perception, title, baby, sky, proposal\nString2: perception, title, baby, sky, proposal\nOutput: False\n\nInput: \nString1: writing, training, guarantee, package, midnight\nString2: writing, training, guarantee, package, midnight\nOutput: False\n\nInput: \nString1: good, moment, presentation, rough, equal\nString2: good, moment, presentation, rough, equal\nOutput: False\n\nInput: \nString1: advice, hire, challenge, entrance, luck\nString2: luck, entrance, challenge, hire, advice\nOutput: True\n\n",
+        "prompt": "Input: \nString1: net, local, pride, pool, revenue\nString2: revenue, pool, pride, local, net\nOutput:",
+        "label": true
+    },
+    {
+        "uid": 86,
+        "task": "check_order",
+        "task_type": "word",
+        "examples": "Input: \nString1: she, uncle, blow, design, message\nString2: she, uncle, blow, design, message\nOutput: False\n\nInput: \nString1: resolve, analysis, comment, human, bicycle\nString2: resolve, analysis, comment, human, bicycle\nOutput: False\n\nInput: \nString1: engineering, tip, accident, relation, weakness\nString2: weakness, relation, accident, tip, engineering\nOutput: True\n\nInput: \nString1: device, month, detail, member, sing\nString2: sing, member, detail, month, device\nOutput: True\n\nInput: \nString1: improvement, classic, feedback, cook, mind\nString2: improvement, classic, feedback, cook, mind\nOutput: False\n\nInput: \nString1: shine, distribution, expression, trip, toe\nString2: shine, distribution, expression, trip, toe\nOutput: False\n\nInput: \nString1: resort, balance, board, clerk, fight\nString2: resort, balance, board, clerk, fight\nOutput: False\n\nInput: \nString1: illegal, rise, let, harm, bat\nString2: bat, harm, let, rise, illegal\nOutput: True\n\n",
+        "prompt": "Input: \nString1: rope, education, strength, harm, trick\nString2: trick, harm, strength, education, rope\nOutput:",
+        "label": true
+    },
+    {
+        "uid": 87,
+        "task": "check_order",
+        "task_type": "word",
+        "examples": "Input: \nString1: patience, other, resource, record, bug\nString2: bug, record, resource, other, patience\nOutput: True\n\nInput: \nString1: father, name, dish, fill, judge\nString2: father, name, dish, fill, judge\nOutput: False\n\nInput: \nString1: boyfriend, volume, soil, south, transportation\nString2: boyfriend, volume, soil, south, transportation\nOutput: False\n\nInput: \nString1: technology, signal, address, smell, film\nString2: technology, signal, address, smell, film\nOutput: False\n\nInput: \nString1: associate, piece, bridge, product, hope\nString2: hope, product, bridge, piece, associate\nOutput: True\n\nInput: \nString1: inside, site, pound, repair, whereas\nString2: inside, site, pound, repair, whereas\nOutput: False\n\nInput: \nString1: passenger, bath, material, wrap, manner\nString2: manner, wrap, material, bath, passenger\nOutput: True\n\nInput: \nString1: web, surround, stable, present, spring\nString2: web, surround, stable, present, spring\nOutput: False\n\n",
+        "prompt": "Input: \nString1: milk, mom, guitar, being, increase\nString2: increase, being, guitar, mom, milk\nOutput:",
+        "label": true
+    },
+    {
+        "uid": 88,
+        "task": "check_order",
+        "task_type": "word",
+        "examples": "Input: \nString1: bend, club, nation, yard, dinner\nString2: bend, club, nation, yard, dinner\nOutput: False\n\nInput: \nString1: outside, dependent, monitor, status, candidate\nString2: candidate, status, monitor, dependent, outside\nOutput: True\n\nInput: \nString1: airport, writer, honey, soup, end\nString2: end, soup, honey, writer, airport\nOutput: True\n\nInput: \nString1: emergency, combination, pair, split, establishment\nString2: establishment, split, pair, combination, emergency\nOutput: True\n\nInput: \nString1: reference, noise, glove, street, save\nString2: reference, noise, glove, street, save\nOutput: False\n\nInput: \nString1: impress, video, form, bridge, opening\nString2: opening, bridge, form, video, impress\nOutput: True\n\nInput: \nString1: database, arm, move, resident, plant\nString2: database, arm, move, resident, plant\nOutput: False\n\nInput: \nString1: mud, trade, hunt, skill, bad\nString2: mud, trade, hunt, skill, bad\nOutput: False\n\n",
+        "prompt": "Input: \nString1: replacement, layer, tongue, confidence, stretch\nString2: stretch, confidence, tongue, layer, replacement\nOutput:",
+        "label": true
+    },
+    {
+        "uid": 89,
+        "task": "check_order",
+        "task_type": "word",
+        "examples": "Input: \nString1: brown, intention, weird, potato, web\nString2: web, potato, weird, intention, brown\nOutput: True\n\nInput: \nString1: till, product, repeat, reading, wine\nString2: till, product, repeat, reading, wine\nOutput: False\n\nInput: \nString1: brown, accident, primary, person, girlfriend\nString2: girlfriend, person, primary, accident, brown\nOutput: True\n\nInput: \nString1: green, scale, permit, crash, finish\nString2: green, scale, permit, crash, finish\nOutput: False\n\nInput: \nString1: detail, maximum, lack, grade, body\nString2: detail, maximum, lack, grade, body\nOutput: False\n\nInput: \nString1: phrase, rock, wear, concert, walk\nString2: walk, concert, wear, rock, phrase\nOutput: True\n\nInput: \nString1: try, agency, thanks, shock, print\nString2: try, agency, thanks, shock, print\nOutput: False\n\nInput: \nString1: one, brown, international, glad, case\nString2: one, brown, international, glad, case\nOutput: False\n\n",
+        "prompt": "Input: \nString1: red, marriage, mode, general, apple\nString2: apple, general, mode, marriage, red\nOutput:",
+        "label": true
+    },
+    {
+        "uid": 90,
+        "task": "check_order",
+        "task_type": "word",
+        "examples": "Input: \nString1: handle, medium, picture, word, jump\nString2: handle, medium, picture, word, jump\nOutput: False\n\nInput: \nString1: revolution, outcome, bite, study, road\nString2: revolution, outcome, bite, study, road\nOutput: False\n\nInput: \nString1: abuse, item, forever, guest, estimate\nString2: abuse, item, forever, guest, estimate\nOutput: False\n\nInput: \nString1: formal, bar, man, care, trick\nString2: trick, care, man, bar, formal\nOutput: True\n\nInput: \nString1: vegetable, quit, policy, natural, yellow\nString2: vegetable, quit, policy, natural, yellow\nOutput: False\n\nInput: \nString1: voice, shake, quote, friendship, command\nString2: command, friendship, quote, shake, voice\nOutput: True\n\nInput: \nString1: attack, base, mortgage, head, song\nString2: attack, base, mortgage, head, song\nOutput: False\n\nInput: \nString1: stock, studio, string, engine, stretch\nString2: stretch, engine, string, studio, stock\nOutput: True\n\n",
+        "prompt": "Input: \nString1: strip, attitude, draft, decision, contact\nString2: strip, attitude, draft, decision, contact\nOutput:",
+        "label": false
+    },
+    {
+        "uid": 91,
+        "task": "check_order",
+        "task_type": "word",
+        "examples": "Input: \nString1: friendship, desire, gene, yesterday, profit\nString2: profit, yesterday, gene, desire, friendship\nOutput: True\n\nInput: \nString1: address, bowl, risk, second, weather\nString2: address, bowl, risk, second, weather\nOutput: False\n\nInput: \nString1: union, stomach, communication, maybe, physical\nString2: union, stomach, communication, maybe, physical\nOutput: False\n\nInput: \nString1: vacation, chest, chair, employment, forever\nString2: forever, employment, chair, chest, vacation\nOutput: True\n\nInput: \nString1: specialist, chicken, limit, night, permission\nString2: specialist, chicken, limit, night, permission\nOutput: False\n\nInput: \nString1: grocery, star, dream, keep, farm\nString2: farm, keep, dream, star, grocery\nOutput: True\n\nInput: \nString1: benefit, slip, girl, association, mail\nString2: mail, association, girl, slip, benefit\nOutput: True\n\nInput: \nString1: concern, conversation, eye, maybe, soup\nString2: concern, conversation, eye, maybe, soup\nOutput: False\n\n",
+        "prompt": "Input: \nString1: reveal, you, instruction, doubt, condition\nString2: reveal, you, instruction, doubt, condition\nOutput:",
+        "label": false
+    },
+    {
+        "uid": 92,
+        "task": "check_order",
+        "task_type": "word",
+        "examples": "Input: \nString1: parent, opinion, hotel, leave, calendar\nString2: calendar, leave, hotel, opinion, parent\nOutput: True\n\nInput: \nString1: status, sex, branch, factor, government\nString2: status, sex, branch, factor, government\nOutput: False\n\nInput: \nString1: bid, examination, dare, character, software\nString2: software, character, dare, examination, bid\nOutput: True\n\nInput: \nString1: switch, village, television, solid, family\nString2: switch, village, television, solid, family\nOutput: False\n\nInput: \nString1: midnight, crazy, friend, bus, guidance\nString2: guidance, bus, friend, crazy, midnight\nOutput: True\n\nInput: \nString1: factor, devil, single, sun, relation\nString2: relation, sun, single, devil, factor\nOutput: True\n\nInput: \nString1: department, program, store, ease, steal\nString2: steal, ease, store, program, department\nOutput: True\n\nInput: \nString1: calendar, dig, awareness, star, pattern\nString2: calendar, dig, awareness, star, pattern\nOutput: False\n\n",
+        "prompt": "Input: \nString1: bill, sound, requirement, sector, common\nString2: common, sector, requirement, sound, bill\nOutput:",
+        "label": true
+    },
+    {
+        "uid": 93,
+        "task": "check_order",
+        "task_type": "word",
+        "examples": "Input: \nString1: shine, protection, tongue, invite, investment\nString2: investment, invite, tongue, protection, shine\nOutput: True\n\nInput: \nString1: republic, lesson, grab, touch, boyfriend\nString2: boyfriend, touch, grab, lesson, republic\nOutput: True\n\nInput: \nString1: handle, company, boot, rise, growth\nString2: handle, company, boot, rise, growth\nOutput: False\n\nInput: \nString1: deposit, attitude, push, fact, fishing\nString2: fishing, fact, push, attitude, deposit\nOutput: True\n\nInput: \nString1: stable, nose, skin, tradition, mate\nString2: mate, tradition, skin, nose, stable\nOutput: True\n\nInput: \nString1: arm, mobile, resolution, menu, hate\nString2: arm, mobile, resolution, menu, hate\nOutput: False\n\nInput: \nString1: purpose, blank, deposit, resource, print\nString2: print, resource, deposit, blank, purpose\nOutput: True\n\nInput: \nString1: report, talk, laugh, confusion, trick\nString2: report, talk, laugh, confusion, trick\nOutput: False\n\n",
+        "prompt": "Input: \nString1: revolution, police, status, nature, pizza\nString2: revolution, police, status, nature, pizza\nOutput:",
+        "label": false
+    },
+    {
+        "uid": 94,
+        "task": "check_order",
+        "task_type": "word",
+        "examples": "Input: \nString1: secretary, bell, drawer, glad, garbage\nString2: garbage, glad, drawer, bell, secretary\nOutput: True\n\nInput: \nString1: knee, improvement, wall, respond, duty\nString2: knee, improvement, wall, respond, duty\nOutput: False\n\nInput: \nString1: hearing, army, nerve, assist, professor\nString2: hearing, army, nerve, assist, professor\nOutput: False\n\nInput: \nString1: wind, throat, information, literature, attack\nString2: wind, throat, information, literature, attack\nOutput: False\n\nInput: \nString1: response, play, join, shoe, leader\nString2: leader, shoe, join, play, response\nOutput: True\n\nInput: \nString1: shock, newspaper, prompt, setting, price\nString2: price, setting, prompt, newspaper, shock\nOutput: True\n\nInput: \nString1: evening, model, name, noise, user\nString2: user, noise, name, model, evening\nOutput: True\n\nInput: \nString1: arrival, army, store, feeling, wear\nString2: wear, feeling, store, army, arrival\nOutput: True\n\n",
+        "prompt": "Input: \nString1: shock, usual, charge, union, case\nString2: case, union, charge, usual, shock\nOutput:",
+        "label": true
+    },
+    {
+        "uid": 95,
+        "task": "check_order",
+        "task_type": "word",
+        "examples": "Input: \nString1: emotion, sleep, brown, tooth, impact\nString2: impact, tooth, brown, sleep, emotion\nOutput: True\n\nInput: \nString1: door, affect, service, hurry, county\nString2: door, affect, service, hurry, county\nOutput: False\n\nInput: \nString1: star, instruction, contract, minimum, drop\nString2: star, instruction, contract, minimum, drop\nOutput: False\n\nInput: \nString1: page, master, march, brother, chain\nString2: page, master, march, brother, chain\nOutput: False\n\nInput: \nString1: argument, variation, repair, shake, location\nString2: location, shake, repair, variation, argument\nOutput: True\n\nInput: \nString1: criticism, seat, buy, expert, read\nString2: read, expert, buy, seat, criticism\nOutput: True\n\nInput: \nString1: historian, complex, quarter, base, due\nString2: historian, complex, quarter, base, due\nOutput: False\n\nInput: \nString1: strip, shine, priority, floor, mess\nString2: mess, floor, priority, shine, strip\nOutput: True\n\n",
+        "prompt": "Input: \nString1: match, rip, membership, grandmother, department\nString2: match, rip, membership, grandmother, department\nOutput:",
+        "label": false
+    },
+    {
+        "uid": 96,
+        "task": "check_order",
+        "task_type": "word",
+        "examples": "Input: \nString1: bird, senior, wonder, load, wake\nString2: bird, senior, wonder, load, wake\nOutput: False\n\nInput: \nString1: kill, ice, candle, knee, hang\nString2: hang, knee, candle, ice, kill\nOutput: True\n\nInput: \nString1: block, deposit, shift, book, draft\nString2: draft, book, shift, deposit, block\nOutput: True\n\nInput: \nString1: somewhere, solid, meet, joint, homework\nString2: somewhere, solid, meet, joint, homework\nOutput: False\n\nInput: \nString1: theory, normal, childhood, jacket, shoulder\nString2: shoulder, jacket, childhood, normal, theory\nOutput: True\n\nInput: \nString1: possibility, newspaper, pound, paint, game\nString2: possibility, newspaper, pound, paint, game\nOutput: False\n\nInput: \nString1: garden, combination, mortgage, funeral, prize\nString2: garden, combination, mortgage, funeral, prize\nOutput: False\n\nInput: \nString1: south, trainer, message, grade, nose\nString2: south, trainer, message, grade, nose\nOutput: False\n\n",
+        "prompt": "Input: \nString1: fee, hook, difference, attention, fat\nString2: fat, attention, difference, hook, fee\nOutput:",
+        "label": true
+    },
+    {
+        "uid": 97,
+        "task": "check_order",
+        "task_type": "word",
+        "examples": "Input: \nString1: push, television, college, status, hour\nString2: push, television, college, status, hour\nOutput: False\n\nInput: \nString1: truck, pen, people, statement, search\nString2: search, statement, people, pen, truck\nOutput: True\n\nInput: \nString1: panic, most, potato, eat, attack\nString2: panic, most, potato, eat, attack\nOutput: False\n\nInput: \nString1: effect, animal, chemistry, funeral, designer\nString2: effect, animal, chemistry, funeral, designer\nOutput: False\n\nInput: \nString1: will, safe, low, west, suspect\nString2: will, safe, low, west, suspect\nOutput: False\n\nInput: \nString1: spare, bother, contract, studio, total\nString2: spare, bother, contract, studio, total\nOutput: False\n\nInput: \nString1: world, link, desire, comfortable, side\nString2: side, comfortable, desire, link, world\nOutput: True\n\nInput: \nString1: mobile, secretary, department, poetry, salary\nString2: mobile, secretary, department, poetry, salary\nOutput: False\n\n",
+        "prompt": "Input: \nString1: opinion, bike, routine, benefit, cancer\nString2: opinion, bike, routine, benefit, cancer\nOutput:",
+        "label": false
+    },
+    {
+        "uid": 98,
+        "task": "check_order",
+        "task_type": "word",
+        "examples": "Input: \nString1: complex, contribution, replacement, entry, net\nString2: complex, contribution, replacement, entry, net\nOutput: False\n\nInput: \nString1: extension, village, suspect, ice, aspect\nString2: aspect, ice, suspect, village, extension\nOutput: True\n\nInput: \nString1: goal, broad, claim, single, republic\nString2: goal, broad, claim, single, republic\nOutput: False\n\nInput: \nString1: extension, remote, individual, fear, bath\nString2: extension, remote, individual, fear, bath\nOutput: False\n\nInput: \nString1: family, stroke, punch, growth, rope\nString2: family, stroke, punch, growth, rope\nOutput: False\n\nInput: \nString1: check, floor, panic, conversation, survey\nString2: check, floor, panic, conversation, survey\nOutput: False\n\nInput: \nString1: dare, engine, criticism, traffic, pass\nString2: pass, traffic, criticism, engine, dare\nOutput: True\n\nInput: \nString1: fear, glass, trick, glad, adult\nString2: fear, glass, trick, glad, adult\nOutput: False\n\n",
+        "prompt": "Input: \nString1: sweet, temporary, estimate, dream, administration\nString2: administration, dream, estimate, temporary, sweet\nOutput:",
+        "label": true
+    },
+    {
+        "uid": 99,
+        "task": "check_order",
+        "task_type": "word",
+        "examples": "Input: \nString1: elevator, juice, fall, hurt, spray\nString2: spray, hurt, fall, juice, elevator\nOutput: True\n\nInput: \nString1: lay, motor, fire, hide, reply\nString2: lay, motor, fire, hide, reply\nOutput: False\n\nInput: \nString1: honey, salad, white, roll, store\nString2: store, roll, white, salad, honey\nOutput: True\n\nInput: \nString1: constant, variation, fold, shoot, enthusiasm\nString2: constant, variation, fold, shoot, enthusiasm\nOutput: False\n\nInput: \nString1: fold, loss, theme, most, coach\nString2: fold, loss, theme, most, coach\nOutput: False\n\nInput: \nString1: guess, bid, record, cream, literature\nString2: guess, bid, record, cream, literature\nOutput: False\n\nInput: \nString1: thing, weight, disaster, teacher, sensitive\nString2: sensitive, teacher, disaster, weight, thing\nOutput: True\n\nInput: \nString1: garbage, practice, initiative, result, sing\nString2: sing, result, initiative, practice, garbage\nOutput: True\n\n",
+        "prompt": "Input: \nString1: sound, wave, voice, weather, cake\nString2: cake, weather, voice, wave, sound\nOutput:",
+        "label": true
+    }
+]

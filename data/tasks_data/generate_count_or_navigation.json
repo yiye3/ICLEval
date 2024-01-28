@@ -1,0 +1,962 @@
+[
+    {
+        "uid": 0,
+        "task": "count_or_navigation",
+        "task_type": "count-easy",
+        "examples": "Input: up, down, up\nOutput: up: 2, down: 1\n\nInput: down, down, down, down\nOutput: up: 0, down: 4\n\nInput: \nOutput: up: 0, down: 0\n\nInput: down\nOutput: up: 0, down: 1\n\nInput: down, down, down, up, down\nOutput: up: 1, down: 4\n\nInput: down, down, up, up, down, up, up\nOutput: up: 4, down: 3\n\nInput: down, down, up, up, up\nOutput: up: 3, down: 2\n\nInput: \nOutput: up: 0, down: 0\n\n",
+        "prompt": "Input: \nOutput: ",
+        "label": "up: 0, down: 0"
+    },
+    {
+        "uid": 1,
+        "task": "count_or_navigation",
+        "task_type": "count-easy",
+        "examples": "Input: up, down, up, down, up, up\nOutput: up: 4, down: 2\n\nInput: up, up, up, up, down, down\nOutput: up: 4, down: 2\n\nInput: \nOutput: up: 0, down: 0\n\nInput: down, down, up\nOutput: up: 1, down: 2\n\nInput: down, down, down\nOutput: up: 0, down: 3\n\nInput: up, down, up\nOutput: up: 2, down: 1\n\nInput: down, up, down\nOutput: up: 1, down: 2\n\nInput: up, up, up, up, down\nOutput: up: 4, down: 1\n\n",
+        "prompt": "Input: up, up, up\nOutput: ",
+        "label": "up: 3, down: 0"
+    },
+    {
+        "uid": 2,
+        "task": "count_or_navigation",
+        "task_type": "count-easy",
+        "examples": "Input: down\nOutput: up: 0, down: 1\n\nInput: down, down\nOutput: up: 0, down: 2\n\nInput: up, up\nOutput: up: 2, down: 0\n\nInput: up, down, up, down, up, up\nOutput: up: 4, down: 2\n\nInput: down, down, up\nOutput: up: 1, down: 2\n\nInput: up, up, up, down, up, down, down, down\nOutput: up: 4, down: 4\n\nInput: down, down, down, up, down\nOutput: up: 1, down: 4\n\nInput: up, down\nOutput: up: 1, down: 1\n\n",
+        "prompt": "Input: up, down, up, up, down\nOutput: ",
+        "label": "up: 3, down: 2"
+    },
+    {
+        "uid": 3,
+        "task": "count_or_navigation",
+        "task_type": "count-easy",
+        "examples": "Input: up, up, up, down, up, down\nOutput: up: 4, down: 2\n\nInput: up, up\nOutput: up: 2, down: 0\n\nInput: up, up, up, down\nOutput: up: 3, down: 1\n\nInput: up, up, up, up, down\nOutput: up: 4, down: 1\n\nInput: down, down, down, up, down, up, up, up\nOutput: up: 4, down: 4\n\nInput: up, up, up\nOutput: up: 3, down: 0\n\nInput: up, down, up\nOutput: up: 2, down: 1\n\nInput: up, up, up, up\nOutput: up: 4, down: 0\n\n",
+        "prompt": "Input: up, up, up, up\nOutput: ",
+        "label": "up: 4, down: 0"
+    },
+    {
+        "uid": 4,
+        "task": "count_or_navigation",
+        "task_type": "count-easy",
+        "examples": "Input: up, down, up, up, up\nOutput: up: 4, down: 1\n\nInput: up, up, down, down, down\nOutput: up: 2, down: 3\n\nInput: down\nOutput: up: 0, down: 1\n\nInput: up\nOutput: up: 1, down: 0\n\nInput: up, up\nOutput: up: 2, down: 0\n\nInput: up, up, up, down, up\nOutput: up: 4, down: 1\n\nInput: up\nOutput: up: 1, down: 0\n\nInput: down, down\nOutput: up: 0, down: 2\n\n",
+        "prompt": "Input: down, down, down, down\nOutput: ",
+        "label": "up: 0, down: 4"
+    },
+    {
+        "uid": 5,
+        "task": "count_or_navigation",
+        "task_type": "count-easy",
+        "examples": "Input: down, up, up, down, down, up, up, down\nOutput: up: 4, down: 4\n\nInput: up, up, up, down, down\nOutput: up: 3, down: 2\n\nInput: \nOutput: up: 0, down: 0\n\nInput: down, up, down, up, up\nOutput: up: 3, down: 2\n\nInput: down, up, down, up, down, up, up\nOutput: up: 4, down: 3\n\nInput: down, down, down\nOutput: up: 0, down: 3\n\nInput: down, down, down, down\nOutput: up: 0, down: 4\n\nInput: down, up, down, down\nOutput: up: 1, down: 3\n\n",
+        "prompt": "Input: up, down, up, up, up\nOutput: ",
+        "label": "up: 4, down: 1"
+    },
+    {
+        "uid": 6,
+        "task": "count_or_navigation",
+        "task_type": "count-easy",
+        "examples": "Input: down, down, down\nOutput: up: 0, down: 3\n\nInput: up, down, up, down, down\nOutput: up: 2, down: 3\n\nInput: up, down, up\nOutput: up: 2, down: 1\n\nInput: up, up\nOutput: up: 2, down: 0\n\nInput: down, up, up, up, up, down, down\nOutput: up: 4, down: 3\n\nInput: up\nOutput: up: 1, down: 0\n\nInput: up, up, up, up\nOutput: up: 4, down: 0\n\nInput: up, up, up, up, down\nOutput: up: 4, down: 1\n\n",
+        "prompt": "Input: up, up, up\nOutput: ",
+        "label": "up: 3, down: 0"
+    },
+    {
+        "uid": 7,
+        "task": "count_or_navigation",
+        "task_type": "count-easy",
+        "examples": "Input: down, up, down\nOutput: up: 1, down: 2\n\nInput: down, up, down, up, down\nOutput: up: 2, down: 3\n\nInput: up, down, down, up, down, down, up, up\nOutput: up: 4, down: 4\n\nInput: down\nOutput: up: 0, down: 1\n\nInput: up, down, down, up\nOutput: up: 2, down: 2\n\nInput: down, up, up, down, up, down, down, up\nOutput: up: 4, down: 4\n\nInput: \nOutput: up: 0, down: 0\n\nInput: up, up, up, down, up\nOutput: up: 4, down: 1\n\n",
+        "prompt": "Input: down, up, up, down, up, down, down\nOutput: ",
+        "label": "up: 3, down: 4"
+    },
+    {
+        "uid": 8,
+        "task": "count_or_navigation",
+        "task_type": "count-easy",
+        "examples": "Input: down, down, up, up, down, up, up\nOutput: up: 4, down: 3\n\nInput: down, down\nOutput: up: 0, down: 2\n\nInput: up, up, down\nOutput: up: 2, down: 1\n\nInput: up, up, up, down, down, up, down\nOutput: up: 4, down: 3\n\nInput: up, up, up, up\nOutput: up: 4, down: 0\n\nInput: down, up, up, up\nOutput: up: 3, down: 1\n\nInput: down, down\nOutput: up: 0, down: 2\n\nInput: up\nOutput: up: 1, down: 0\n\n",
+        "prompt": "Input: up, up, down\nOutput: ",
+        "label": "up: 2, down: 1"
+    },
+    {
+        "uid": 9,
+        "task": "count_or_navigation",
+        "task_type": "count-easy",
+        "examples": "Input: down, down, down, up\nOutput: up: 1, down: 3\n\nInput: up, down, up, up\nOutput: up: 3, down: 1\n\nInput: up, up, up\nOutput: up: 3, down: 0\n\nInput: down, up, down, down\nOutput: up: 1, down: 3\n\nInput: up\nOutput: up: 1, down: 0\n\nInput: down, up, down, down\nOutput: up: 1, down: 3\n\nInput: up, up, down, down\nOutput: up: 2, down: 2\n\nInput: \nOutput: up: 0, down: 0\n\n",
+        "prompt": "Input: down, down, up, up, down, down\nOutput: ",
+        "label": "up: 2, down: 4"
+    },
+    {
+        "uid": 10,
+        "task": "count_or_navigation",
+        "task_type": "count-easy",
+        "examples": "Input: \nOutput: up: 0, down: 0\n\nInput: up, up, down, up, down, down, up\nOutput: up: 4, down: 3\n\nInput: down, down, down, down, up, up, up\nOutput: up: 3, down: 4\n\nInput: down, up, down, down, up\nOutput: up: 2, down: 3\n\nInput: down, down\nOutput: up: 0, down: 2\n\nInput: up, up, down, up, down\nOutput: up: 3, down: 2\n\nInput: down, up, down, down\nOutput: up: 1, down: 3\n\nInput: down, down, up, up, up, down, up, down\nOutput: up: 4, down: 4\n\n",
+        "prompt": "Input: up, up, down\nOutput: ",
+        "label": "up: 2, down: 1"
+    },
+    {
+        "uid": 11,
+        "task": "count_or_navigation",
+        "task_type": "count-easy",
+        "examples": "Input: down, up, down, down, down\nOutput: up: 1, down: 4\n\nInput: up, down, up, down, down, down\nOutput: up: 2, down: 4\n\nInput: up, down, up\nOutput: up: 2, down: 1\n\nInput: \nOutput: up: 0, down: 0\n\nInput: down, down, down, up\nOutput: up: 1, down: 3\n\nInput: up, up, up, down, up\nOutput: up: 4, down: 1\n\nInput: up\nOutput: up: 1, down: 0\n\nInput: down, down, down\nOutput: up: 0, down: 3\n\n",
+        "prompt": "Input: up, down, up, down, up, down, down\nOutput: ",
+        "label": "up: 3, down: 4"
+    },
+    {
+        "uid": 12,
+        "task": "count_or_navigation",
+        "task_type": "count-easy",
+        "examples": "Input: up, up, down, down, up, down, down\nOutput: up: 3, down: 4\n\nInput: up, up, down, down, up, down, up\nOutput: up: 4, down: 3\n\nInput: down, up, down, down, up, down\nOutput: up: 2, down: 4\n\nInput: up, down, up\nOutput: up: 2, down: 1\n\nInput: down, down, down, down, up, up\nOutput: up: 2, down: 4\n\nInput: down, up\nOutput: up: 1, down: 1\n\nInput: down, up, up, down, down, up\nOutput: up: 3, down: 3\n\nInput: down, up, down, down\nOutput: up: 1, down: 3\n\n",
+        "prompt": "Input: up, up, down, down, up, down, up\nOutput: ",
+        "label": "up: 4, down: 3"
+    },
+    {
+        "uid": 13,
+        "task": "count_or_navigation",
+        "task_type": "count-easy",
+        "examples": "Input: down, up, down, down, up, up, down, up\nOutput: up: 4, down: 4\n\nInput: up, up, down, up, down\nOutput: up: 3, down: 2\n\nInput: up, up, down, down, down, down, up, up\nOutput: up: 4, down: 4\n\nInput: down, down, up, down\nOutput: up: 1, down: 3\n\nInput: up, up, down, down, up\nOutput: up: 3, down: 2\n\nInput: down, up, up, up, down\nOutput: up: 3, down: 2\n\nInput: down, down, down, down\nOutput: up: 0, down: 4\n\nInput: \nOutput: up: 0, down: 0\n\n",
+        "prompt": "Input: down, down, up, down, up, up, up\nOutput: ",
+        "label": "up: 4, down: 3"
+    },
+    {
+        "uid": 14,
+        "task": "count_or_navigation",
+        "task_type": "count-easy",
+        "examples": "Input: up\nOutput: up: 1, down: 0\n\nInput: up, up, up, down, up\nOutput: up: 4, down: 1\n\nInput: down, up, up, up, up\nOutput: up: 4, down: 1\n\nInput: down, up, down, up, up, down, down, up\nOutput: up: 4, down: 4\n\nInput: up, up, down, down, down, down\nOutput: up: 2, down: 4\n\nInput: down, down, down, down\nOutput: up: 0, down: 4\n\nInput: up, up, up, up\nOutput: up: 4, down: 0\n\nInput: up, up\nOutput: up: 2, down: 0\n\n",
+        "prompt": "Input: down\nOutput: ",
+        "label": "up: 0, down: 1"
+    },
+    {
+        "uid": 15,
+        "task": "count_or_navigation",
+        "task_type": "count-easy",
+        "examples": "Input: up, up, down, up, down\nOutput: up: 3, down: 2\n\nInput: up, up, up, up, down, down\nOutput: up: 4, down: 2\n\nInput: up, down, down, up, up, up\nOutput: up: 4, down: 2\n\nInput: down, up, down, down\nOutput: up: 1, down: 3\n\nInput: up, down, up, down, up\nOutput: up: 3, down: 2\n\nInput: up, up, down, down\nOutput: up: 2, down: 2\n\nInput: up, up, up, up\nOutput: up: 4, down: 0\n\nInput: up, down, up, down, up, down\nOutput: up: 3, down: 3\n\n",
+        "prompt": "Input: down, down, down\nOutput: ",
+        "label": "up: 0, down: 3"
+    },
+    {
+        "uid": 16,
+        "task": "count_or_navigation",
+        "task_type": "count-easy",
+        "examples": "Input: up, down, down, down\nOutput: up: 1, down: 3\n\nInput: up, down, up, down, down, up, down\nOutput: up: 3, down: 4\n\nInput: up, down, up, down\nOutput: up: 2, down: 2\n\nInput: down, down, up\nOutput: up: 1, down: 2\n\nInput: up, down\nOutput: up: 1, down: 1\n\nInput: up, down, up, down, down, down\nOutput: up: 2, down: 4\n\nInput: down, up, up\nOutput: up: 2, down: 1\n\nInput: up, up\nOutput: up: 2, down: 0\n\n",
+        "prompt": "Input: up, up, up\nOutput: ",
+        "label": "up: 3, down: 0"
+    },
+    {
+        "uid": 17,
+        "task": "count_or_navigation",
+        "task_type": "count-easy",
+        "examples": "Input: down, up, up, up, up, down\nOutput: up: 4, down: 2\n\nInput: up, up, up, down, down, up\nOutput: up: 4, down: 2\n\nInput: down, down\nOutput: up: 0, down: 2\n\nInput: \nOutput: up: 0, down: 0\n\nInput: up, up, down, down, down, up\nOutput: up: 3, down: 3\n\nInput: up, down, up, down, up, up\nOutput: up: 4, down: 2\n\nInput: up, up, up, down, down, down, down, up\nOutput: up: 4, down: 4\n\nInput: up, up, down, up, down, down, up\nOutput: up: 4, down: 3\n\n",
+        "prompt": "Input: up, up\nOutput: ",
+        "label": "up: 2, down: 0"
+    },
+    {
+        "uid": 18,
+        "task": "count_or_navigation",
+        "task_type": "count-easy",
+        "examples": "Input: down\nOutput: up: 0, down: 1\n\nInput: down, up\nOutput: up: 1, down: 1\n\nInput: up\nOutput: up: 1, down: 0\n\nInput: up, up, up, down, down, down\nOutput: up: 3, down: 3\n\nInput: up, down, down\nOutput: up: 1, down: 2\n\nInput: up, up, up\nOutput: up: 3, down: 0\n\nInput: down, down, up, down, up, down\nOutput: up: 2, down: 4\n\nInput: down, down, up\nOutput: up: 1, down: 2\n\n",
+        "prompt": "Input: up, down\nOutput: ",
+        "label": "up: 1, down: 1"
+    },
+    {
+        "uid": 19,
+        "task": "count_or_navigation",
+        "task_type": "count-easy",
+        "examples": "Input: down, up, up, down, down, down\nOutput: up: 2, down: 4\n\nInput: up, up, down, up, down\nOutput: up: 3, down: 2\n\nInput: up, up, up\nOutput: up: 3, down: 0\n\nInput: up, down, up, up, down\nOutput: up: 3, down: 2\n\nInput: down, down, down, up, down\nOutput: up: 1, down: 4\n\nInput: up, up, up, up\nOutput: up: 4, down: 0\n\nInput: up, up, down\nOutput: up: 2, down: 1\n\nInput: up, up, up\nOutput: up: 3, down: 0\n\n",
+        "prompt": "Input: down\nOutput: ",
+        "label": "up: 0, down: 1"
+    },
+    {
+        "uid": 20,
+        "task": "count_or_navigation",
+        "task_type": "count-easy",
+        "examples": "Input: down, down, up, up, down, up\nOutput: up: 3, down: 3\n\nInput: down, up, up, down\nOutput: up: 2, down: 2\n\nInput: up, up, up, up\nOutput: up: 4, down: 0\n\nInput: up, down, down, down, down\nOutput: up: 1, down: 4\n\nInput: down\nOutput: up: 0, down: 1\n\nInput: up, down, down, down, down, up\nOutput: up: 2, down: 4\n\nInput: \nOutput: up: 0, down: 0\n\nInput: down, up, up, up, up\nOutput: up: 4, down: 1\n\n",
+        "prompt": "Input: down, up, down, up, up\nOutput: ",
+        "label": "up: 3, down: 2"
+    },
+    {
+        "uid": 21,
+        "task": "count_or_navigation",
+        "task_type": "count-easy",
+        "examples": "Input: up, down, up, up, down\nOutput: up: 3, down: 2\n\nInput: up, up, up, down\nOutput: up: 3, down: 1\n\nInput: up, down, up, up\nOutput: up: 3, down: 1\n\nInput: down, up, up, up, down\nOutput: up: 3, down: 2\n\nInput: up, down, down, up, down, down\nOutput: up: 2, down: 4\n\nInput: up, down, up, down\nOutput: up: 2, down: 2\n\nInput: up, down\nOutput: up: 1, down: 1\n\nInput: down, down, down, up\nOutput: up: 1, down: 3\n\n",
+        "prompt": "Input: down, up, down, up, down, up, up\nOutput: ",
+        "label": "up: 4, down: 3"
+    },
+    {
+        "uid": 22,
+        "task": "count_or_navigation",
+        "task_type": "count-easy",
+        "examples": "Input: down, up, up, down, up, up, down, down\nOutput: up: 4, down: 4\n\nInput: down\nOutput: up: 0, down: 1\n\nInput: down, up, up, up\nOutput: up: 3, down: 1\n\nInput: down, down, up, up, down, down\nOutput: up: 2, down: 4\n\nInput: up, down, down, up, down\nOutput: up: 2, down: 3\n\nInput: down, down, up\nOutput: up: 1, down: 2\n\nInput: up, up, up\nOutput: up: 3, down: 0\n\nInput: up, down, up, up\nOutput: up: 3, down: 1\n\n",
+        "prompt": "Input: down, up, up, down, up, down\nOutput: ",
+        "label": "up: 3, down: 3"
+    },
+    {
+        "uid": 23,
+        "task": "count_or_navigation",
+        "task_type": "count-easy",
+        "examples": "Input: up, down, up, down\nOutput: up: 2, down: 2\n\nInput: up, up, up, down, up, down, down\nOutput: up: 4, down: 3\n\nInput: down, up, up, up, up, down, down\nOutput: up: 4, down: 3\n\nInput: up, down, down, down\nOutput: up: 1, down: 3\n\nInput: down, down, down\nOutput: up: 0, down: 3\n\nInput: down, down, down\nOutput: up: 0, down: 3\n\nInput: down, up, up, up, down\nOutput: up: 3, down: 2\n\nInput: up, up, up\nOutput: up: 3, down: 0\n\n",
+        "prompt": "Input: up, up\nOutput: ",
+        "label": "up: 2, down: 0"
+    },
+    {
+        "uid": 24,
+        "task": "count_or_navigation",
+        "task_type": "count-easy",
+        "examples": "Input: up, up\nOutput: up: 2, down: 0\n\nInput: down, up, up, down, up, up, down\nOutput: up: 4, down: 3\n\nInput: down, up, up, up, up, down\nOutput: up: 4, down: 2\n\nInput: up, down, down, down, up\nOutput: up: 2, down: 3\n\nInput: down, down\nOutput: up: 0, down: 2\n\nInput: up, down, up, up\nOutput: up: 3, down: 1\n\nInput: up, down, down, up, up, up, down, down\nOutput: up: 4, down: 4\n\nInput: down, down, down\nOutput: up: 0, down: 3\n\n",
+        "prompt": "Input: up, up, up, down, up, down\nOutput: ",
+        "label": "up: 4, down: 2"
+    },
+    {
+        "uid": 25,
+        "task": "count_or_navigation",
+        "task_type": "count-easy",
+        "examples": "Input: down, down\nOutput: up: 0, down: 2\n\nInput: up, up, down, down, up\nOutput: up: 3, down: 2\n\nInput: down\nOutput: up: 0, down: 1\n\nInput: up, up, up\nOutput: up: 3, down: 0\n\nInput: down, up, up, up, up\nOutput: up: 4, down: 1\n\nInput: up, up, up\nOutput: up: 3, down: 0\n\nInput: down, down\nOutput: up: 0, down: 2\n\nInput: \nOutput: up: 0, down: 0\n\n",
+        "prompt": "Input: down, down, up, down\nOutput: ",
+        "label": "up: 1, down: 3"
+    },
+    {
+        "uid": 26,
+        "task": "count_or_navigation",
+        "task_type": "count-easy",
+        "examples": "Input: down, up, up, up, up, down, down\nOutput: up: 4, down: 3\n\nInput: down, up, down, down, up, up, down\nOutput: up: 3, down: 4\n\nInput: down, up, up, up\nOutput: up: 3, down: 1\n\nInput: up, down, down, up, up, up\nOutput: up: 4, down: 2\n\nInput: up, up, up\nOutput: up: 3, down: 0\n\nInput: up, up, up, up\nOutput: up: 4, down: 0\n\nInput: down, down, down, up, down\nOutput: up: 1, down: 4\n\nInput: down, up, up, up, up\nOutput: up: 4, down: 1\n\n",
+        "prompt": "Input: up, down, down, down, down\nOutput: ",
+        "label": "up: 1, down: 4"
+    },
+    {
+        "uid": 27,
+        "task": "count_or_navigation",
+        "task_type": "count-easy",
+        "examples": "Input: up\nOutput: up: 1, down: 0\n\nInput: down\nOutput: up: 0, down: 1\n\nInput: down, down\nOutput: up: 0, down: 2\n\nInput: down, up, down, up, up, up\nOutput: up: 4, down: 2\n\nInput: down, up, up, down, down, down, up\nOutput: up: 3, down: 4\n\nInput: down, down, up, up, down, down, up, up\nOutput: up: 4, down: 4\n\nInput: up, up, up\nOutput: up: 3, down: 0\n\nInput: down, up, up, down, up, down\nOutput: up: 3, down: 3\n\n",
+        "prompt": "Input: down, up, up\nOutput: ",
+        "label": "up: 2, down: 1"
+    },
+    {
+        "uid": 28,
+        "task": "count_or_navigation",
+        "task_type": "count-easy",
+        "examples": "Input: down, down, down, down, up, up\nOutput: up: 2, down: 4\n\nInput: up, down, up, down, down, up, down\nOutput: up: 3, down: 4\n\nInput: up, up, up, down, up\nOutput: up: 4, down: 1\n\nInput: up, up, down, down, down\nOutput: up: 2, down: 3\n\nInput: down, up, up, down, down\nOutput: up: 2, down: 3\n\nInput: up, up, up\nOutput: up: 3, down: 0\n\nInput: down, down, down\nOutput: up: 0, down: 3\n\nInput: down, down, down, down, up\nOutput: up: 1, down: 4\n\n",
+        "prompt": "Input: \nOutput: ",
+        "label": "up: 0, down: 0"
+    },
+    {
+        "uid": 29,
+        "task": "count_or_navigation",
+        "task_type": "count-easy",
+        "examples": "Input: up, up\nOutput: up: 2, down: 0\n\nInput: down, down, up, down\nOutput: up: 1, down: 3\n\nInput: down, down, up, up, up, up\nOutput: up: 4, down: 2\n\nInput: down, down, up, up, up, up\nOutput: up: 4, down: 2\n\nInput: up, down, down, up\nOutput: up: 2, down: 2\n\nInput: down, up, up, down, down, up, up\nOutput: up: 4, down: 3\n\nInput: up, down, down, up, up, down\nOutput: up: 3, down: 3\n\nInput: up, down, down, down, up, down\nOutput: up: 2, down: 4\n\n",
+        "prompt": "Input: down, up, up, up, down\nOutput: ",
+        "label": "up: 3, down: 2"
+    },
+    {
+        "uid": 30,
+        "task": "count_or_navigation",
+        "task_type": "count-middle",
+        "examples": "Input: right, right, right, down, down, up, up, right, left, up\nOutput: up: 3, down: 2, left: 1, right: 4\n\nInput: right, left, right, right, left, left, right, down\nOutput: up: 0, down: 1, left: 3, right: 4\n\nInput: up, up, down, down\nOutput: up: 2, down: 2, left: 0, right: 0\n\nInput: left, down, left, right, right, right, up, right, left\nOutput: up: 1, down: 1, left: 3, right: 4\n\nInput: right, left, down, left, left, down, left, right, right\nOutput: up: 0, down: 2, left: 4, right: 3\n\nInput: left, up, up, down, down, up, left, up, down\nOutput: up: 4, down: 3, left: 2, right: 0\n\nInput: right, down, up, down, up, up, left, left\nOutput: up: 3, down: 2, left: 2, right: 1\n\nInput: left, down, right, down, up, up\nOutput: up: 2, down: 2, left: 1, right: 1\n\n",
+        "prompt": "Input: up, up, up, right, right, up\nOutput: ",
+        "label": "up: 4, down: 0, left: 0, right: 2"
+    },
+    {
+        "uid": 31,
+        "task": "count_or_navigation",
+        "task_type": "count-middle",
+        "examples": "Input: down, up, left, up, down, right, down, left, right, up, down, up\nOutput: up: 4, down: 4, left: 2, right: 2\n\nInput: down, up, left, down, left, left, down, up\nOutput: up: 2, down: 3, left: 3, right: 0\n\nInput: up, left, up, up, down, left, down, down, down, left, left\nOutput: up: 3, down: 4, left: 4, right: 0\n\nInput: right, right, right, down, down, right\nOutput: up: 0, down: 2, left: 0, right: 4\n\nInput: right, down, up, left, right, left, left, up, right, left, down, down, right, down, up\nOutput: up: 3, down: 4, left: 4, right: 4\n\nInput: down, up, left, left, up, down, up, down, up, right, right\nOutput: up: 4, down: 3, left: 2, right: 2\n\nInput: right, up, right, down, down, down, down\nOutput: up: 1, down: 4, left: 0, right: 2\n\nInput: left, left, up, down, up, down, up, down, down\nOutput: up: 3, down: 4, left: 2, right: 0\n\n",
+        "prompt": "Input: up, up, up, down, up, right\nOutput: ",
+        "label": "up: 4, down: 1, left: 0, right: 1"
+    },
+    {
+        "uid": 32,
+        "task": "count_or_navigation",
+        "task_type": "count-middle",
+        "examples": "Input: up, down, right, up, down, down, right, right, right, down, left\nOutput: up: 2, down: 4, left: 1, right: 4\n\nInput: down, down, right, down, left, left\nOutput: up: 0, down: 3, left: 2, right: 1\n\nInput: up, down, left, down, down, down, right, right\nOutput: up: 1, down: 4, left: 1, right: 2\n\nInput: up, right, down, left, right, left, down, left, up, down, right, left, down, up\nOutput: up: 3, down: 4, left: 4, right: 3\n\nInput: left, up, right, up, right\nOutput: up: 2, down: 0, left: 1, right: 2\n\nInput: left, down, down, left, up, down\nOutput: up: 1, down: 3, left: 2, right: 0\n\nInput: down, right, right, down, up, down\nOutput: up: 1, down: 3, left: 0, right: 2\n\nInput: down, up, right, right\nOutput: up: 1, down: 1, left: 0, right: 2\n\n",
+        "prompt": "Input: down, right, right, up\nOutput: ",
+        "label": "up: 1, down: 1, left: 0, right: 2"
+    },
+    {
+        "uid": 33,
+        "task": "count_or_navigation",
+        "task_type": "count-middle",
+        "examples": "Input: down, down, up\nOutput: up: 1, down: 2, left: 0, right: 0\n\nInput: up, down, up, up, down, up, down\nOutput: up: 4, down: 3, left: 0, right: 0\n\nInput: up, left, left, down, down, left\nOutput: up: 1, down: 2, left: 3, right: 0\n\nInput: left, left, left, right, right, left, up\nOutput: up: 1, down: 0, left: 4, right: 2\n\nInput: left, left, down, right, down, down, right\nOutput: up: 0, down: 3, left: 2, right: 2\n\nInput: down, right, down, left, left, down, down\nOutput: up: 0, down: 4, left: 2, right: 1\n\nInput: right, left, down, up, up, down, down, up\nOutput: up: 3, down: 3, left: 1, right: 1\n\nInput: up, left, left, right, right\nOutput: up: 1, down: 0, left: 2, right: 2\n\n",
+        "prompt": "Input: up, down, left, down, left, left, left, down, up, up\nOutput: ",
+        "label": "up: 3, down: 3, left: 4, right: 0"
+    },
+    {
+        "uid": 34,
+        "task": "count_or_navigation",
+        "task_type": "count-middle",
+        "examples": "Input: left, up, up, right, right, right, left\nOutput: up: 2, down: 0, left: 2, right: 3\n\nInput: down, up, down, up, left, right, right, right, right, left, up, down\nOutput: up: 3, down: 3, left: 2, right: 4\n\nInput: left, down, down, right, right, left\nOutput: up: 0, down: 2, left: 2, right: 2\n\nInput: right, up, right, up, down, down, down\nOutput: up: 2, down: 3, left: 0, right: 2\n\nInput: left, down, down, up, down, down, up\nOutput: up: 2, down: 4, left: 1, right: 0\n\nInput: right, right, right, down, left, down, left, up\nOutput: up: 1, down: 2, left: 2, right: 3\n\nInput: down, left, down, down, right, right, down, right, right\nOutput: up: 0, down: 4, left: 1, right: 4\n\nInput: up, left, left, down, right, down, left, right, left, down, right\nOutput: up: 1, down: 3, left: 4, right: 3\n\n",
+        "prompt": "Input: right, up, right, up, left\nOutput: ",
+        "label": "up: 2, down: 0, left: 1, right: 2"
+    },
+    {
+        "uid": 35,
+        "task": "count_or_navigation",
+        "task_type": "count-middle",
+        "examples": "Input: down, down, right, up, down, right\nOutput: up: 1, down: 3, left: 0, right: 2\n\nInput: right, down, left, up, up, right\nOutput: up: 2, down: 1, left: 1, right: 2\n\nInput: down, up, down, down, right, right\nOutput: up: 1, down: 3, left: 0, right: 2\n\nInput: up, up, up, right, right, up\nOutput: up: 4, down: 0, left: 0, right: 2\n\nInput: down, right, up, down, right, right\nOutput: up: 1, down: 2, left: 0, right: 3\n\nInput: left, down, up, left, down, left, left, down\nOutput: up: 1, down: 3, left: 4, right: 0\n\nInput: left, left, up, down, right, left, right, left, down\nOutput: up: 1, down: 2, left: 4, right: 2\n\nInput: up, up, up, down, down, down, down, right, right, right, up, right\nOutput: up: 4, down: 4, left: 0, right: 4\n\n",
+        "prompt": "Input: up, left\nOutput: ",
+        "label": "up: 1, down: 0, left: 1, right: 0"
+    },
+    {
+        "uid": 36,
+        "task": "count_or_navigation",
+        "task_type": "count-middle",
+        "examples": "Input: left, up, down, up, down, up, up, left, down, left, left\nOutput: up: 4, down: 3, left: 4, right: 0\n\nInput: right, down, right, left, left, right, left\nOutput: up: 0, down: 1, left: 3, right: 3\n\nInput: down, up, right, right, up, right, left, left, down\nOutput: up: 2, down: 2, left: 2, right: 3\n\nInput: left, left, right, left, down, down\nOutput: up: 0, down: 2, left: 3, right: 1\n\nInput: up, up, left, down, up, down, up, right, down\nOutput: up: 4, down: 3, left: 1, right: 1\n\nInput: up, right, up, up, right, right\nOutput: up: 3, down: 0, left: 0, right: 3\n\nInput: right, left, left, right, right\nOutput: up: 0, down: 0, left: 2, right: 3\n\nInput: right, down, down, left, down, right\nOutput: up: 0, down: 3, left: 1, right: 2\n\n",
+        "prompt": "Input: right, right, right, right\nOutput: ",
+        "label": "up: 0, down: 0, left: 0, right: 4"
+    },
+    {
+        "uid": 37,
+        "task": "count_or_navigation",
+        "task_type": "count-middle",
+        "examples": "Input: right, up, up, down, down, down, up, down, up\nOutput: up: 4, down: 4, left: 0, right: 1\n\nInput: right, right, up, down, left, down, up, left, left, down, down, up, right, right, up\nOutput: up: 4, down: 4, left: 3, right: 4\n\nInput: left, down, up, down, down, left, right, left, left, right\nOutput: up: 1, down: 3, left: 4, right: 2\n\nInput: right, right, right, up, left, left, right, up, left\nOutput: up: 2, down: 0, left: 3, right: 4\n\nInput: right, left, down, up, right, down, up, up, up, down, right, right\nOutput: up: 4, down: 3, left: 1, right: 4\n\nInput: up, left, down, up, right, right, down, right, down\nOutput: up: 2, down: 3, left: 1, right: 3\n\nInput: up, left, down, right, up, up, up, left, left, left, right\nOutput: up: 4, down: 1, left: 4, right: 2\n\nInput: up, right, left, left, down, down, up, left, down, down\nOutput: up: 2, down: 4, left: 3, right: 1\n\n",
+        "prompt": "Input: left, up, up, right, right, right, up, left, right, left, left\nOutput: ",
+        "label": "up: 3, down: 0, left: 4, right: 4"
+    },
+    {
+        "uid": 38,
+        "task": "count_or_navigation",
+        "task_type": "count-middle",
+        "examples": "Input: down, right, left, left, down, left, right\nOutput: up: 0, down: 2, left: 3, right: 2\n\nInput: up, up, up, up, left, down, down\nOutput: up: 4, down: 2, left: 1, right: 0\n\nInput: left, up, down, up, up, up\nOutput: up: 4, down: 1, left: 1, right: 0\n\nInput: down, right, right, right, right\nOutput: up: 0, down: 1, left: 0, right: 4\n\nInput: down, right, up, up, right, up, left, left\nOutput: up: 3, down: 1, left: 2, right: 2\n\nInput: down, down, up, left, down\nOutput: up: 1, down: 3, left: 1, right: 0\n\nInput: right, right, left, right, left, right\nOutput: up: 0, down: 0, left: 2, right: 4\n\nInput: down, up, left, down, right, left, up, up, up, down, down, left\nOutput: up: 4, down: 4, left: 3, right: 1\n\n",
+        "prompt": "Input: right, right, up, left, right, down, down, left, up, right, down\nOutput: ",
+        "label": "up: 2, down: 3, left: 2, right: 4"
+    },
+    {
+        "uid": 39,
+        "task": "count_or_navigation",
+        "task_type": "count-middle",
+        "examples": "Input: down, down, right, down\nOutput: up: 0, down: 3, left: 0, right: 1\n\nInput: up, right, right, left, right, left\nOutput: up: 1, down: 0, left: 2, right: 3\n\nInput: down, up, down, up, right, down, right, up, up, down\nOutput: up: 4, down: 4, left: 0, right: 2\n\nInput: up, up, up, right, right, up, down, down\nOutput: up: 4, down: 2, left: 0, right: 2\n\nInput: right, down, up, up, down, up, down, down, right, left, left, right\nOutput: up: 3, down: 4, left: 2, right: 3\n\nInput: right, up, right, down, right, right, down, up, up, up\nOutput: up: 4, down: 2, left: 0, right: 4\n\nInput: left, right, right, right, down, left, left, left\nOutput: up: 0, down: 1, left: 4, right: 3\n\nInput: right, right, down, down, up, right, up, down, up, down, right\nOutput: up: 3, down: 4, left: 0, right: 4\n\n",
+        "prompt": "Input: down, right, left, right, right, right, down, left\nOutput: ",
+        "label": "up: 0, down: 2, left: 2, right: 4"
+    },
+    {
+        "uid": 40,
+        "task": "count_or_navigation",
+        "task_type": "count-middle",
+        "examples": "Input: down, left, up, left, right, right, left\nOutput: up: 1, down: 1, left: 3, right: 2\n\nInput: right, left, up, right, up, right, right\nOutput: up: 2, down: 0, left: 1, right: 4\n\nInput: right, up, down, left, right, up, down, left, right, down, left, left\nOutput: up: 2, down: 3, left: 4, right: 3\n\nInput: left, left, down, left, down, left, down\nOutput: up: 0, down: 3, left: 4, right: 0\n\nInput: down, up, right, down, up, down, down, up\nOutput: up: 3, down: 4, left: 0, right: 1\n\nInput: up, left, right, right, down, up, up, up, right, right, down\nOutput: up: 4, down: 2, left: 1, right: 4\n\nInput: right, up, left, left, left, right, up, right, right, left\nOutput: up: 2, down: 0, left: 4, right: 4\n\nInput: left, up, down, left, right, right, up, right, up\nOutput: up: 3, down: 1, left: 2, right: 3\n\n",
+        "prompt": "Input: left, left, up, left, left, up\nOutput: ",
+        "label": "up: 2, down: 0, left: 4, right: 0"
+    },
+    {
+        "uid": 41,
+        "task": "count_or_navigation",
+        "task_type": "count-middle",
+        "examples": "Input: left, right, left, right, right, left, right, down, down\nOutput: up: 0, down: 2, left: 3, right: 4\n\nInput: down, right, down, up, up\nOutput: up: 2, down: 2, left: 0, right: 1\n\nInput: up, down, right, down, right, down, right, left, down\nOutput: up: 1, down: 4, left: 1, right: 3\n\nInput: left, right, up, down, down, left, right, up, right, right\nOutput: up: 2, down: 2, left: 2, right: 4\n\nInput: right, right, up, right, down, right, up, down, down\nOutput: up: 2, down: 3, left: 0, right: 4\n\nInput: up, right, right, down, left, down, right\nOutput: up: 1, down: 2, left: 1, right: 3\n\nInput: left, up, right, up, down, down, down, right, up\nOutput: up: 3, down: 3, left: 1, right: 2\n\nInput: up, up, up, up\nOutput: up: 4, down: 0, left: 0, right: 0\n\n",
+        "prompt": "Input: up, left, right, right, right, up, left, down, right, down, up, down, up, left\nOutput: ",
+        "label": "up: 4, down: 3, left: 3, right: 4"
+    },
+    {
+        "uid": 42,
+        "task": "count_or_navigation",
+        "task_type": "count-middle",
+        "examples": "Input: up, up, down, up, down, down, up, left, left\nOutput: up: 4, down: 3, left: 2, right: 0\n\nInput: right, up, left, down, left, down, right, up, up, left, left, up\nOutput: up: 4, down: 2, left: 4, right: 2\n\nInput: left, up, left, up, left, down, down\nOutput: up: 2, down: 2, left: 3, right: 0\n\nInput: up, up\nOutput: up: 2, down: 0, left: 0, right: 0\n\nInput: left, down, down, right, left, down, left, left, up, up, right, right, up\nOutput: up: 3, down: 3, left: 4, right: 3\n\nInput: right, down, left, right, left, left, right, up, left\nOutput: up: 1, down: 1, left: 4, right: 3\n\nInput: left, left, left, down, left, right\nOutput: up: 0, down: 1, left: 4, right: 1\n\nInput: up, up, down, left, up, right, right, up, left, left, left, right\nOutput: up: 4, down: 1, left: 4, right: 3\n\n",
+        "prompt": "Input: left, up\nOutput: ",
+        "label": "up: 1, down: 0, left: 1, right: 0"
+    },
+    {
+        "uid": 43,
+        "task": "count_or_navigation",
+        "task_type": "count-middle",
+        "examples": "Input: down, right, up, left, down, up, down, left, left\nOutput: up: 2, down: 3, left: 3, right: 1\n\nInput: right, right, up\nOutput: up: 1, down: 0, left: 0, right: 2\n\nInput: left, left, right, down, down, right, up, down\nOutput: up: 1, down: 3, left: 2, right: 2\n\nInput: down, right\nOutput: up: 0, down: 1, left: 0, right: 1\n\nInput: down, left, left, up, right, down, right, left, right, left, down, right, up, up, down\nOutput: up: 3, down: 4, left: 4, right: 4\n\nInput: down, right, right, left, down, down, right, down, right\nOutput: up: 0, down: 4, left: 1, right: 4\n\nInput: up, down, left, down, down, up\nOutput: up: 2, down: 3, left: 1, right: 0\n\nInput: up, up, left, right, left, right, up\nOutput: up: 3, down: 0, left: 2, right: 2\n\n",
+        "prompt": "Input: up, up, up, down, right, right\nOutput: ",
+        "label": "up: 3, down: 1, left: 0, right: 2"
+    },
+    {
+        "uid": 44,
+        "task": "count_or_navigation",
+        "task_type": "count-middle",
+        "examples": "Input: up, left, right, left, up, down, left, down, left, down\nOutput: up: 2, down: 3, left: 4, right: 1\n\nInput: down, down, left, up, right, up, up, right, down, down\nOutput: up: 3, down: 4, left: 1, right: 2\n\nInput: left, up, left, up, up, up, left, right\nOutput: up: 4, down: 0, left: 3, right: 1\n\nInput: down, up, right, left, down, right\nOutput: up: 1, down: 2, left: 1, right: 2\n\nInput: up, up, down, left, right, down, left, down, up, right, right, right, left, down\nOutput: up: 3, down: 4, left: 3, right: 4\n\nInput: left, up, up, down, left, left, left\nOutput: up: 2, down: 1, left: 4, right: 0\n\nInput: left, left, right\nOutput: up: 0, down: 0, left: 2, right: 1\n\nInput: down, left, up, left, down, up, left, up, right, right, right\nOutput: up: 3, down: 2, left: 3, right: 3\n\n",
+        "prompt": "Input: up, right, down, right, right, down\nOutput: ",
+        "label": "up: 1, down: 2, left: 0, right: 3"
+    },
+    {
+        "uid": 45,
+        "task": "count_or_navigation",
+        "task_type": "count-middle",
+        "examples": "Input: left, right, up, up, down, left, right, right, up, left, left\nOutput: up: 3, down: 1, left: 4, right: 3\n\nInput: right, right\nOutput: up: 0, down: 0, left: 0, right: 2\n\nInput: right, up, left, left, left, down, left\nOutput: up: 1, down: 1, left: 4, right: 1\n\nInput: right, up, down, up, left, right, up, right\nOutput: up: 3, down: 1, left: 1, right: 3\n\nInput: up, left, right, up, up\nOutput: up: 3, down: 0, left: 1, right: 1\n\nInput: left, up, down, left, right, up, up, right, up\nOutput: up: 4, down: 1, left: 2, right: 2\n\nInput: up, up, down, up, left, left, down, up, left, left, down\nOutput: up: 4, down: 3, left: 4, right: 0\n\nInput: left, right, right, up, up\nOutput: up: 2, down: 0, left: 1, right: 2\n\n",
+        "prompt": "Input: left, right, right\nOutput: ",
+        "label": "up: 0, down: 0, left: 1, right: 2"
+    },
+    {
+        "uid": 46,
+        "task": "count_or_navigation",
+        "task_type": "count-middle",
+        "examples": "Input: left, down, down, left, left, up, down, up, left\nOutput: up: 2, down: 3, left: 4, right: 0\n\nInput: down, right, down, right, left, left, right, down, up, up, up, left\nOutput: up: 3, down: 3, left: 3, right: 3\n\nInput: down, left, left, up, left, left, down, right, down, right, right\nOutput: up: 1, down: 3, left: 4, right: 3\n\nInput: down, left, up, left, left, up, up, up\nOutput: up: 4, down: 1, left: 3, right: 0\n\nInput: up, up, left, up, right\nOutput: up: 3, down: 0, left: 1, right: 1\n\nInput: down, left, down, down, up, down, right\nOutput: up: 1, down: 4, left: 1, right: 1\n\nInput: down, left, down, up, up, up, down, up, right, right, down\nOutput: up: 4, down: 4, left: 1, right: 2\n\nInput: left, up, right, right, down\nOutput: up: 1, down: 1, left: 1, right: 2\n\n",
+        "prompt": "Input: down, right, up, left, up, up, down, right, left, right, right, down, left, up\nOutput: ",
+        "label": "up: 4, down: 3, left: 3, right: 4"
+    },
+    {
+        "uid": 47,
+        "task": "count_or_navigation",
+        "task_type": "count-middle",
+        "examples": "Input: down, down, down, left, left\nOutput: up: 0, down: 3, left: 2, right: 0\n\nInput: up, down, right, down, left, right, down, left\nOutput: up: 1, down: 3, left: 2, right: 2\n\nInput: up, up\nOutput: up: 2, down: 0, left: 0, right: 0\n\nInput: right, right, left, right\nOutput: up: 0, down: 0, left: 1, right: 3\n\nInput: left, down, right, up, left\nOutput: up: 1, down: 1, left: 2, right: 1\n\nInput: right, up, left, left, up\nOutput: up: 2, down: 0, left: 2, right: 1\n\nInput: down, down, down, up\nOutput: up: 1, down: 3, left: 0, right: 0\n\nInput: left, left, right, down, left, left\nOutput: up: 0, down: 1, left: 4, right: 1\n\n",
+        "prompt": "Input: left, up, right, right, up, up, down, down, left, right, up, left\nOutput: ",
+        "label": "up: 4, down: 2, left: 3, right: 3"
+    },
+    {
+        "uid": 48,
+        "task": "count_or_navigation",
+        "task_type": "count-middle",
+        "examples": "Input: right, down, left, right, left, down\nOutput: up: 0, down: 2, left: 2, right: 2\n\nInput: down, left, left, left, down, left, down, down\nOutput: up: 0, down: 4, left: 4, right: 0\n\nInput: right, up\nOutput: up: 1, down: 0, left: 0, right: 1\n\nInput: down, up, right, right, right, left, left, up, down, up, up, down\nOutput: up: 4, down: 3, left: 2, right: 3\n\nInput: down, right, right, right, up, up, left, left, left, left, right\nOutput: up: 2, down: 1, left: 4, right: 4\n\nInput: left, left, left, down, down, left, down, up\nOutput: up: 1, down: 3, left: 4, right: 0\n\nInput: down, down, down, left, right, down, right, right, up, up\nOutput: up: 2, down: 4, left: 1, right: 3\n\nInput: left, up, down, down, right, up, left, up, left, up, right, right, left\nOutput: up: 4, down: 2, left: 4, right: 3\n\n",
+        "prompt": "Input: right, right, down, right, left, down, down\nOutput: ",
+        "label": "up: 0, down: 3, left: 1, right: 3"
+    },
+    {
+        "uid": 49,
+        "task": "count_or_navigation",
+        "task_type": "count-middle",
+        "examples": "Input: right, up, left, right, up, right, left, left, up, right\nOutput: up: 3, down: 0, left: 3, right: 4\n\nInput: left, left, down, left, right, right\nOutput: up: 0, down: 1, left: 3, right: 2\n\nInput: up, down, down\nOutput: up: 1, down: 2, left: 0, right: 0\n\nInput: down, right, up, down, down, right, down, up\nOutput: up: 2, down: 4, left: 0, right: 2\n\nInput: up, up, up, left, right, up, left, down\nOutput: up: 4, down: 1, left: 2, right: 1\n\nInput: left\nOutput: up: 0, down: 0, left: 1, right: 0\n\nInput: right, left, left, up, down, left, down, up, up\nOutput: up: 3, down: 2, left: 3, right: 1\n\nInput: up, left, down, left, up, up, down\nOutput: up: 3, down: 2, left: 2, right: 0\n\n",
+        "prompt": "Input: right, down, left, up, right, down, left, down, down, right\nOutput: ",
+        "label": "up: 1, down: 4, left: 2, right: 3"
+    },
+    {
+        "uid": 50,
+        "task": "count_or_navigation",
+        "task_type": "count-middle",
+        "examples": "Input: down, down, right, left, right\nOutput: up: 0, down: 2, left: 1, right: 2\n\nInput: down, left, left, right, up, left, right, up, up, right, left, down\nOutput: up: 3, down: 2, left: 4, right: 3\n\nInput: right, left, left, right, left, up, up\nOutput: up: 2, down: 0, left: 3, right: 2\n\nInput: left, left, down\nOutput: up: 0, down: 1, left: 2, right: 0\n\nInput: left, down, left, down, up, up, down, up, right, right, up, right\nOutput: up: 4, down: 3, left: 2, right: 3\n\nInput: up, right, down, left, down, left, right\nOutput: up: 1, down: 2, left: 2, right: 2\n\nInput: left, up, right\nOutput: up: 1, down: 0, left: 1, right: 1\n\nInput: right, up, left, right, right\nOutput: up: 1, down: 0, left: 1, right: 3\n\n",
+        "prompt": "Input: left, up, up, left, left, up, up\nOutput: ",
+        "label": "up: 4, down: 0, left: 3, right: 0"
+    },
+    {
+        "uid": 51,
+        "task": "count_or_navigation",
+        "task_type": "count-middle",
+        "examples": "Input: up, right, left, up, right, up, up\nOutput: up: 4, down: 0, left: 1, right: 2\n\nInput: up, up, down, left, down\nOutput: up: 2, down: 2, left: 1, right: 0\n\nInput: down, down, right, down\nOutput: up: 0, down: 3, left: 0, right: 1\n\nInput: down, right, right, right, up, left\nOutput: up: 1, down: 1, left: 1, right: 3\n\nInput: left, left, right, left, down\nOutput: up: 0, down: 1, left: 3, right: 1\n\nInput: up, up, up, right, left, right, right, right\nOutput: up: 3, down: 0, left: 1, right: 4\n\nInput: right, left, up, down, left, up, up\nOutput: up: 3, down: 1, left: 2, right: 1\n\nInput: left, up, down, up, up, left, up, right, left, down, down, down, left\nOutput: up: 4, down: 4, left: 4, right: 1\n\n",
+        "prompt": "Input: right, up, up, up, down, up, left, right, right, down\nOutput: ",
+        "label": "up: 4, down: 2, left: 1, right: 3"
+    },
+    {
+        "uid": 52,
+        "task": "count_or_navigation",
+        "task_type": "count-middle",
+        "examples": "Input: left, down, up, up, down, up\nOutput: up: 3, down: 2, left: 1, right: 0\n\nInput: left, left, right, right, left, down, down, down, left\nOutput: up: 0, down: 3, left: 4, right: 2\n\nInput: left, down, left, up, left, right, down, down, right, down\nOutput: up: 1, down: 4, left: 3, right: 2\n\nInput: right, right, right, up, down, down, up, right, up, down, left, down, up\nOutput: up: 4, down: 4, left: 1, right: 4\n\nInput: left, down, down, left, down, left, down\nOutput: up: 0, down: 4, left: 3, right: 0\n\nInput: up, up, right\nOutput: up: 2, down: 0, left: 0, right: 1\n\nInput: left, left, down, down, down, down\nOutput: up: 0, down: 4, left: 2, right: 0\n\nInput: right, up, up, down, left, right, right\nOutput: up: 2, down: 1, left: 1, right: 3\n\n",
+        "prompt": "Input: right, down, right, down, right, down, down, left, right, up\nOutput: ",
+        "label": "up: 1, down: 4, left: 1, right: 4"
+    },
+    {
+        "uid": 53,
+        "task": "count_or_navigation",
+        "task_type": "count-middle",
+        "examples": "Input: down, left, right, left, up, down, right, right, down, right, down\nOutput: up: 1, down: 4, left: 2, right: 4\n\nInput: right, right, right, left, left, up\nOutput: up: 1, down: 0, left: 2, right: 3\n\nInput: down, down, up, up\nOutput: up: 2, down: 2, left: 0, right: 0\n\nInput: up, right, right, up, left, down, up, right, left, left\nOutput: up: 3, down: 1, left: 3, right: 3\n\nInput: left, left\nOutput: up: 0, down: 0, left: 2, right: 0\n\nInput: right, up, right, up\nOutput: up: 2, down: 0, left: 0, right: 2\n\nInput: down, down, down, down, right, right\nOutput: up: 0, down: 4, left: 0, right: 2\n\nInput: right, left, left, right, down, left, right, left, up, up, up\nOutput: up: 3, down: 1, left: 4, right: 3\n\n",
+        "prompt": "Input: left, right, down, down, up, right, down, right, down\nOutput: ",
+        "label": "up: 1, down: 4, left: 1, right: 3"
+    },
+    {
+        "uid": 54,
+        "task": "count_or_navigation",
+        "task_type": "count-middle",
+        "examples": "Input: left, up, left\nOutput: up: 1, down: 0, left: 2, right: 0\n\nInput: down, left, left, left, down, down, right, down, up, up\nOutput: up: 2, down: 4, left: 3, right: 1\n\nInput: right, left, up, left, down, down, right, left, up, down, right\nOutput: up: 2, down: 3, left: 3, right: 3\n\nInput: right, right, left, down, right, left, down, left\nOutput: up: 0, down: 2, left: 3, right: 3\n\nInput: right, down, left, left, left, right, right, down, left\nOutput: up: 0, down: 2, left: 4, right: 3\n\nInput: up, up, left, right, left, right, down, up, left, up\nOutput: up: 4, down: 1, left: 3, right: 2\n\nInput: left, right, up, down\nOutput: up: 1, down: 1, left: 1, right: 1\n\nInput: left, down, down, down, right\nOutput: up: 0, down: 3, left: 1, right: 1\n\n",
+        "prompt": "Input: up, down, up\nOutput: ",
+        "label": "up: 2, down: 1, left: 0, right: 0"
+    },
+    {
+        "uid": 55,
+        "task": "count_or_navigation",
+        "task_type": "count-middle",
+        "examples": "Input: left, left, right, right, left, up, left, right, down, right\nOutput: up: 1, down: 1, left: 4, right: 4\n\nInput: right, down, right, up, left, down, right, left, right, left, down, up, up, left\nOutput: up: 3, down: 3, left: 4, right: 4\n\nInput: down, up, up, right, right, down\nOutput: up: 2, down: 2, left: 0, right: 2\n\nInput: down, up, right, left, right, left, right\nOutput: up: 1, down: 1, left: 2, right: 3\n\nInput: down, down, right, up, down, left, right, right\nOutput: up: 1, down: 3, left: 1, right: 3\n\nInput: left, right, left, right, left, right, down, down, left\nOutput: up: 0, down: 2, left: 4, right: 3\n\nInput: up, up, left, left, right, up\nOutput: up: 3, down: 0, left: 2, right: 1\n\nInput: left, right, right\nOutput: up: 0, down: 0, left: 1, right: 2\n\n",
+        "prompt": "Input: down, down, left, right, down, left, right, left, left, right\nOutput: ",
+        "label": "up: 0, down: 3, left: 4, right: 3"
+    },
+    {
+        "uid": 56,
+        "task": "count_or_navigation",
+        "task_type": "count-middle",
+        "examples": "Input: down, right, left, up, right\nOutput: up: 1, down: 1, left: 1, right: 2\n\nInput: right, right, up, right, right, left, up, down, up\nOutput: up: 3, down: 1, left: 1, right: 4\n\nInput: up, up, left, down, down, left, down, right\nOutput: up: 2, down: 3, left: 2, right: 1\n\nInput: right, down, down, right, down, down, left, right, left, right\nOutput: up: 0, down: 4, left: 2, right: 4\n\nInput: right, left, down, up, right, left, up, down\nOutput: up: 2, down: 2, left: 2, right: 2\n\nInput: up, right, up, right, right, down\nOutput: up: 2, down: 1, left: 0, right: 3\n\nInput: down, down, left, down, left, left, right, down, left\nOutput: up: 0, down: 4, left: 4, right: 1\n\nInput: up, right, down, left, down, right, down, down\nOutput: up: 1, down: 4, left: 1, right: 2\n\n",
+        "prompt": "Input: left, left, right, right, down, up, right, down, left, down, right, left\nOutput: ",
+        "label": "up: 1, down: 3, left: 4, right: 4"
+    },
+    {
+        "uid": 57,
+        "task": "count_or_navigation",
+        "task_type": "count-middle",
+        "examples": "Input: down, down, right, left, left, left, up, right, up, left\nOutput: up: 2, down: 2, left: 4, right: 2\n\nInput: right, left, right, up, right, right, up, up, up, left, left\nOutput: up: 4, down: 0, left: 3, right: 4\n\nInput: down, up, down, left\nOutput: up: 1, down: 2, left: 1, right: 0\n\nInput: right, right, up, up, right\nOutput: up: 2, down: 0, left: 0, right: 3\n\nInput: up, up, up, right, right, left, right, right\nOutput: up: 3, down: 0, left: 1, right: 4\n\nInput: right, left, left, left, left\nOutput: up: 0, down: 0, left: 4, right: 1\n\nInput: left, right\nOutput: up: 0, down: 0, left: 1, right: 1\n\nInput: up, right, up, down, right, right\nOutput: up: 2, down: 1, left: 0, right: 3\n\n",
+        "prompt": "Input: down, right, left, left\nOutput: ",
+        "label": "up: 0, down: 1, left: 2, right: 1"
+    },
+    {
+        "uid": 58,
+        "task": "count_or_navigation",
+        "task_type": "count-middle",
+        "examples": "Input: left, right, down, up, up, down, left, down\nOutput: up: 2, down: 3, left: 2, right: 1\n\nInput: left, right, right, left, up, right, right, left, left\nOutput: up: 1, down: 0, left: 4, right: 4\n\nInput: up, down, right, down, up, down, down, right, right, up, right, up\nOutput: up: 4, down: 4, left: 0, right: 4\n\nInput: up, left, left, up, left, down, right, down, up, up\nOutput: up: 4, down: 2, left: 3, right: 1\n\nInput: up, up, left, left, right, right, left, right, right, left, up\nOutput: up: 3, down: 0, left: 4, right: 4\n\nInput: down, right, left, left, up, down, down, up\nOutput: up: 2, down: 3, left: 2, right: 1\n\nInput: \nOutput: up: 0, down: 0, left: 0, right: 0\n\nInput: left, down, up, up, up, down, down, up\nOutput: up: 4, down: 3, left: 1, right: 0\n\n",
+        "prompt": "Input: left, down, down, left, right, right, right\nOutput: ",
+        "label": "up: 0, down: 2, left: 2, right: 3"
+    },
+    {
+        "uid": 59,
+        "task": "count_or_navigation",
+        "task_type": "count-middle",
+        "examples": "Input: up, up, up\nOutput: up: 3, down: 0, left: 0, right: 0\n\nInput: down, left, right, right, down, up, right, left\nOutput: up: 1, down: 2, left: 2, right: 3\n\nInput: right, down, down, down, left, up, up, up, right, left, left\nOutput: up: 3, down: 3, left: 3, right: 2\n\nInput: left, down, up, left, left, right, up, right, up, right, down, down, left, up\nOutput: up: 4, down: 3, left: 4, right: 3\n\nInput: down, left, left, down\nOutput: up: 0, down: 2, left: 2, right: 0\n\nInput: down, up, up, up, left, left, left, down, down, up, left, down\nOutput: up: 4, down: 4, left: 4, right: 0\n\nInput: left, left, right, left, down, left, right, right\nOutput: up: 0, down: 1, left: 4, right: 3\n\nInput: up, down, up, right, right, right, right, down\nOutput: up: 2, down: 2, left: 0, right: 4\n\n",
+        "prompt": "Input: left, right, down, down, right, right, left, up, up, up\nOutput: ",
+        "label": "up: 3, down: 2, left: 2, right: 3"
+    },
+    {
+        "uid": 60,
+        "task": "count_or_navigation",
+        "task_type": "navigation-easy",
+        "examples": "Input: up, up\nOutput: up: 2\n\nInput: \nOutput: up: 0\n\nInput: up, up, down, down, down, up\nOutput: up: 0\n\nInput: down, up, up, up, down, down, down, up\nOutput: up: 0\n\nInput: up, down, down, down\nOutput: down: 2\n\nInput: up, down, down, down, up\nOutput: down: 1\n\nInput: down, down\nOutput: down: 2\n\nInput: up, down, down, up, down, down\nOutput: down: 2\n\n",
+        "prompt": "Input: down, up, up, up, down, down\nOutput: ",
+        "label": "up: 0"
+    },
+    {
+        "uid": 61,
+        "task": "count_or_navigation",
+        "task_type": "navigation-easy",
+        "examples": "Input: up, up, down, up, up\nOutput: up: 3\n\nInput: down, up, up, up\nOutput: up: 2\n\nInput: down, down, down, down\nOutput: down: 4\n\nInput: down, up, down, down, down, up, up, up\nOutput: up: 0\n\nInput: up, up, up, down, down, up, down\nOutput: up: 1\n\nInput: down, down, down\nOutput: down: 3\n\nInput: up, down, down, up, up, down, up\nOutput: up: 1\n\nInput: up, down, down, down, up\nOutput: down: 1\n\n",
+        "prompt": "Input: up, up, up, down\nOutput: ",
+        "label": "up: 2"
+    },
+    {
+        "uid": 62,
+        "task": "count_or_navigation",
+        "task_type": "navigation-easy",
+        "examples": "Input: up, up, down, up, up, down\nOutput: up: 2\n\nInput: down, up, down, up, up, up, down, down\nOutput: up: 0\n\nInput: up, up, down, down, up, up\nOutput: up: 2\n\nInput: up\nOutput: up: 1\n\nInput: down\nOutput: down: 1\n\nInput: up, down, up\nOutput: up: 1\n\nInput: up\nOutput: up: 1\n\nInput: up, up, down\nOutput: up: 1\n\n",
+        "prompt": "Input: up, up, up, up, down, down\nOutput: ",
+        "label": "up: 2"
+    },
+    {
+        "uid": 63,
+        "task": "count_or_navigation",
+        "task_type": "navigation-easy",
+        "examples": "Input: down, down, down, up, down\nOutput: down: 3\n\nInput: up, up, down, up, down\nOutput: up: 1\n\nInput: up, down, down, down, down\nOutput: down: 3\n\nInput: down, up, down, up, up, down, down, up\nOutput: up: 0\n\nInput: down\nOutput: down: 1\n\nInput: down, down, down, down, up\nOutput: down: 3\n\nInput: up, down, down, down, up, down\nOutput: down: 2\n\nInput: down, down\nOutput: down: 2\n\n",
+        "prompt": "Input: down, down, down, up, up\nOutput: ",
+        "label": "down: 1"
+    },
+    {
+        "uid": 64,
+        "task": "count_or_navigation",
+        "task_type": "navigation-easy",
+        "examples": "Input: down, up, down\nOutput: down: 1\n\nInput: down, up, up, up, down, up\nOutput: up: 2\n\nInput: down, up, up, up, up\nOutput: up: 3\n\nInput: up, down, down, up, up, down, down\nOutput: down: 1\n\nInput: down, up, up, down\nOutput: up: 0\n\nInput: up, up, up, down, up, down, down, down\nOutput: up: 0\n\nInput: up, down, up, up\nOutput: up: 2\n\nInput: up, up, up\nOutput: up: 3\n\n",
+        "prompt": "Input: up\nOutput: ",
+        "label": "up: 1"
+    },
+    {
+        "uid": 65,
+        "task": "count_or_navigation",
+        "task_type": "navigation-easy",
+        "examples": "Input: up, up, up\nOutput: up: 3\n\nInput: down, down, down, up, down, up\nOutput: down: 2\n\nInput: down\nOutput: down: 1\n\nInput: down, down, down, up\nOutput: down: 2\n\nInput: down\nOutput: down: 1\n\nInput: down, down, down\nOutput: down: 3\n\nInput: \nOutput: up: 0\n\nInput: \nOutput: up: 0\n\n",
+        "prompt": "Input: down, up, up, up, down, up\nOutput: ",
+        "label": "up: 2"
+    },
+    {
+        "uid": 66,
+        "task": "count_or_navigation",
+        "task_type": "navigation-easy",
+        "examples": "Input: up, down, up, up, up\nOutput: up: 3\n\nInput: up, down, down, down, up, up\nOutput: up: 0\n\nInput: up, up, up, up\nOutput: up: 4\n\nInput: down, down\nOutput: down: 2\n\nInput: down, down, up, up\nOutput: up: 0\n\nInput: up, up, down, down, up, down\nOutput: up: 0\n\nInput: down, up, down, down\nOutput: down: 2\n\nInput: up, down, down, up\nOutput: up: 0\n\n",
+        "prompt": "Input: down, up, down\nOutput: ",
+        "label": "down: 1"
+    },
+    {
+        "uid": 67,
+        "task": "count_or_navigation",
+        "task_type": "navigation-easy",
+        "examples": "Input: down, down, down, down\nOutput: down: 4\n\nInput: up, up, down\nOutput: up: 1\n\nInput: down, down, up, down\nOutput: down: 2\n\nInput: down, down, up, down, down\nOutput: down: 3\n\nInput: up, up, up, up\nOutput: up: 4\n\nInput: up, up\nOutput: up: 2\n\nInput: down\nOutput: down: 1\n\nInput: down, up, up, down, up, down, up\nOutput: up: 1\n\n",
+        "prompt": "Input: \nOutput: ",
+        "label": "up: 0"
+    },
+    {
+        "uid": 68,
+        "task": "count_or_navigation",
+        "task_type": "navigation-easy",
+        "examples": "Input: up, up, down, up, down\nOutput: up: 1\n\nInput: down, down, up, up, up, up, down, down\nOutput: up: 0\n\nInput: up, down\nOutput: up: 0\n\nInput: up, down, down, up\nOutput: up: 0\n\nInput: down, up, up, down, up, down\nOutput: up: 0\n\nInput: down, down, down, down, up\nOutput: down: 3\n\nInput: up, up\nOutput: up: 2\n\nInput: down, down, down, down\nOutput: down: 4\n\n",
+        "prompt": "Input: up, up, up, up\nOutput: ",
+        "label": "up: 4"
+    },
+    {
+        "uid": 69,
+        "task": "count_or_navigation",
+        "task_type": "navigation-easy",
+        "examples": "Input: down, up, down\nOutput: down: 1\n\nInput: down, up, down, up, up, up\nOutput: up: 2\n\nInput: up, up, up, up\nOutput: up: 4\n\nInput: down, up, up, up, up\nOutput: up: 3\n\nInput: up, down, down, up, up\nOutput: up: 1\n\nInput: down, down\nOutput: down: 2\n\nInput: up\nOutput: up: 1\n\nInput: up, down, down, down, down\nOutput: down: 3\n\n",
+        "prompt": "Input: down, up, up, up, up\nOutput: ",
+        "label": "up: 3"
+    },
+    {
+        "uid": 70,
+        "task": "count_or_navigation",
+        "task_type": "navigation-easy",
+        "examples": "Input: up, up\nOutput: up: 2\n\nInput: up, down, down, up, down, down\nOutput: down: 2\n\nInput: down, down, up, down, up, down\nOutput: down: 2\n\nInput: up, up, down, down, up, down, up\nOutput: up: 1\n\nInput: down, up, up, up, up\nOutput: up: 3\n\nInput: up, up, up, down, down, up\nOutput: up: 2\n\nInput: up, up, up, up\nOutput: up: 4\n\nInput: down, down, down\nOutput: down: 3\n\n",
+        "prompt": "Input: \nOutput: ",
+        "label": "up: 0"
+    },
+    {
+        "uid": 71,
+        "task": "count_or_navigation",
+        "task_type": "navigation-easy",
+        "examples": "Input: down\nOutput: down: 1\n\nInput: down\nOutput: down: 1\n\nInput: down, up, down, up, down, down, up, up\nOutput: up: 0\n\nInput: down\nOutput: down: 1\n\nInput: up, up, down\nOutput: up: 1\n\nInput: down, up, up, down, up, down, down, up\nOutput: up: 0\n\nInput: up, up, down, down, up, up, down\nOutput: up: 1\n\nInput: up, up, up, up, down\nOutput: up: 3\n\n",
+        "prompt": "Input: up, down, up, up\nOutput: ",
+        "label": "up: 2"
+    },
+    {
+        "uid": 72,
+        "task": "count_or_navigation",
+        "task_type": "navigation-easy",
+        "examples": "Input: \nOutput: up: 0\n\nInput: down, down, up, down, down\nOutput: down: 3\n\nInput: down, down, down, up\nOutput: down: 2\n\nInput: down, down, down\nOutput: down: 3\n\nInput: up, down, up, down, up, down, down, up\nOutput: up: 0\n\nInput: down, up, down, up, down, up, up\nOutput: up: 1\n\nInput: down, up, up, up\nOutput: up: 2\n\nInput: down, down\nOutput: down: 2\n\n",
+        "prompt": "Input: up, down, down, down, up, up, down\nOutput: ",
+        "label": "down: 1"
+    },
+    {
+        "uid": 73,
+        "task": "count_or_navigation",
+        "task_type": "navigation-easy",
+        "examples": "Input: down, down, up, down, up, up, down, up\nOutput: up: 0\n\nInput: down, up, down, up, up\nOutput: up: 1\n\nInput: up, up, down, down, down, down\nOutput: down: 2\n\nInput: up, up, up, down\nOutput: up: 2\n\nInput: up, down, down\nOutput: down: 1\n\nInput: up, up, down, down\nOutput: up: 0\n\nInput: up\nOutput: up: 1\n\nInput: down, down, up, down\nOutput: down: 2\n\n",
+        "prompt": "Input: up, down, up\nOutput: ",
+        "label": "up: 1"
+    },
+    {
+        "uid": 74,
+        "task": "count_or_navigation",
+        "task_type": "navigation-easy",
+        "examples": "Input: \nOutput: up: 0\n\nInput: down, down, up, down\nOutput: down: 2\n\nInput: down, up, up\nOutput: up: 1\n\nInput: up, up, up, up\nOutput: up: 4\n\nInput: up, up, up, up\nOutput: up: 4\n\nInput: up, up, up\nOutput: up: 3\n\nInput: up\nOutput: up: 1\n\nInput: down, down, down, up, up, up, down, up\nOutput: up: 0\n\n",
+        "prompt": "Input: down, up, up, up, down, up, down\nOutput: ",
+        "label": "up: 1"
+    },
+    {
+        "uid": 75,
+        "task": "count_or_navigation",
+        "task_type": "navigation-easy",
+        "examples": "Input: down, up, up, down, down\nOutput: down: 1\n\nInput: up, up, up, up\nOutput: up: 4\n\nInput: up, down, up, down, up, down, up, down\nOutput: up: 0\n\nInput: up, up, up, up\nOutput: up: 4\n\nInput: up, up, up, up\nOutput: up: 4\n\nInput: up, up\nOutput: up: 2\n\nInput: up, up, up, down, down, up, down, down\nOutput: up: 0\n\nInput: up, up, down, down, up, down\nOutput: up: 0\n\n",
+        "prompt": "Input: up\nOutput: ",
+        "label": "up: 1"
+    },
+    {
+        "uid": 76,
+        "task": "count_or_navigation",
+        "task_type": "navigation-easy",
+        "examples": "Input: up, down, down\nOutput: down: 1\n\nInput: up, down, down, down, up, up, down, up\nOutput: up: 0\n\nInput: up, up\nOutput: up: 2\n\nInput: up, down, down, up, up\nOutput: up: 1\n\nInput: up, down\nOutput: up: 0\n\nInput: down, up\nOutput: up: 0\n\nInput: up, down, up\nOutput: up: 1\n\nInput: down, down, up, down, down\nOutput: down: 3\n\n",
+        "prompt": "Input: down, down, down\nOutput: ",
+        "label": "down: 3"
+    },
+    {
+        "uid": 77,
+        "task": "count_or_navigation",
+        "task_type": "navigation-easy",
+        "examples": "Input: up, up, up, up\nOutput: up: 4\n\nInput: up, down, down, up, down, up, down\nOutput: down: 1\n\nInput: up, down, up, up\nOutput: up: 2\n\nInput: up, down, down, down, up, down, up\nOutput: down: 1\n\nInput: up, up, up\nOutput: up: 3\n\nInput: up, up\nOutput: up: 2\n\nInput: down, down, down, up\nOutput: down: 2\n\nInput: up, down, up, up, down, up\nOutput: up: 2\n\n",
+        "prompt": "Input: down, down, down\nOutput: ",
+        "label": "down: 3"
+    },
+    {
+        "uid": 78,
+        "task": "count_or_navigation",
+        "task_type": "navigation-easy",
+        "examples": "Input: up, down, up, down, up\nOutput: up: 1\n\nInput: down, down, up, down, down\nOutput: down: 3\n\nInput: down, down, up, down, down\nOutput: down: 3\n\nInput: down, down, down, up\nOutput: down: 2\n\nInput: up, down, up, up\nOutput: up: 2\n\nInput: up, down, down, down, up, down\nOutput: down: 2\n\nInput: down\nOutput: down: 1\n\nInput: down, up, down, down, up\nOutput: down: 1\n\n",
+        "prompt": "Input: down, up, down, down, up, down, up\nOutput: ",
+        "label": "down: 1"
+    },
+    {
+        "uid": 79,
+        "task": "count_or_navigation",
+        "task_type": "navigation-easy",
+        "examples": "Input: up, up\nOutput: up: 2\n\nInput: down, down\nOutput: down: 2\n\nInput: up, up, up, down, down, down, down, up\nOutput: up: 0\n\nInput: up, up, up\nOutput: up: 3\n\nInput: up, down, up, up\nOutput: up: 2\n\nInput: up, up, down, down, up, down, down\nOutput: down: 1\n\nInput: up, down, down\nOutput: down: 1\n\nInput: up, down, up, down, down, down\nOutput: down: 2\n\n",
+        "prompt": "Input: up, up, down, down\nOutput: ",
+        "label": "up: 0"
+    },
+    {
+        "uid": 80,
+        "task": "count_or_navigation",
+        "task_type": "navigation-easy",
+        "examples": "Input: up, up\nOutput: up: 2\n\nInput: down, down, down, up\nOutput: down: 2\n\nInput: up, up, down, down, down, down, up\nOutput: down: 1\n\nInput: up, down, up, up, up\nOutput: up: 3\n\nInput: down, up, down\nOutput: down: 1\n\nInput: down, down, down, up, down\nOutput: down: 3\n\nInput: up, up, down, down, down\nOutput: down: 1\n\nInput: up, down, down, down, down\nOutput: down: 3\n\n",
+        "prompt": "Input: down, up, down, up, down, up, up, down\nOutput: ",
+        "label": "up: 0"
+    },
+    {
+        "uid": 81,
+        "task": "count_or_navigation",
+        "task_type": "navigation-easy",
+        "examples": "Input: down, up, up, down\nOutput: up: 0\n\nInput: up, up\nOutput: up: 2\n\nInput: up, up, up, down, up\nOutput: up: 3\n\nInput: down, down, up, down, up, up\nOutput: up: 0\n\nInput: down, down, down, down\nOutput: down: 4\n\nInput: up, up, down, down, down, up, up\nOutput: up: 1\n\nInput: up, up\nOutput: up: 2\n\nInput: up, down, down, down, down\nOutput: down: 3\n\n",
+        "prompt": "Input: down, down, up, up, down, up, up, down\nOutput: ",
+        "label": "up: 0"
+    },
+    {
+        "uid": 82,
+        "task": "count_or_navigation",
+        "task_type": "navigation-easy",
+        "examples": "Input: up, up\nOutput: up: 2\n\nInput: down, up, up, up, down, down, up\nOutput: up: 1\n\nInput: down\nOutput: down: 1\n\nInput: down, down, down, down\nOutput: down: 4\n\nInput: up, down, down, up\nOutput: up: 0\n\nInput: down\nOutput: down: 1\n\nInput: down\nOutput: down: 1\n\nInput: down, down, down\nOutput: down: 3\n\n",
+        "prompt": "Input: up, up, down, up\nOutput: ",
+        "label": "up: 2"
+    },
+    {
+        "uid": 83,
+        "task": "count_or_navigation",
+        "task_type": "navigation-easy",
+        "examples": "Input: up, up\nOutput: up: 2\n\nInput: down, down\nOutput: down: 2\n\nInput: down, down, down, down\nOutput: down: 4\n\nInput: up, down, down, down, up\nOutput: down: 1\n\nInput: up, down, down, down, up, up\nOutput: up: 0\n\nInput: up, up, up, down, up\nOutput: up: 3\n\nInput: up, up, down\nOutput: up: 1\n\nInput: down, up, down, down, down, up, up, up\nOutput: up: 0\n\n",
+        "prompt": "Input: down, up, up, up, down\nOutput: ",
+        "label": "up: 1"
+    },
+    {
+        "uid": 84,
+        "task": "count_or_navigation",
+        "task_type": "navigation-easy",
+        "examples": "Input: down, down, up, down\nOutput: down: 2\n\nInput: down, down, down, up, down, up\nOutput: down: 2\n\nInput: down, up, up, up, up, down, down\nOutput: up: 1\n\nInput: down, down, down, up\nOutput: down: 2\n\nInput: \nOutput: up: 0\n\nInput: up, up, down\nOutput: up: 1\n\nInput: up, down, down, down\nOutput: down: 2\n\nInput: down, up, up, up\nOutput: up: 2\n\n",
+        "prompt": "Input: up\nOutput: ",
+        "label": "up: 1"
+    },
+    {
+        "uid": 85,
+        "task": "count_or_navigation",
+        "task_type": "navigation-easy",
+        "examples": "Input: up, down, up, down, up, down\nOutput: up: 0\n\nInput: up, up, down, down, up, up\nOutput: up: 2\n\nInput: down, down, down, down\nOutput: down: 4\n\nInput: down, up, down, up, down, down\nOutput: down: 2\n\nInput: up\nOutput: up: 1\n\nInput: down, up, up, up, up, down\nOutput: up: 2\n\nInput: up, down, up, down, up, down, up\nOutput: up: 1\n\nInput: up, down, down, up, down\nOutput: down: 1\n\n",
+        "prompt": "Input: down, up, up\nOutput: ",
+        "label": "up: 1"
+    },
+    {
+        "uid": 86,
+        "task": "count_or_navigation",
+        "task_type": "navigation-easy",
+        "examples": "Input: up\nOutput: up: 1\n\nInput: up\nOutput: up: 1\n\nInput: up, up, down, up\nOutput: up: 2\n\nInput: down, up, up, up, down, down, down\nOutput: down: 1\n\nInput: down, down, down, down, up\nOutput: down: 3\n\nInput: down, down, down\nOutput: down: 3\n\nInput: up, up, down, down, down, down\nOutput: down: 2\n\nInput: up, up, up, down, up, down\nOutput: up: 2\n\n",
+        "prompt": "Input: down\nOutput: ",
+        "label": "down: 1"
+    },
+    {
+        "uid": 87,
+        "task": "count_or_navigation",
+        "task_type": "navigation-easy",
+        "examples": "Input: up, up, up, down, down, down, up\nOutput: up: 1\n\nInput: down, up, up, up, down, up, down, down\nOutput: up: 0\n\nInput: up, up, up\nOutput: up: 3\n\nInput: up, down, down, up, up, up, down\nOutput: up: 1\n\nInput: up, up, down, down, up, up\nOutput: up: 2\n\nInput: up, up, up, up, down\nOutput: up: 3\n\nInput: up, down, up, down, down\nOutput: down: 1\n\nInput: down, down, down, up, down, up\nOutput: down: 2\n\n",
+        "prompt": "Input: down, down, down, down, up\nOutput: ",
+        "label": "down: 3"
+    },
+    {
+        "uid": 88,
+        "task": "count_or_navigation",
+        "task_type": "navigation-easy",
+        "examples": "Input: down, down\nOutput: down: 2\n\nInput: \nOutput: up: 0\n\nInput: up, up, down, down, up\nOutput: up: 1\n\nInput: up, up, down, up, up\nOutput: up: 3\n\nInput: up, down, down, up, up, up, down\nOutput: up: 1\n\nInput: down, up, down, up, down, up, down\nOutput: down: 1\n\nInput: \nOutput: up: 0\n\nInput: down, up, up, down\nOutput: up: 0\n\n",
+        "prompt": "Input: down, up, up\nOutput: ",
+        "label": "up: 1"
+    },
+    {
+        "uid": 89,
+        "task": "count_or_navigation",
+        "task_type": "navigation-easy",
+        "examples": "Input: up, up, up, up\nOutput: up: 4\n\nInput: down, down, up, down, up, down\nOutput: down: 2\n\nInput: down, up, down, up, up, down, down\nOutput: down: 1\n\nInput: up, up, down, up\nOutput: up: 2\n\nInput: up, down, up, down, down, up, down\nOutput: down: 1\n\nInput: up, up, down, down, up, down, down\nOutput: down: 1\n\nInput: down, up, up, up, down, down\nOutput: up: 0\n\nInput: up\nOutput: up: 1\n\n",
+        "prompt": "Input: down, down, down, down, up\nOutput: ",
+        "label": "down: 3"
+    },
+    {
+        "uid": 90,
+        "task": "count_or_navigation",
+        "task_type": "navigation-middle",
+        "examples": "Input: right, right, right, left, up, up, left, down, right\nOutput: up: 1, right: 2\n\nInput: up\nOutput: up: 1, left: 0\n\nInput: down, down, down, right, right, left, down, up\nOutput: down: 3, right: 1\n\nInput: down, right, right, left, right, right, down\nOutput: down: 2, right: 3\n\nInput: up, right, down, right, right, up, up, up\nOutput: up: 3, right: 3\n\nInput: down, down, down\nOutput: down: 3, left: 0\n\nInput: right, up, up, right\nOutput: up: 2, right: 2\n\nInput: left, up, up, up, left, right, right, up, right\nOutput: up: 4, right: 1\n\n",
+        "prompt": "Input: down, up, down, left, right, right, down, right, left, right, up\nOutput: ",
+        "label": "down: 1, right: 2"
+    },
+    {
+        "uid": 91,
+        "task": "count_or_navigation",
+        "task_type": "navigation-middle",
+        "examples": "Input: down, right, up, left, up, down, left\nOutput: up: 0, left: 1\n\nInput: left, down, up, up, up, right, up, down\nOutput: up: 2, left: 0\n\nInput: left, down, up, up, right, right, down, down, down, up, right, up\nOutput: up: 0, right: 2\n\nInput: down, up, down, down, right, up, up, up, left, down\nOutput: up: 0, left: 0\n\nInput: down, down, up, up, down, up, right, up, down\nOutput: up: 0, right: 1\n\nInput: down, down, up, right, left, up, up\nOutput: up: 1, left: 0\n\nInput: right, down, up, down, down, left, left, up, down, up, left, up, left\nOutput: up: 0, left: 3\n\nInput: left, right, left, left, right, up, down, down, right, down\nOutput: down: 2, left: 0\n\n",
+        "prompt": "Input: right, left, down, left, right, left, left\nOutput: ",
+        "label": "down: 1, left: 2"
+    },
+    {
+        "uid": 92,
+        "task": "count_or_navigation",
+        "task_type": "navigation-middle",
+        "examples": "Input: up, down, left, left, right, up, down, right, up, right, down, up\nOutput: up: 1, right: 1\n\nInput: down, up, up, up, down, right, down\nOutput: up: 0, right: 1\n\nInput: right, up, up, left, up, right, up\nOutput: up: 4, right: 1\n\nInput: up, down, left, up, left, left, down, up, left\nOutput: up: 1, left: 4\n\nInput: down, left, down, left, down, up, down, left, right, left\nOutput: down: 3, left: 3\n\nInput: left, up, left, up, up, right, right\nOutput: up: 3, left: 0\n\nInput: right, up, right, up, right, down, down, up, right\nOutput: up: 1, right: 4\n\nInput: down, up, right, up, up, left, up\nOutput: up: 3, left: 0\n\n",
+        "prompt": "Input: left, down, up\nOutput: ",
+        "label": "up: 0, left: 1"
+    },
+    {
+        "uid": 93,
+        "task": "count_or_navigation",
+        "task_type": "navigation-middle",
+        "examples": "Input: right, left, down, right, down, left, left, down, right\nOutput: down: 3, left: 0\n\nInput: left, down, left, up, left, up, down, down, up\nOutput: up: 0, left: 3\n\nInput: left, left, up\nOutput: up: 1, left: 2\n\nInput: right, down, up, left, down, down, left, up, down, right, up, up\nOutput: up: 0, left: 0\n\nInput: right, left, left, right\nOutput: up: 0, left: 0\n\nInput: down, up, down, down, right, down, up, up, right\nOutput: down: 1, right: 2\n\nInput: right, right, right, up, down, left, up, right, up, up\nOutput: up: 3, right: 3\n\nInput: up, left, right, right, down, up, down, right, left, left, right, left, down, down\nOutput: down: 2, left: 0\n\n",
+        "prompt": "Input: down, down, up, up, left, up\nOutput: ",
+        "label": "up: 1, left: 1"
+    },
+    {
+        "uid": 94,
+        "task": "count_or_navigation",
+        "task_type": "navigation-middle",
+        "examples": "Input: up, right, right, right, up, up, left, right\nOutput: up: 3, right: 3\n\nInput: right, right, left, left, down\nOutput: down: 1, left: 0\n\nInput: left, left, right, right\nOutput: up: 0, left: 0\n\nInput: down, left, up, right, left, right\nOutput: up: 0, left: 0\n\nInput: up, right, down, right, up, left, right, up, left, right, left\nOutput: up: 2, right: 1\n\nInput: right, left, down, down, left, up, right, down, down\nOutput: down: 3, left: 0\n\nInput: down, left, right, left, down, up, up, up, down, down, up, left\nOutput: up: 0, left: 2\n\nInput: right, down, right, left, right, up, right, up, up, down\nOutput: up: 1, right: 3\n\n",
+        "prompt": "Input: up\nOutput: ",
+        "label": "up: 1, left: 0"
+    },
+    {
+        "uid": 95,
+        "task": "count_or_navigation",
+        "task_type": "navigation-middle",
+        "examples": "Input: up, up, down, up, left, up\nOutput: up: 3, left: 1\n\nInput: right, down, down, right, down, down\nOutput: down: 4, right: 2\n\nInput: down, down, left, right, left, down, down\nOutput: down: 4, left: 1\n\nInput: right, left, left, up, up, up\nOutput: up: 3, left: 1\n\nInput: down, right, left, up, right, down, right, right, down, down, left\nOutput: down: 3, right: 2\n\nInput: up, down, up, down, right, down, up, up\nOutput: up: 1, right: 1\n\nInput: down, down, down, left, right, left, left\nOutput: down: 3, left: 2\n\nInput: down, right, right, down, up, right, left, right, up\nOutput: up: 0, right: 3\n\n",
+        "prompt": "Input: up, down, up, down, up, down, right, left, down\nOutput: ",
+        "label": "down: 1, left: 0"
+    },
+    {
+        "uid": 96,
+        "task": "count_or_navigation",
+        "task_type": "navigation-middle",
+        "examples": "Input: left, right, left, left, down, down, right, right, up, up\nOutput: up: 0, left: 0\n\nInput: down, left, down, right, up, down, down, left, left, up, left\nOutput: down: 2, left: 3\n\nInput: down, up, down, left, up, down, right, up, left, down, left\nOutput: down: 1, left: 2\n\nInput: left, up, down, right, right, down, down, right, left, up, up, down, right\nOutput: down: 1, right: 2\n\nInput: right, up, right, up, down, left, left, right, up\nOutput: up: 2, right: 1\n\nInput: right, right, right, left, down, right\nOutput: down: 1, right: 3\n\nInput: up, right, up, down, down, up, down, left, down, left, right, right\nOutput: down: 1, right: 1\n\nInput: right, down, right, down, down, down, right, right\nOutput: down: 4, right: 4\n\n",
+        "prompt": "Input: right, up, up, left, left, down, left, down, down\nOutput: ",
+        "label": "down: 1, left: 2"
+    },
+    {
+        "uid": 97,
+        "task": "count_or_navigation",
+        "task_type": "navigation-middle",
+        "examples": "Input: up, left, down, right, left, up, right, down, down, right, left\nOutput: down: 1, left: 0\n\nInput: down, left, down, right, up\nOutput: down: 1, left: 0\n\nInput: up, left, down, left, down, left, right, down\nOutput: down: 2, left: 2\n\nInput: down, right, up, up, up, right, up, left, right, left, right, left\nOutput: up: 3, right: 1\n\nInput: right, down, left, down, down, down, right, up, left, right\nOutput: down: 3, right: 1\n\nInput: left, left, right, right, down, left, left\nOutput: down: 1, left: 2\n\nInput: left, down, down, left, down, right, left, left, down, right\nOutput: down: 4, left: 2\n\nInput: up, up, left, left, left, right, down, up, up, right, down\nOutput: up: 2, left: 1\n\n",
+        "prompt": "Input: left, left, down, down, down, down\nOutput: ",
+        "label": "down: 4, left: 2"
+    },
+    {
+        "uid": 98,
+        "task": "count_or_navigation",
+        "task_type": "navigation-middle",
+        "examples": "Input: up, down, right, right, up, down, right, right, left\nOutput: up: 0, right: 3\n\nInput: right, left, left, up, right, up, left, up, down, up\nOutput: up: 3, left: 1\n\nInput: down, down, up, right, down, left, down, right, right\nOutput: down: 3, right: 2\n\nInput: down, down\nOutput: down: 2, left: 0\n\nInput: up, up, up, down, right, right, down, left, down, left, left\nOutput: up: 0, left: 1\n\nInput: right, up, up, up, down, up, down, down, right\nOutput: up: 1, right: 2\n\nInput: left, up, up, down, down, left, down, right, up, right, down\nOutput: down: 1, left: 0\n\nInput: right, up, up, down, left, left, left, up, left, up, right\nOutput: up: 3, left: 2\n\n",
+        "prompt": "Input: left, left, left, up, left, up, up, up, down\nOutput: ",
+        "label": "up: 3, left: 4"
+    },
+    {
+        "uid": 99,
+        "task": "count_or_navigation",
+        "task_type": "navigation-middle",
+        "examples": "Input: right, right, down, down, right, left, down, right, down\nOutput: down: 4, right: 3\n\nInput: right, left, left, down, right\nOutput: down: 1, left: 0\n\nInput: left, left, right, down, down, up, right, up, down\nOutput: down: 1, left: 0\n\nInput: down, right, up, right, left, right, down, up\nOutput: up: 0, right: 2\n\nInput: right, left, left, right, down, right, left, left\nOutput: down: 1, left: 1\n\nInput: \nOutput: up: 0, left: 0\n\nInput: up, up, left, down, up, left, down, up, left\nOutput: up: 2, left: 3\n\nInput: right, down, up, right, left, right, left, up\nOutput: up: 1, right: 1\n\n",
+        "prompt": "Input: left, right, left, right, up, up, up, left, up\nOutput: ",
+        "label": "up: 4, left: 1"
+    },
+    {
+        "uid": 100,
+        "task": "count_or_navigation",
+        "task_type": "navigation-middle",
+        "examples": "Input: left, up, down, down, up, left, left\nOutput: up: 0, left: 3\n\nInput: down, left, right, down, left, down\nOutput: down: 3, left: 1\n\nInput: down, down, right, up, right, up, down\nOutput: down: 1, right: 2\n\nInput: left, left, left, up, right, left\nOutput: up: 1, left: 3\n\nInput: up, down, down, down, left, left, up, left, down, up\nOutput: down: 1, left: 3\n\nInput: up, down, down, left, left, left, down, up, up, up, left, right\nOutput: up: 1, left: 3\n\nInput: down, up, right\nOutput: up: 0, right: 1\n\nInput: right, left, right, left, right, up, right, up, left\nOutput: up: 2, right: 1\n\n",
+        "prompt": "Input: down, down, down, left, down\nOutput: ",
+        "label": "down: 4, left: 1"
+    },
+    {
+        "uid": 101,
+        "task": "count_or_navigation",
+        "task_type": "navigation-middle",
+        "examples": "Input: right, right, right, right, up, down, up\nOutput: up: 1, right: 4\n\nInput: right, right, right, left, up, up, left, down, right, up\nOutput: up: 2, right: 2\n\nInput: left, left, left, up\nOutput: up: 1, left: 3\n\nInput: left, down, left, down, right, right, down, down, right\nOutput: down: 4, right: 1\n\nInput: down, right, down, right, right, up, down, right, down\nOutput: down: 3, right: 4\n\nInput: up, left, up, up, up, down\nOutput: up: 3, left: 1\n\nInput: left, down, up, left, up, up\nOutput: up: 2, left: 2\n\nInput: down, left, up, up, up\nOutput: up: 2, left: 1\n\n",
+        "prompt": "Input: left, right, down, left, left, right\nOutput: ",
+        "label": "down: 1, left: 1"
+    },
+    {
+        "uid": 102,
+        "task": "count_or_navigation",
+        "task_type": "navigation-middle",
+        "examples": "Input: right, right, down, right, left, left, left, right\nOutput: down: 1, right: 1\n\nInput: right, right, up, right, left\nOutput: up: 1, right: 2\n\nInput: left, up, left, down, up, left, down, down, up, down\nOutput: down: 1, left: 3\n\nInput: right, right, left, left, up, up, up, down\nOutput: up: 2, left: 0\n\nInput: left, down, right, right, left, right, down, left, down\nOutput: down: 3, left: 0\n\nInput: up, up, down, up, down, up, left, down, down\nOutput: up: 0, left: 1\n\nInput: down, down, right, left, down\nOutput: down: 3, left: 0\n\nInput: left, up, up, left, down, up, left, up, left\nOutput: up: 3, left: 4\n\n",
+        "prompt": "Input: up, down, left, right, left, right, down, right, up, up, right\nOutput: ",
+        "label": "up: 1, right: 2"
+    },
+    {
+        "uid": 103,
+        "task": "count_or_navigation",
+        "task_type": "navigation-middle",
+        "examples": "Input: up, down, up\nOutput: up: 1, left: 0\n\nInput: right, left, left, right, down, right, down, left, down, right, left, up\nOutput: down: 2, left: 0\n\nInput: down, up, left, up, left, up, left, left, down\nOutput: up: 1, left: 4\n\nInput: down, right, right, right, right, up, up, up, up, down\nOutput: up: 2, right: 4\n\nInput: right, right, right, up, down, down, right, down, down\nOutput: down: 3, right: 4\n\nInput: up, right, up, right, up, down, up, left\nOutput: up: 3, right: 1\n\nInput: up, left, right, down, left, left, down, up, right, right\nOutput: up: 0, left: 0\n\nInput: left, left, left, down\nOutput: down: 1, left: 3\n\n",
+        "prompt": "Input: up, right, left, right, right, up, left, up, left\nOutput: ",
+        "label": "up: 3, left: 0"
+    },
+    {
+        "uid": 104,
+        "task": "count_or_navigation",
+        "task_type": "navigation-middle",
+        "examples": "Input: down, right, down, down, up, left\nOutput: down: 2, left: 0\n\nInput: left, left, right, up, up, left, right, down, down, up, right\nOutput: up: 1, left: 0\n\nInput: up, left, right, down, left, right, up, right, down, down, right, left, left\nOutput: down: 1, left: 0\n\nInput: right, down, left, left, right\nOutput: down: 1, left: 0\n\nInput: right, up, down, down, up, left, up, up\nOutput: up: 2, left: 0\n\nInput: right, left, up, up, up, left, down, down\nOutput: up: 1, left: 1\n\nInput: left, down, right, left, left, down, up, up, down, left\nOutput: down: 1, left: 3\n\nInput: up, right, right, left, right, left, left, left, right\nOutput: up: 1, left: 0\n\n",
+        "prompt": "Input: right, up, up\nOutput: ",
+        "label": "up: 2, right: 1"
+    },
+    {
+        "uid": 105,
+        "task": "count_or_navigation",
+        "task_type": "navigation-middle",
+        "examples": "Input: up, left, down, down, right, right, down, up, right, up, down\nOutput: down: 1, right: 2\n\nInput: left, left, right, left, left, right, right\nOutput: up: 0, left: 1\n\nInput: down, left, up, left, right, left, down, right, right, down, left, down, right, up\nOutput: down: 2, left: 0\n\nInput: down, up, up, down, left, left, left, left, down\nOutput: down: 1, left: 4\n\nInput: right, right, left, up, right, right, left, left, left, down, up, up\nOutput: up: 2, left: 0\n\nInput: left, right, left, left, right\nOutput: up: 0, left: 1\n\nInput: down, up, up, left, up, up, right\nOutput: up: 3, left: 0\n\nInput: down, up, down, left, right, left, right, up, right, up, up, left, right\nOutput: up: 2, right: 1\n\n",
+        "prompt": "Input: left, left, left, up, up\nOutput: ",
+        "label": "up: 2, left: 3"
+    },
+    {
+        "uid": 106,
+        "task": "count_or_navigation",
+        "task_type": "navigation-middle",
+        "examples": "Input: up, up, left, up, down, left, right, down, up, left, right, left, down, right\nOutput: up: 1, left: 1\n\nInput: left, right, up, up, up, right, up\nOutput: up: 4, right: 1\n\nInput: down, left, left, up, right, right, down, left, up\nOutput: up: 0, left: 1\n\nInput: down, down, down, left, down, right, right, right, right\nOutput: down: 4, right: 3\n\nInput: right, left, down, down, left, left, left, right, down, down\nOutput: down: 4, left: 2\n\nInput: left, up, right\nOutput: up: 1, left: 0\n\nInput: down, down, down, left, right, right, up, left, left, down, right, right, left\nOutput: down: 3, left: 0\n\nInput: right, down, left, up, down, right, up, right\nOutput: up: 0, right: 2\n\n",
+        "prompt": "Input: left, up, left, left, down, up, right, up\nOutput: ",
+        "label": "up: 2, left: 2"
+    },
+    {
+        "uid": 107,
+        "task": "count_or_navigation",
+        "task_type": "navigation-middle",
+        "examples": "Input: left, left, left, up\nOutput: up: 1, left: 3\n\nInput: up, left, up, up\nOutput: up: 3, left: 1\n\nInput: up, left, left, up, up\nOutput: up: 3, left: 2\n\nInput: left, left, left, left, right\nOutput: up: 0, left: 3\n\nInput: left, right, right\nOutput: up: 0, right: 1\n\nInput: right, left, down, right, up, left, left, right, up, right, left\nOutput: up: 1, left: 0\n\nInput: down, left, left, left, up, up, left\nOutput: up: 1, left: 4\n\nInput: right, up, up, up, right, left\nOutput: up: 3, right: 1\n\n",
+        "prompt": "Input: down, right, up, left\nOutput: ",
+        "label": "up: 0, left: 0"
+    },
+    {
+        "uid": 108,
+        "task": "count_or_navigation",
+        "task_type": "navigation-middle",
+        "examples": "Input: left, right, down, right, up, down, right, right, left, up, up\nOutput: up: 1, right: 2\n\nInput: right, left, up, left, up, right, right, up, down, left, left\nOutput: up: 2, left: 1\n\nInput: right, left, right, down, left, right, left, down, right, down\nOutput: down: 3, right: 1\n\nInput: right, left, down, right, down\nOutput: down: 2, right: 1\n\nInput: up, up, up, right, down, right, right, left, down, left, down, right\nOutput: up: 0, right: 2\n\nInput: up, down, down, down\nOutput: down: 2, left: 0\n\nInput: down, up\nOutput: up: 0, left: 0\n\nInput: down, down, down, right\nOutput: down: 3, right: 1\n\n",
+        "prompt": "Input: up, left, up, up, left\nOutput: ",
+        "label": "up: 3, left: 2"
+    },
+    {
+        "uid": 109,
+        "task": "count_or_navigation",
+        "task_type": "navigation-middle",
+        "examples": "Input: left, down, up, up, right, down, right, down, right, up, right, left, down\nOutput: down: 1, right: 2\n\nInput: up, up, right, up\nOutput: up: 3, right: 1\n\nInput: down, up, up, down, down, up, right, right, left\nOutput: up: 0, right: 1\n\nInput: down, right, up, right, up, down, right, right, left, down, down, up\nOutput: down: 1, right: 3\n\nInput: down, down, down, right, down\nOutput: down: 4, right: 1\n\nInput: up, right, down, up, right, down, down, right\nOutput: down: 1, right: 3\n\nInput: right, left, right, right, left, up, right, down\nOutput: up: 0, right: 2\n\nInput: down, down, down, left, left, down\nOutput: down: 4, left: 2\n\n",
+        "prompt": "Input: up, left, left, down, right, left, left, right, right, right, down\nOutput: ",
+        "label": "down: 1, left: 0"
+    },
+    {
+        "uid": 110,
+        "task": "count_or_navigation",
+        "task_type": "navigation-middle",
+        "examples": "Input: left, left, right, up, left, up, down, left, down, right, down\nOutput: down: 1, left: 2\n\nInput: right, up, down, up, down, right\nOutput: up: 0, right: 2\n\nInput: left, left, right, up, up, right, up, left, up, left\nOutput: up: 4, left: 2\n\nInput: right, right, up, up, up, left, right, left, down, right, left, up, down\nOutput: up: 2, right: 1\n\nInput: down, right, left, up, up, up, right, up, down, right, down\nOutput: up: 1, right: 2\n\nInput: left, up, right, down, left, right, right, down, left\nOutput: down: 1, left: 0\n\nInput: down, right, down, right, left, up, right, down, up, down\nOutput: down: 2, right: 2\n\nInput: down, down, left, left, left, up, up, down, up, up\nOutput: up: 1, left: 3\n\n",
+        "prompt": "Input: up, right, down, down, up, down, up, right, down\nOutput: ",
+        "label": "down: 1, right: 2"
+    },
+    {
+        "uid": 111,
+        "task": "count_or_navigation",
+        "task_type": "navigation-middle",
+        "examples": "Input: right, up, up, down, right, right, up, up, down\nOutput: up: 2, right: 3\n\nInput: up, up, right, left, left, down, down, left, down, right, left, up, up, down\nOutput: up: 0, left: 2\n\nInput: up, right, left\nOutput: up: 1, left: 0\n\nInput: down, left, up, down, up, up, left, left, left\nOutput: up: 1, left: 4\n\nInput: up, left, right, left, up, down, right, right\nOutput: up: 1, right: 1\n\nInput: down, right, up, left, left, right, right, down, left, left\nOutput: down: 1, left: 1\n\nInput: right, down, up, up, down\nOutput: up: 0, right: 1\n\nInput: right, up, down, down, down, up, right\nOutput: down: 1, right: 2\n\n",
+        "prompt": "Input: down, down, down\nOutput: ",
+        "label": "down: 3, left: 0"
+    },
+    {
+        "uid": 112,
+        "task": "count_or_navigation",
+        "task_type": "navigation-middle",
+        "examples": "Input: down, down, down, left, up, up, right, left, down, up, right, up, right\nOutput: up: 0, right: 1\n\nInput: down, right, right, right, left, right\nOutput: down: 1, right: 3\n\nInput: up, down, up, right, up, left, left\nOutput: up: 2, left: 1\n\nInput: up, right, left, up, down, right, up, down, right\nOutput: up: 1, right: 2\n\nInput: up, down, down, left\nOutput: down: 1, left: 1\n\nInput: left, down, up, up, down, up, up\nOutput: up: 2, left: 1\n\nInput: up, down, down, up, right, up, down\nOutput: up: 0, right: 1\n\nInput: left, left, up, right, up, up, left, down\nOutput: up: 2, left: 2\n\n",
+        "prompt": "Input: down, down, up, up, down, right\nOutput: ",
+        "label": "down: 1, right: 1"
+    },
+    {
+        "uid": 113,
+        "task": "count_or_navigation",
+        "task_type": "navigation-middle",
+        "examples": "Input: down, up, down, down, up, up, up\nOutput: up: 1, left: 0\n\nInput: down, left, down, left, down, right, up, left, up, left, right, up\nOutput: up: 0, left: 2\n\nInput: right, left, right, down, down, left, left, right, left, right\nOutput: down: 2, left: 0\n\nInput: right, up, left, left, left, right, up, down, right, left\nOutput: up: 1, left: 1\n\nInput: down, right, down\nOutput: down: 2, right: 1\n\nInput: right, right, up, left, down, up, down, left, down\nOutput: down: 1, left: 0\n\nInput: left, down\nOutput: down: 1, left: 1\n\nInput: left, right, up, right, left, left\nOutput: up: 1, left: 1\n\n",
+        "prompt": "Input: left, right, up, right, left\nOutput: ",
+        "label": "up: 1, left: 0"
+    },
+    {
+        "uid": 114,
+        "task": "count_or_navigation",
+        "task_type": "navigation-middle",
+        "examples": "Input: down, up, left, down, right\nOutput: down: 1, left: 0\n\nInput: left, right, right, right, right, up, left, left, up, up, left, up\nOutput: up: 4, left: 0\n\nInput: left, left, up, down, down, left, up, up, left\nOutput: up: 1, left: 4\n\nInput: up, up, up, up, left, left\nOutput: up: 4, left: 2\n\nInput: right, left, left, right, up\nOutput: up: 1, left: 0\n\nInput: right, down, left, down, left, down\nOutput: down: 3, left: 1\n\nInput: right, up, left, left, left, down, right, down, down\nOutput: down: 2, left: 1\n\nInput: up, left, up, right, right, right, right, left\nOutput: up: 2, right: 2\n\n",
+        "prompt": "Input: down, right, left, right, down, down, left, right, right\nOutput: ",
+        "label": "down: 3, right: 2"
+    },
+    {
+        "uid": 115,
+        "task": "count_or_navigation",
+        "task_type": "navigation-middle",
+        "examples": "Input: left, right, right, up, right, down, up, up\nOutput: up: 2, right: 2\n\nInput: left, up, down, left, right\nOutput: up: 0, left: 1\n\nInput: right, up, right, up, right, up, right, up\nOutput: up: 4, right: 4\n\nInput: down, left, left, up, down, left, left, up\nOutput: up: 0, left: 4\n\nInput: left, left, right, right, left\nOutput: up: 0, left: 1\n\nInput: up, left, right, left, down, down, up, up, up\nOutput: up: 2, left: 1\n\nInput: down, down, up, up, down, up, down\nOutput: down: 1, left: 0\n\nInput: left, up, down, left, right, up, up, right, left, down, right, left, down\nOutput: up: 0, left: 1\n\n",
+        "prompt": "Input: right, down, right, left, down, left, right, right, down\nOutput: ",
+        "label": "down: 3, right: 2"
+    },
+    {
+        "uid": 116,
+        "task": "count_or_navigation",
+        "task_type": "navigation-middle",
+        "examples": "Input: right, up, left, right, right, right, left, down, left\nOutput: up: 0, right: 1\n\nInput: right, left, down, right, right\nOutput: down: 1, right: 2\n\nInput: up, up, left, down, right, up, up, right\nOutput: up: 3, right: 1\n\nInput: up, up, right, down, down, right, right, left, left, left, up, down, left, right\nOutput: up: 0, left: 0\n\nInput: right, up, right, up, left, up, right, left, up, right, left\nOutput: up: 4, right: 1\n\nInput: up, right, down, down, up, down, up\nOutput: up: 0, right: 1\n\nInput: up, down, right, down, down, right, right, down, right, left\nOutput: down: 3, right: 3\n\nInput: left, up, up, right, left, down, left, up, left\nOutput: up: 2, left: 3\n\n",
+        "prompt": "Input: down, right\nOutput: ",
+        "label": "down: 1, right: 1"
+    },
+    {
+        "uid": 117,
+        "task": "count_or_navigation",
+        "task_type": "navigation-middle",
+        "examples": "Input: up, right, right, left, down, right, right, up\nOutput: up: 1, right: 3\n\nInput: down, down, right, right, down, right, down, left\nOutput: down: 4, right: 2\n\nInput: down, left, down, left, left, down\nOutput: down: 3, left: 3\n\nInput: up, left, up, up, up\nOutput: up: 4, left: 1\n\nInput: down, left, down, left, up, up, down, left, down, up\nOutput: down: 1, left: 3\n\nInput: right, left, down, left, right, left\nOutput: down: 1, left: 1\n\nInput: right, left, up, up, down, down, left, down\nOutput: down: 1, left: 1\n\nInput: left, up, down, right, down, right, left, up, left, up, down, right, right\nOutput: up: 0, right: 1\n\n",
+        "prompt": "Input: right, up, down, down, up, right, up, up, down, right\nOutput: ",
+        "label": "up: 1, right: 3"
+    },
+    {
+        "uid": 118,
+        "task": "count_or_navigation",
+        "task_type": "navigation-middle",
+        "examples": "Input: up, left, left, down, up, left, left, down, up, right, down, right\nOutput: up: 0, left: 2\n\nInput: down, right, right, left, up, left, up, up, down, up, down, left, right, down, left\nOutput: up: 0, left: 1\n\nInput: down, down, up, up, right, up, down, down, left, left, up\nOutput: up: 0, left: 1\n\nInput: right, left, right, right, left, right, down, left, up, down\nOutput: down: 1, right: 1\n\nInput: right, right, left, right, left, down, down, right, down\nOutput: down: 3, right: 2\n\nInput: up, left, right, right, down, down, down, up, down, right\nOutput: down: 2, right: 2\n\nInput: left, left, right, left, right, right, down\nOutput: down: 1, left: 0\n\nInput: up, down, down, down, right, right\nOutput: down: 2, right: 2\n\n",
+        "prompt": "Input: down, down, down, left, up, right, right, right, up\nOutput: ",
+        "label": "down: 1, right: 2"
+    },
+    {
+        "uid": 119,
+        "task": "count_or_navigation",
+        "task_type": "navigation-middle",
+        "examples": "Input: down, left, up, down, left, down, left\nOutput: down: 2, left: 3\n\nInput: right, right, right, left, left, right\nOutput: up: 0, right: 2\n\nInput: down, left, right, down, left, up, up, right\nOutput: up: 0, left: 0\n\nInput: up, left, right, down, right, right, up\nOutput: up: 1, right: 2\n\nInput: up, down, up, up, down, right, left, right, left, down, left, left\nOutput: up: 0, left: 2\n\nInput: down, up, down, up, right, right, down, left, up\nOutput: up: 0, right: 1\n\nInput: up, down, down, up, up, right\nOutput: up: 1, right: 1\n\nInput: right, right, up, up, up, right, left, up, right\nOutput: up: 4, right: 3\n\n",
+        "prompt": "Input: down, right, up, right, down, up, down, left, down, left, right, left\nOutput: ",
+        "label": "down: 2, left: 0"
+    }
+]

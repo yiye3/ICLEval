@@ -1,0 +1,962 @@
+[
+    {
+        "uid": 0,
+        "task": "format_convert",
+        "task_type": "normal",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Ava Hill|31|Portland|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,David Wilson,29,Boston\nOutput: csv\n\nInput:\n(Landon Smith, age, 31)\n(Landon Smith, city, New Orleans)\nOutput: tuple\n\nInput:\n<person>\n  <name>Alexander Harris</name>\n  <age>33</age>\n  <city>Philadelphia</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Charlotte Adams\n  age: 35\n  city: Seattle\nOutput: yaml\n\nInput:\n{\"name\": \"Grace Morgan\", \"age\": 30, \"city\": \"St. Louis\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Brooklyn Wilson|35|Tampa|\nOutput: ",
+        "label": "table"
+    },
+    {
+        "uid": 1,
+        "task": "format_convert",
+        "task_type": "normal",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Landon Smith|31|New Orleans|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Alexander Young,29,San Diego\nOutput: csv\n\nInput:\n(Audrey Anderson, age, 27)\n(Audrey Anderson, city, Detroit)\nOutput: tuple\n\nInput:\n<person>\n  <name>Landon Smith</name>\n  <age>31</age>\n  <city>New Orleans</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Zoe Carter\n  age: 36\n  city: Miami\nOutput: yaml\n\nInput:\n{\"name\": \"James Lewis\", \"age\": 35, \"city\": \"Atlanta\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\nIndex,name,age,city\n1,Andrew Adams,34,Charlotte\nOutput: ",
+        "label": "csv"
+    },
+    {
+        "uid": 2,
+        "task": "format_convert",
+        "task_type": "normal",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Carter Young|31|Salt Lake City|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Jennifer Taylor,31,Seattle\nOutput: csv\n\nInput:\n(David Wilson, age, 29)\n(David Wilson, city, Boston)\nOutput: tuple\n\nInput:\n<person>\n  <name>James Lewis</name>\n  <age>35</age>\n  <city>Atlanta</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Henry Cook\n  age: 34\n  city: Cleveland\nOutput: yaml\n\nInput:\n{\"name\": \"Samuel Powell\", \"age\": 36, \"city\": \"Pittsburgh\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\n(Zachary Turner, age, 33)\n(Zachary Turner, city, Las Vegas)\nOutput: ",
+        "label": "tuple"
+    },
+    {
+        "uid": 3,
+        "task": "format_convert",
+        "task_type": "normal",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Eleanor Parker|34|Nashville|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,David Wilson,29,Boston\nOutput: csv\n\nInput:\n(Madelyn White, age, 35)\n(Madelyn White, city, Dallas)\nOutput: tuple\n\nInput:\n<person>\n  <name>Logan Perez</name>\n  <age>33</age>\n  <city>Kansas City</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Zoey Adams\n  age: 35\n  city: Seattle\nOutput: yaml\n\nInput:\n{\"name\": \"Stella Clark\", \"age\": 29, \"city\": \"Minneapolis\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\n<person>\n  <name>Gavin Smith</name>\n  <age>31</age>\n  <city>New Orleans</city>\n</person>\nOutput: ",
+        "label": "xml"
+    },
+    {
+        "uid": 4,
+        "task": "format_convert",
+        "task_type": "normal",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Zoe Carter|36|Miami|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Nora Clark,29,Minneapolis\nOutput: csv\n\nInput:\n(Grace Morgan, age, 30)\n(Grace Morgan, city, St. Louis)\nOutput: tuple\n\nInput:\n<person>\n  <name>Sofia Mitchell</name>\n  <age>34</age>\n  <city>Cleveland</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Zachary Turner\n  age: 33\n  city: Las Vegas\nOutput: yaml\n\nInput:\n{\"name\": \"Alexander Harris\", \"age\": 33, \"city\": \"Philadelphia\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\nperson:\n  name: Elijah Morgan\n  age: 36\n  city: Pittsburgh\nOutput: ",
+        "label": "yaml"
+    },
+    {
+        "uid": 5,
+        "task": "format_convert",
+        "task_type": "normal",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Nova Baker|34|Houston|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Madison King,28,Raleigh\nOutput: csv\n\nInput:\n(Elijah Morgan, age, 36)\n(Elijah Morgan, city, Pittsburgh)\nOutput: tuple\n\nInput:\n<person>\n  <name>Carter Young</name>\n  <age>31</age>\n  <city>Salt Lake City</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Jackson Rodriguez\n  age: 29\n  city: Portland\nOutput: yaml\n\nInput:\n{\"name\": \"Alexander Harris\", \"age\": 33, \"city\": \"Philadelphia\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\n{\"name\": \"Sarah Johnson\", \"age\": 28, \"city\": \"Los Angeles\"}\nOutput: ",
+        "label": "jsonl"
+    },
+    {
+        "uid": 6,
+        "task": "format_convert",
+        "task_type": "normal",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Henry Cook|34|Cleveland|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Nova Baker,34,Houston\nOutput: csv\n\nInput:\n(Jackson Rodriguez, age, 29)\n(Jackson Rodriguez, city, Portland)\nOutput: tuple\n\nInput:\n<person>\n  <name>Alexander Young</name>\n  <age>29</age>\n  <city>San Diego</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: James Lewis\n  age: 35\n  city: Atlanta\nOutput: yaml\n\nInput:\n{\"name\": \"Mateo Hill\", \"age\": 30, \"city\": \"Austin\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Christopher Wright|36|Orlando|\nOutput: ",
+        "label": "table"
+    },
+    {
+        "uid": 7,
+        "task": "format_convert",
+        "task_type": "normal",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Aiden Taylor|33|Las Vegas|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Isabella Wright,31,San Antonio\nOutput: csv\n\nInput:\n(Eleanor Parker, age, 34)\n(Eleanor Parker, city, Nashville)\nOutput: tuple\n\nInput:\n<person>\n  <name>Mason Lee</name>\n  <age>29</age>\n  <city>San Francisco</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Matthew Martinez\n  age: 33\n  city: Denver\nOutput: yaml\n\nInput:\n{\"name\": \"Hazel Davis\", \"age\": 29, \"city\": \"San Francisco\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\nIndex,name,age,city\n1,Emma Hall,32,Dallas\nOutput: ",
+        "label": "csv"
+    },
+    {
+        "uid": 8,
+        "task": "format_convert",
+        "task_type": "normal",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Ian Green|30|Phoenix|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Joseph Scott,33,San Antonio\nOutput: csv\n\nInput:\n(Mateo Hill, age, 30)\n(Mateo Hill, city, Austin)\nOutput: tuple\n\nInput:\n<person>\n  <name>Isabella Walker</name>\n  <age>28</age>\n  <city>Austin</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Caleb Adams\n  age: 28\n  city: Atlanta\nOutput: yaml\n\nInput:\n{\"name\": \"Jameson Baker\", \"age\": 34, \"city\": \"Houston\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\n(Henry Baker, age, 30)\n(Henry Baker, city, St. Louis)\nOutput: ",
+        "label": "tuple"
+    },
+    {
+        "uid": 9,
+        "task": "format_convert",
+        "task_type": "normal",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Aria Adams|36|Orlando|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Riley Turner,27,Charlotte\nOutput: csv\n\nInput:\n(Gabriel Rodriguez, age, 29)\n(Gabriel Rodriguez, city, Portland)\nOutput: tuple\n\nInput:\n<person>\n  <name>Sofia Mitchell</name>\n  <age>31</age>\n  <city>Salt Lake City</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Eli Turner\n  age: 28\n  city: Denver\nOutput: yaml\n\nInput:\n{\"name\": \"Sophia Clark\", \"age\": 30, \"city\": \"Houston\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\n<person>\n  <name>Julian Lewis</name>\n  <age>28</age>\n  <city>Raleigh</city>\n</person>\nOutput: ",
+        "label": "xml"
+    },
+    {
+        "uid": 10,
+        "task": "format_convert",
+        "task_type": "normal",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Nathan Young|31|Salt Lake City|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Samuel Powell,36,Pittsburgh\nOutput: csv\n\nInput:\n(Asher Green, age, 30)\n(Asher Green, city, Phoenix)\nOutput: tuple\n\nInput:\n<person>\n  <name>Jameson Baker</name>\n  <age>34</age>\n  <city>Houston</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Isabella Walker\n  age: 28\n  city: Austin\nOutput: yaml\n\nInput:\n{\"name\": \"Samuel Powell\", \"age\": 36, \"city\": \"Pittsburgh\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\nperson:\n  name: Matthew Martinez\n  age: 33\n  city: Denver\nOutput: ",
+        "label": "yaml"
+    },
+    {
+        "uid": 11,
+        "task": "format_convert",
+        "task_type": "normal",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Mateo Hill|30|Austin|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Alexander Harris,33,Philadelphia\nOutput: csv\n\nInput:\n(Henry Baker, age, 30)\n(Henry Baker, city, St. Louis)\nOutput: tuple\n\nInput:\n<person>\n  <name>Brooklyn Wilson</name>\n  <age>35</age>\n  <city>Tampa</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Riley Turner\n  age: 27\n  city: Charlotte\nOutput: yaml\n\nInput:\n{\"name\": \"Madison King\", \"age\": 28, \"city\": \"Raleigh\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\n{\"name\": \"Emma Hall\", \"age\": 32, \"city\": \"Dallas\"}\nOutput: ",
+        "label": "jsonl"
+    },
+    {
+        "uid": 12,
+        "task": "format_convert",
+        "task_type": "normal",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Aiden Taylor|33|Las Vegas|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Victoria Roberts,27,Detroit\nOutput: csv\n\nInput:\n(Paisley Turner, age, 33)\n(Paisley Turner, city, Kansas City)\nOutput: tuple\n\nInput:\n<person>\n  <name>Evelyn Scott</name>\n  <age>31</age>\n  <city>New Orleans</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Elijah Morgan\n  age: 36\n  city: Pittsburgh\nOutput: yaml\n\nInput:\n{\"name\": \"Easton Mitchell\", \"age\": 34, \"city\": \"Cleveland\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Lucy Parker|34|Nashville|\nOutput: ",
+        "label": "table"
+    },
+    {
+        "uid": 13,
+        "task": "format_convert",
+        "task_type": "normal",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|William Rodriguez|36|Phoenix|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Eleanor Parker,34,Nashville\nOutput: csv\n\nInput:\n(Brooklyn Wilson, age, 35)\n(Brooklyn Wilson, city, Tampa)\nOutput: tuple\n\nInput:\n<person>\n  <name>Benjamin Lee</name>\n  <age>35</age>\n  <city>Tampa</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Ian Green\n  age: 30\n  city: Phoenix\nOutput: yaml\n\nInput:\n{\"name\": \"Hazel Davis\", \"age\": 29, \"city\": \"San Francisco\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\nIndex,name,age,city\n1,Hudson Davis,32,Indianapolis\nOutput: ",
+        "label": "csv"
+    },
+    {
+        "uid": 14,
+        "task": "format_convert",
+        "task_type": "normal",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Madison King|28|Raleigh|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Violet Morgan,36,Pittsburgh\nOutput: csv\n\nInput:\n(Mateo Hill, age, 30)\n(Mateo Hill, city, Austin)\nOutput: tuple\n\nInput:\n<person>\n  <name>Evelyn Scott</name>\n  <age>31</age>\n  <city>New Orleans</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Brooklyn Wilson\n  age: 35\n  city: Tampa\nOutput: yaml\n\nInput:\n{\"name\": \"Scarlett Baker\", \"age\": 30, \"city\": \"St. Louis\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\n(Charlotte Adams, age, 35)\n(Charlotte Adams, city, Seattle)\nOutput: ",
+        "label": "tuple"
+    },
+    {
+        "uid": 15,
+        "task": "format_convert",
+        "task_type": "normal",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Grace Morgan|30|St. Louis|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Easton Mitchell,34,Cleveland\nOutput: csv\n\nInput:\n(Lucas White, age, 35)\n(Lucas White, city, Dallas)\nOutput: tuple\n\nInput:\n<person>\n  <name>Asher Green</name>\n  <age>30</age>\n  <city>Phoenix</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Emilia Carter\n  age: 36\n  city: Miami\nOutput: yaml\n\nInput:\n{\"name\": \"Daniel Thomas\", \"age\": 34, \"city\": \"Philadelphia\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\n<person>\n  <name>Madelyn White</name>\n  <age>35</age>\n  <city>Dallas</city>\n</person>\nOutput: ",
+        "label": "xml"
+    },
+    {
+        "uid": 16,
+        "task": "format_convert",
+        "task_type": "normal",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Jennifer Taylor|31|Seattle|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Ava Adams,28,Atlanta\nOutput: csv\n\nInput:\n(Penelope Wilson, age, 35)\n(Penelope Wilson, city, Tampa)\nOutput: tuple\n\nInput:\n<person>\n  <name>Evelyn Scott</name>\n  <age>31</age>\n  <city>New Orleans</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Sophia Clark\n  age: 30\n  city: Houston\nOutput: yaml\n\nInput:\n{\"name\": \"Henry Cook\", \"age\": 34, \"city\": \"Cleveland\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\nperson:\n  name: Samuel Powell\n  age: 36\n  city: Pittsburgh\nOutput: ",
+        "label": "yaml"
+    },
+    {
+        "uid": 17,
+        "task": "format_convert",
+        "task_type": "normal",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Zoey Adams|35|Seattle|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Ava Adams,28,Atlanta\nOutput: csv\n\nInput:\n(Henry Cook, age, 34)\n(Henry Cook, city, Cleveland)\nOutput: tuple\n\nInput:\n<person>\n  <name>Stella Clark</name>\n  <age>29</age>\n  <city>Minneapolis</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Mila Davis\n  age: 29\n  city: San Francisco\nOutput: yaml\n\nInput:\n{\"name\": \"Jack Lewis\", \"age\": 28, \"city\": \"Raleigh\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\n{\"name\": \"Henry Thompson\", \"age\": 32, \"city\": \"San Diego\"}\nOutput: ",
+        "label": "jsonl"
+    },
+    {
+        "uid": 18,
+        "task": "format_convert",
+        "task_type": "normal",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Henry Baker|30|St. Louis|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Abigail Baker,30,Nashville\nOutput: csv\n\nInput:\n(Mason Lee, age, 29)\n(Mason Lee, city, San Francisco)\nOutput: tuple\n\nInput:\n<person>\n  <name>Andrew Adams</name>\n  <age>34</age>\n  <city>Charlotte</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Charlotte Adams\n  age: 35\n  city: Seattle\nOutput: yaml\n\nInput:\n{\"name\": \"Skylar Martinez\", \"age\": 33, \"city\": \"Philadelphia\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Hudson Davis|32|Indianapolis|\nOutput: ",
+        "label": "table"
+    },
+    {
+        "uid": 19,
+        "task": "format_convert",
+        "task_type": "normal",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Ian Green|30|Phoenix|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Mason Lee,29,San Francisco\nOutput: csv\n\nInput:\n(Skylar Martinez, age, 33)\n(Skylar Martinez, city, Philadelphia)\nOutput: tuple\n\nInput:\n<person>\n  <name>Adeline Wright</name>\n  <age>31</age>\n  <city>San Diego</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Carter Young\n  age: 31\n  city: Salt Lake City\nOutput: yaml\n\nInput:\n{\"name\": \"Adeline Wright\", \"age\": 31, \"city\": \"San Diego\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\nIndex,name,age,city\n1,Madelyn White,35,Dallas\nOutput: ",
+        "label": "csv"
+    },
+    {
+        "uid": 20,
+        "task": "format_convert",
+        "task_type": "normal",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Riley Turner|27|Charlotte|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Grace Morgan,30,St. Louis\nOutput: csv\n\nInput:\n(Andrew Adams, age, 34)\n(Andrew Adams, city, Charlotte)\nOutput: tuple\n\nInput:\n<person>\n  <name>Lily Martinez</name>\n  <age>33</age>\n  <city>Philadelphia</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Mila Davis\n  age: 29\n  city: San Francisco\nOutput: yaml\n\nInput:\n{\"name\": \"James Lewis\", \"age\": 35, \"city\": \"Atlanta\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\n(Penelope Wilson, age, 35)\n(Penelope Wilson, city, Tampa)\nOutput: ",
+        "label": "tuple"
+    },
+    {
+        "uid": 21,
+        "task": "format_convert",
+        "task_type": "normal",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Olivia Anderson|27|Miami|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Ava Hill,31,Portland\nOutput: csv\n\nInput:\n(Christopher Wright, age, 36)\n(Christopher Wright, city, Orlando)\nOutput: tuple\n\nInput:\n<person>\n  <name>Julian Lewis</name>\n  <age>28</age>\n  <city>Raleigh</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Madison King\n  age: 28\n  city: Raleigh\nOutput: yaml\n\nInput:\n{\"name\": \"Easton Mitchell\", \"age\": 34, \"city\": \"Cleveland\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\n<person>\n  <name>Bentley Jackson</name>\n  <age>27</age>\n  <city>Los Angeles</city>\n</person>\nOutput: ",
+        "label": "xml"
+    },
+    {
+        "uid": 22,
+        "task": "format_convert",
+        "task_type": "normal",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Avery Turner|27|Charlotte|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Sophia Clark,30,Houston\nOutput: csv\n\nInput:\n(Layla Adams, age, 36)\n(Layla Adams, city, Orlando)\nOutput: tuple\n\nInput:\n<person>\n  <name>Mateo Hill</name>\n  <age>30</age>\n  <city>Austin</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Avery Turner\n  age: 27\n  city: Charlotte\nOutput: yaml\n\nInput:\n{\"name\": \"Violet Morgan\", \"age\": 36, \"city\": \"Pittsburgh\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\nperson:\n  name: Carter Young\n  age: 31\n  city: Salt Lake City\nOutput: ",
+        "label": "yaml"
+    },
+    {
+        "uid": 23,
+        "task": "format_convert",
+        "task_type": "normal",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Harper Martinez|32|Chicago|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Caleb Adams,28,Atlanta\nOutput: csv\n\nInput:\n(Michael Brown, age, 35)\n(Michael Brown, city, Chicago)\nOutput: tuple\n\nInput:\n<person>\n  <name>Easton Mitchell</name>\n  <age>34</age>\n  <city>Cleveland</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Lincoln Johnson\n  age: 32\n  city: Chicago\nOutput: yaml\n\nInput:\n{\"name\": \"Ava Hill\", \"age\": 31, \"city\": \"Portland\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\n{\"name\": \"Scarlett Baker\", \"age\": 34, \"city\": \"Houston\"}\nOutput: ",
+        "label": "jsonl"
+    },
+    {
+        "uid": 24,
+        "task": "format_convert",
+        "task_type": "normal",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Ian Green|30|Phoenix|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Bentley Jackson,27,Los Angeles\nOutput: csv\n\nInput:\n(Evelyn Scott, age, 31)\n(Evelyn Scott, city, New Orleans)\nOutput: tuple\n\nInput:\n<person>\n  <name>Asher Green</name>\n  <age>30</age>\n  <city>Phoenix</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Hudson Davis\n  age: 32\n  city: Indianapolis\nOutput: yaml\n\nInput:\n{\"name\": \"Jackson Rodriguez\", \"age\": 29, \"city\": \"Portland\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Easton Mitchell|34|Cleveland|\nOutput: ",
+        "label": "table"
+    },
+    {
+        "uid": 25,
+        "task": "format_convert",
+        "task_type": "normal",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Jameson Baker|34|Houston|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Chloe Turner,33,Kansas City\nOutput: csv\n\nInput:\n(Madison King, age, 28)\n(Madison King, city, Raleigh)\nOutput: tuple\n\nInput:\n<person>\n  <name>Henry Baker</name>\n  <age>30</age>\n  <city>St. Louis</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Sarah Johnson\n  age: 28\n  city: Los Angeles\nOutput: yaml\n\nInput:\n{\"name\": \"Lincoln Johnson\", \"age\": 32, \"city\": \"Chicago\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\nIndex,name,age,city\n1,Ava Hill,31,Portland\nOutput: ",
+        "label": "csv"
+    },
+    {
+        "uid": 26,
+        "task": "format_convert",
+        "task_type": "normal",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Mason Lee|29|San Francisco|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Gavin Smith,31,New Orleans\nOutput: csv\n\nInput:\n(Nova Baker, age, 34)\n(Nova Baker, city, Houston)\nOutput: tuple\n\nInput:\n<person>\n  <name>Ella Turner</name>\n  <age>32</age>\n  <city>Indianapolis</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Gavin Smith\n  age: 31\n  city: New Orleans\nOutput: yaml\n\nInput:\n{\"name\": \"Alexander Young\", \"age\": 29, \"city\": \"San Diego\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\n(Lincoln Johnson, age, 32)\n(Lincoln Johnson, city, Chicago)\nOutput: ",
+        "label": "tuple"
+    },
+    {
+        "uid": 27,
+        "task": "format_convert",
+        "task_type": "normal",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Luna Green|30|Phoenix|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Brooklyn Wilson,35,Tampa\nOutput: csv\n\nInput:\n(Gavin Smith, age, 31)\n(Gavin Smith, city, New Orleans)\nOutput: tuple\n\nInput:\n<person>\n  <name>Eleanor Parker</name>\n  <age>34</age>\n  <city>Nashville</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Logan Perez\n  age: 33\n  city: Kansas City\nOutput: yaml\n\nInput:\n{\"name\": \"Christopher Wright\", \"age\": 36, \"city\": \"Orlando\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\n<person>\n  <name>Julian Lewis</name>\n  <age>28</age>\n  <city>Raleigh</city>\n</person>\nOutput: ",
+        "label": "xml"
+    },
+    {
+        "uid": 28,
+        "task": "format_convert",
+        "task_type": "normal",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Nova Baker|34|Houston|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Madison King,28,Raleigh\nOutput: csv\n\nInput:\n(Zoe Carter, age, 36)\n(Zoe Carter, city, Miami)\nOutput: tuple\n\nInput:\n<person>\n  <name>Emilia Carter</name>\n  <age>36</age>\n  <city>Miami</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Scarlett Baker\n  age: 34\n  city: Houston\nOutput: yaml\n\nInput:\n{\"name\": \"Sarah Johnson\", \"age\": 28, \"city\": \"Los Angeles\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\nperson:\n  name: Lucy Parker\n  age: 34\n  city: Nashville\nOutput: ",
+        "label": "yaml"
+    },
+    {
+        "uid": 29,
+        "task": "format_convert",
+        "task_type": "normal",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Lucas White|35|Dallas|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Levi Johnson,32,Chicago\nOutput: csv\n\nInput:\n(Emily Davis, age, 32)\n(Emily Davis, city, San Francisco)\nOutput: tuple\n\nInput:\n<person>\n  <name>Ava Hill</name>\n  <age>31</age>\n  <city>Portland</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Riley Turner\n  age: 27\n  city: Charlotte\nOutput: yaml\n\nInput:\n{\"name\": \"Oliver Carter\", \"age\": 36, \"city\": \"Miami\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\n{\"name\": \"Avery Turner\", \"age\": 27, \"city\": \"Charlotte\"}\nOutput: ",
+        "label": "jsonl"
+    },
+    {
+        "uid": 30,
+        "task": "format_convert",
+        "task_type": "normal",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Daniel Thomas|34|Philadelphia|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Liam Turner,28,Denver\nOutput: csv\n\nInput:\n(Henry Thompson, age, 32)\n(Henry Thompson, city, San Diego)\nOutput: tuple\n\nInput:\n<person>\n  <name>Isabella Walker</name>\n  <age>28</age>\n  <city>Austin</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Isabella Walker\n  age: 28\n  city: Austin\nOutput: yaml\n\nInput:\n{\"name\": \"Hazel Davis\", \"age\": 29, \"city\": \"San Francisco\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Liam Turner|28|Denver|\nOutput: ",
+        "label": "table"
+    },
+    {
+        "uid": 31,
+        "task": "format_convert",
+        "task_type": "normal",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Sophia Clark|30|Houston|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Nova Baker,34,Houston\nOutput: csv\n\nInput:\n(Ian Green, age, 30)\n(Ian Green, city, Phoenix)\nOutput: tuple\n\nInput:\n<person>\n  <name>Asher Green</name>\n  <age>30</age>\n  <city>Phoenix</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Mia Green\n  age: 27\n  city: Las Vegas\nOutput: yaml\n\nInput:\n{\"name\": \"Mia Green\", \"age\": 27, \"city\": \"Las Vegas\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\nIndex,name,age,city\n1,Levi Johnson,32,Chicago\nOutput: ",
+        "label": "csv"
+    },
+    {
+        "uid": 32,
+        "task": "format_convert",
+        "task_type": "normal",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Wyatt Cooper|28|Denver|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Caleb Adams,28,Atlanta\nOutput: csv\n\nInput:\n(Benjamin Lee, age, 35)\n(Benjamin Lee, city, Tampa)\nOutput: tuple\n\nInput:\n<person>\n  <name>Mason Lee</name>\n  <age>29</age>\n  <city>San Francisco</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Scarlett Baker\n  age: 34\n  city: Houston\nOutput: yaml\n\nInput:\n{\"name\": \"Eleanor Parker\", \"age\": 34, \"city\": \"Nashville\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\n(Nathan Young, age, 31)\n(Nathan Young, city, Salt Lake City)\nOutput: ",
+        "label": "tuple"
+    },
+    {
+        "uid": 33,
+        "task": "format_convert",
+        "task_type": "normal",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Henry Cook|34|Cleveland|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Zoe Carter,36,Miami\nOutput: csv\n\nInput:\n(Bentley Jackson, age, 27)\n(Bentley Jackson, city, Los Angeles)\nOutput: tuple\n\nInput:\n<person>\n  <name>Hazel Davis</name>\n  <age>29</age>\n  <city>San Francisco</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Scarlett Baker\n  age: 30\n  city: St. Louis\nOutput: yaml\n\nInput:\n{\"name\": \"Logan Perez\", \"age\": 33, \"city\": \"Kansas City\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\n<person>\n  <name>Carter Young</name>\n  <age>31</age>\n  <city>Salt Lake City</city>\n</person>\nOutput: ",
+        "label": "xml"
+    },
+    {
+        "uid": 34,
+        "task": "format_convert",
+        "task_type": "normal",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Oliver Carter|36|Miami|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Penelope Wilson,35,Tampa\nOutput: csv\n\nInput:\n(Paisley Turner, age, 33)\n(Paisley Turner, city, Kansas City)\nOutput: tuple\n\nInput:\n<person>\n  <name>Stella Clark</name>\n  <age>29</age>\n  <city>Minneapolis</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Lucy Parker\n  age: 34\n  city: Nashville\nOutput: yaml\n\nInput:\n{\"name\": \"Grayson Anderson\", \"age\": 27, \"city\": \"Detroit\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\nperson:\n  name: Zoey Adams\n  age: 35\n  city: Seattle\nOutput: ",
+        "label": "yaml"
+    },
+    {
+        "uid": 35,
+        "task": "format_convert",
+        "task_type": "normal",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Sofia Mitchell|34|Cleveland|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Joseph Scott,33,San Antonio\nOutput: csv\n\nInput:\n(Charlotte Adams, age, 35)\n(Charlotte Adams, city, Seattle)\nOutput: tuple\n\nInput:\n<person>\n  <name>Grace Morgan</name>\n  <age>30</age>\n  <city>St. Louis</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Sophia Clark\n  age: 30\n  city: Houston\nOutput: yaml\n\nInput:\n{\"name\": \"Jackson Rodriguez\", \"age\": 29, \"city\": \"Portland\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\n{\"name\": \"Asher Jackson\", \"age\": 27, \"city\": \"Los Angeles\"}\nOutput: ",
+        "label": "jsonl"
+    },
+    {
+        "uid": 36,
+        "task": "format_convert",
+        "task_type": "normal",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Zachary Turner|33|Las Vegas|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Caleb Adams,28,Atlanta\nOutput: csv\n\nInput:\n(Samuel Powell, age, 36)\n(Samuel Powell, city, Pittsburgh)\nOutput: tuple\n\nInput:\n<person>\n  <name>Zachary Turner</name>\n  <age>33</age>\n  <city>Las Vegas</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Grace Morgan\n  age: 30\n  city: St. Louis\nOutput: yaml\n\nInput:\n{\"name\": \"Sarah Johnson\", \"age\": 28, \"city\": \"Los Angeles\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Emily Davis|32|San Francisco|\nOutput: ",
+        "label": "table"
+    },
+    {
+        "uid": 37,
+        "task": "format_convert",
+        "task_type": "normal",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Eli Turner|28|Denver|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Julian Lewis,28,Raleigh\nOutput: csv\n\nInput:\n(Daniel Thomas, age, 34)\n(Daniel Thomas, city, Philadelphia)\nOutput: tuple\n\nInput:\n<person>\n  <name>Samuel Powell</name>\n  <age>36</age>\n  <city>Pittsburgh</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Sophia Clark\n  age: 30\n  city: Houston\nOutput: yaml\n\nInput:\n{\"name\": \"Jennifer Taylor\", \"age\": 31, \"city\": \"Seattle\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\nIndex,name,age,city\n1,William Rodriguez,36,Phoenix\nOutput: ",
+        "label": "csv"
+    },
+    {
+        "uid": 38,
+        "task": "format_convert",
+        "task_type": "normal",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|William Rodriguez|36|Phoenix|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Lily Martinez,33,Philadelphia\nOutput: csv\n\nInput:\n(Liam Turner, age, 28)\n(Liam Turner, city, Denver)\nOutput: tuple\n\nInput:\n<person>\n  <name>Alexander Harris</name>\n  <age>33</age>\n  <city>Philadelphia</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Paisley Turner\n  age: 33\n  city: Kansas City\nOutput: yaml\n\nInput:\n{\"name\": \"Levi Johnson\", \"age\": 32, \"city\": \"Chicago\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\n(Sophia Thompson, age, 32)\n(Sophia Thompson, city, San Diego)\nOutput: ",
+        "label": "tuple"
+    },
+    {
+        "uid": 39,
+        "task": "format_convert",
+        "task_type": "normal",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Zoe Carter|36|Miami|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Mia Green,27,Las Vegas\nOutput: csv\n\nInput:\n(Lincoln Johnson, age, 32)\n(Lincoln Johnson, city, Chicago)\nOutput: tuple\n\nInput:\n<person>\n  <name>Gabriel Rodriguez</name>\n  <age>29</age>\n  <city>Portland</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Gabriel Rodriguez\n  age: 29\n  city: Portland\nOutput: yaml\n\nInput:\n{\"name\": \"Wyatt Cooper\", \"age\": 28, \"city\": \"Denver\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\n<person>\n  <name>Henry Cook</name>\n  <age>34</age>\n  <city>Cleveland</city>\n</person>\nOutput: ",
+        "label": "xml"
+    },
+    {
+        "uid": 40,
+        "task": "format_convert",
+        "task_type": "normal",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Wyatt Cooper|28|Denver|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Leo Davis,32,Indianapolis\nOutput: csv\n\nInput:\n(Sofia Mitchell, age, 31)\n(Sofia Mitchell, city, Salt Lake City)\nOutput: tuple\n\nInput:\n<person>\n  <name>Emma Hall</name>\n  <age>32</age>\n  <city>Dallas</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Emma Hall\n  age: 32\n  city: Dallas\nOutput: yaml\n\nInput:\n{\"name\": \"Nathan Young\", \"age\": 31, \"city\": \"Salt Lake City\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\nperson:\n  name: Charlotte Adams\n  age: 35\n  city: Seattle\nOutput: ",
+        "label": "yaml"
+    },
+    {
+        "uid": 41,
+        "task": "format_convert",
+        "task_type": "normal",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Aiden Taylor|33|Las Vegas|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Carter Young,31,Salt Lake City\nOutput: csv\n\nInput:\n(Leo Davis, age, 32)\n(Leo Davis, city, Indianapolis)\nOutput: tuple\n\nInput:\n<person>\n  <name>Violet Morgan</name>\n  <age>36</age>\n  <city>Pittsburgh</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Hazel Davis\n  age: 29\n  city: San Francisco\nOutput: yaml\n\nInput:\n{\"name\": \"Olivia Anderson\", \"age\": 27, \"city\": \"Miami\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\n{\"name\": \"Chloe Turner\", \"age\": 33, \"city\": \"Kansas City\"}\nOutput: ",
+        "label": "jsonl"
+    },
+    {
+        "uid": 42,
+        "task": "format_convert",
+        "task_type": "normal",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Stella Clark|29|Minneapolis|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Hudson Davis,32,Indianapolis\nOutput: csv\n\nInput:\n(Emma Hall, age, 32)\n(Emma Hall, city, Dallas)\nOutput: tuple\n\nInput:\n<person>\n  <name>Daniel Thomas</name>\n  <age>34</age>\n  <city>Philadelphia</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Penelope Wilson\n  age: 35\n  city: Tampa\nOutput: yaml\n\nInput:\n{\"name\": \"Hazel Davis\", \"age\": 29, \"city\": \"San Francisco\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Audrey Anderson|27|Detroit|\nOutput: ",
+        "label": "table"
+    },
+    {
+        "uid": 43,
+        "task": "format_convert",
+        "task_type": "normal",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Alexander Young|29|San Diego|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Charlotte Adams,35,Seattle\nOutput: csv\n\nInput:\n(Sofia Mitchell, age, 31)\n(Sofia Mitchell, city, Salt Lake City)\nOutput: tuple\n\nInput:\n<person>\n  <name>Sofia Mitchell</name>\n  <age>31</age>\n  <city>Salt Lake City</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Ian Green\n  age: 30\n  city: Phoenix\nOutput: yaml\n\nInput:\n{\"name\": \"Sofia Mitchell\", \"age\": 34, \"city\": \"Cleveland\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\nIndex,name,age,city\n1,Jackson Rodriguez,29,Portland\nOutput: ",
+        "label": "csv"
+    },
+    {
+        "uid": 44,
+        "task": "format_convert",
+        "task_type": "normal",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Carter Young|31|Salt Lake City|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Joshua Campbell,29,Minneapolis\nOutput: csv\n\nInput:\n(Alexander Harris, age, 33)\n(Alexander Harris, city, Philadelphia)\nOutput: tuple\n\nInput:\n<person>\n  <name>Violet Morgan</name>\n  <age>36</age>\n  <city>Pittsburgh</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Charlotte Adams\n  age: 35\n  city: Seattle\nOutput: yaml\n\nInput:\n{\"name\": \"William Rodriguez\", \"age\": 36, \"city\": \"Phoenix\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\n(Andrew Adams, age, 34)\n(Andrew Adams, city, Charlotte)\nOutput: ",
+        "label": "tuple"
+    },
+    {
+        "uid": 45,
+        "task": "format_convert",
+        "task_type": "normal",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Caleb Adams|28|Atlanta|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Emma Hall,32,Dallas\nOutput: csv\n\nInput:\n(Olivia Anderson, age, 27)\n(Olivia Anderson, city, Miami)\nOutput: tuple\n\nInput:\n<person>\n  <name>Stella Clark</name>\n  <age>29</age>\n  <city>Minneapolis</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Zoe Carter\n  age: 36\n  city: Miami\nOutput: yaml\n\nInput:\n{\"name\": \"Michael Brown\", \"age\": 35, \"city\": \"Chicago\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\n<person>\n  <name>Grayson Anderson</name>\n  <age>27</age>\n  <city>Detroit</city>\n</person>\nOutput: ",
+        "label": "xml"
+    },
+    {
+        "uid": 46,
+        "task": "format_convert",
+        "task_type": "normal",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Bentley Jackson|27|Los Angeles|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Liam Turner,28,Denver\nOutput: csv\n\nInput:\n(Benjamin Lee, age, 35)\n(Benjamin Lee, city, Tampa)\nOutput: tuple\n\nInput:\n<person>\n  <name>Leo Davis</name>\n  <age>32</age>\n  <city>Indianapolis</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Levi Johnson\n  age: 32\n  city: Chicago\nOutput: yaml\n\nInput:\n{\"name\": \"Zoe Adams\", \"age\": 35, \"city\": \"Seattle\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\nperson:\n  name: James Lewis\n  age: 35\n  city: Atlanta\nOutput: ",
+        "label": "yaml"
+    },
+    {
+        "uid": 47,
+        "task": "format_convert",
+        "task_type": "normal",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Penelope Wilson|35|Tampa|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Daniel Thomas,34,Philadelphia\nOutput: csv\n\nInput:\n(Benjamin Lee, age, 35)\n(Benjamin Lee, city, Tampa)\nOutput: tuple\n\nInput:\n<person>\n  <name>Mateo Hill</name>\n  <age>30</age>\n  <city>Austin</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Sarah Johnson\n  age: 28\n  city: Los Angeles\nOutput: yaml\n\nInput:\n{\"name\": \"Layla Adams\", \"age\": 36, \"city\": \"Orlando\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\n{\"name\": \"Henry Cook\", \"age\": 34, \"city\": \"Cleveland\"}\nOutput: ",
+        "label": "jsonl"
+    },
+    {
+        "uid": 48,
+        "task": "format_convert",
+        "task_type": "normal",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Henry Baker|30|St. Louis|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Amelia Jackson,27,Los Angeles\nOutput: csv\n\nInput:\n(Carter Young, age, 31)\n(Carter Young, city, Salt Lake City)\nOutput: tuple\n\nInput:\n<person>\n  <name>Elijah Morgan</name>\n  <age>36</age>\n  <city>Pittsburgh</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Hazel Davis\n  age: 29\n  city: San Francisco\nOutput: yaml\n\nInput:\n{\"name\": \"Madelyn White\", \"age\": 35, \"city\": \"Dallas\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Mason Lee|29|San Francisco|\nOutput: ",
+        "label": "table"
+    },
+    {
+        "uid": 49,
+        "task": "format_convert",
+        "task_type": "normal",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Zoey Adams|35|Seattle|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Levi Johnson,32,Chicago\nOutput: csv\n\nInput:\n(Christopher Wright, age, 36)\n(Christopher Wright, city, Orlando)\nOutput: tuple\n\nInput:\n<person>\n  <name>Sofia Mitchell</name>\n  <age>31</age>\n  <city>Salt Lake City</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Jameson Baker\n  age: 34\n  city: Houston\nOutput: yaml\n\nInput:\n{\"name\": \"Henry Cook\", \"age\": 34, \"city\": \"Cleveland\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\nIndex,name,age,city\n1,Nathan Young,31,Salt Lake City\nOutput: ",
+        "label": "csv"
+    },
+    {
+        "uid": 50,
+        "task": "format_convert",
+        "task_type": "normal",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Adeline Wright|31|San Diego|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Landon Smith,31,New Orleans\nOutput: csv\n\nInput:\n(Zoe Carter, age, 36)\n(Zoe Carter, city, Miami)\nOutput: tuple\n\nInput:\n<person>\n  <name>Daniel Thomas</name>\n  <age>34</age>\n  <city>Philadelphia</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Skylar Martinez\n  age: 33\n  city: Philadelphia\nOutput: yaml\n\nInput:\n{\"name\": \"Ava Adams\", \"age\": 28, \"city\": \"Atlanta\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\n(Daniel Thomas, age, 34)\n(Daniel Thomas, city, Philadelphia)\nOutput: ",
+        "label": "tuple"
+    },
+    {
+        "uid": 51,
+        "task": "format_convert",
+        "task_type": "normal",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Olivia Anderson|27|Miami|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Adeline Wright,31,San Diego\nOutput: csv\n\nInput:\n(Zoe Adams, age, 35)\n(Zoe Adams, city, Seattle)\nOutput: tuple\n\nInput:\n<person>\n  <name>Gavin Smith</name>\n  <age>31</age>\n  <city>New Orleans</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Scarlett Baker\n  age: 34\n  city: Houston\nOutput: yaml\n\nInput:\n{\"name\": \"Madison King\", \"age\": 28, \"city\": \"Raleigh\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\n<person>\n  <name>Daniel Thomas</name>\n  <age>34</age>\n  <city>Philadelphia</city>\n</person>\nOutput: ",
+        "label": "xml"
+    },
+    {
+        "uid": 52,
+        "task": "format_convert",
+        "task_type": "normal",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Lily Martinez|33|Philadelphia|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Isabella Walker,28,Austin\nOutput: csv\n\nInput:\n(Joshua Campbell, age, 29)\n(Joshua Campbell, city, Minneapolis)\nOutput: tuple\n\nInput:\n<person>\n  <name>Sophia Clark</name>\n  <age>30</age>\n  <city>Houston</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Avery Turner\n  age: 27\n  city: Charlotte\nOutput: yaml\n\nInput:\n{\"name\": \"Sophia Clark\", \"age\": 30, \"city\": \"Houston\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\nperson:\n  name: Daniel Thomas\n  age: 34\n  city: Philadelphia\nOutput: ",
+        "label": "yaml"
+    },
+    {
+        "uid": 53,
+        "task": "format_convert",
+        "task_type": "normal",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Liam Turner|28|Denver|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Penelope Wilson,35,Tampa\nOutput: csv\n\nInput:\n(Joseph Scott, age, 33)\n(Joseph Scott, city, San Antonio)\nOutput: tuple\n\nInput:\n<person>\n  <name>Henry Thompson</name>\n  <age>32</age>\n  <city>San Diego</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Charlotte Adams\n  age: 35\n  city: Seattle\nOutput: yaml\n\nInput:\n{\"name\": \"Adeline Wright\", \"age\": 31, \"city\": \"San Diego\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\n{\"name\": \"Audrey Anderson\", \"age\": 27, \"city\": \"Detroit\"}\nOutput: ",
+        "label": "jsonl"
+    },
+    {
+        "uid": 54,
+        "task": "format_convert",
+        "task_type": "normal",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Matthew Martinez|33|Denver|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Aria Adams,36,Orlando\nOutput: csv\n\nInput:\n(Isabella Walker, age, 28)\n(Isabella Walker, city, Austin)\nOutput: tuple\n\nInput:\n<person>\n  <name>Nora Clark</name>\n  <age>29</age>\n  <city>Minneapolis</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Nathan Young\n  age: 31\n  city: Salt Lake City\nOutput: yaml\n\nInput:\n{\"name\": \"Adeline Wright\", \"age\": 31, \"city\": \"San Diego\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Avery Turner|27|Charlotte|\nOutput: ",
+        "label": "table"
+    },
+    {
+        "uid": 55,
+        "task": "format_convert",
+        "task_type": "normal",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Asher Jackson|27|Los Angeles|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Ava Adams,28,Atlanta\nOutput: csv\n\nInput:\n(Mason Lee, age, 29)\n(Mason Lee, city, San Francisco)\nOutput: tuple\n\nInput:\n<person>\n  <name>Victoria Roberts</name>\n  <age>27</age>\n  <city>Detroit</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Paisley Turner\n  age: 33\n  city: Kansas City\nOutput: yaml\n\nInput:\n{\"name\": \"Zoey Adams\", \"age\": 35, \"city\": \"Seattle\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\nIndex,name,age,city\n1,Henry Thompson,32,San Diego\nOutput: ",
+        "label": "csv"
+    },
+    {
+        "uid": 56,
+        "task": "format_convert",
+        "task_type": "normal",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Liam Turner|28|Denver|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Mason Lee,29,San Francisco\nOutput: csv\n\nInput:\n(Jack Lewis, age, 28)\n(Jack Lewis, city, Raleigh)\nOutput: tuple\n\nInput:\n<person>\n  <name>Mia Green</name>\n  <age>27</age>\n  <city>Las Vegas</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Paisley Turner\n  age: 33\n  city: Kansas City\nOutput: yaml\n\nInput:\n{\"name\": \"Hudson Davis\", \"age\": 32, \"city\": \"Indianapolis\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\n(Ava Adams, age, 28)\n(Ava Adams, city, Atlanta)\nOutput: ",
+        "label": "tuple"
+    },
+    {
+        "uid": 57,
+        "task": "format_convert",
+        "task_type": "normal",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Henry Baker|30|St. Louis|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Ava Adams,28,Atlanta\nOutput: csv\n\nInput:\n(Bentley Jackson, age, 27)\n(Bentley Jackson, city, Los Angeles)\nOutput: tuple\n\nInput:\n<person>\n  <name>William Rodriguez</name>\n  <age>36</age>\n  <city>Phoenix</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Michael Brown\n  age: 35\n  city: Chicago\nOutput: yaml\n\nInput:\n{\"name\": \"Henry Baker\", \"age\": 30, \"city\": \"St. Louis\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\n<person>\n  <name>Luna Green</name>\n  <age>30</age>\n  <city>Phoenix</city>\n</person>\nOutput: ",
+        "label": "xml"
+    },
+    {
+        "uid": 58,
+        "task": "format_convert",
+        "task_type": "normal",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Henry Thompson|32|San Diego|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Emma Hall,32,Dallas\nOutput: csv\n\nInput:\n(William Rodriguez, age, 36)\n(William Rodriguez, city, Phoenix)\nOutput: tuple\n\nInput:\n<person>\n  <name>Ian Green</name>\n  <age>30</age>\n  <city>Phoenix</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Henry Cook\n  age: 34\n  city: Cleveland\nOutput: yaml\n\nInput:\n{\"name\": \"Gavin Smith\", \"age\": 31, \"city\": \"New Orleans\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\nperson:\n  name: Aria Adams\n  age: 36\n  city: Orlando\nOutput: ",
+        "label": "yaml"
+    },
+    {
+        "uid": 59,
+        "task": "format_convert",
+        "task_type": "normal",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Mia Green|27|Las Vegas|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Isabella Wright,31,San Antonio\nOutput: csv\n\nInput:\n(Sophia Clark, age, 30)\n(Sophia Clark, city, Houston)\nOutput: tuple\n\nInput:\n<person>\n  <name>Charlotte Adams</name>\n  <age>35</age>\n  <city>Seattle</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Lucy Parker\n  age: 34\n  city: Nashville\nOutput: yaml\n\nInput:\n{\"name\": \"Amelia Jackson\", \"age\": 27, \"city\": \"Los Angeles\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\n{\"name\": \"Mason Lee\", \"age\": 29, \"city\": \"San Francisco\"}\nOutput: ",
+        "label": "jsonl"
+    },
+    {
+        "uid": 60,
+        "task": "format_convert",
+        "task_type": "transfer",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Grayson Anderson|27|Detroit|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Zoe Carter,36,Miami\nOutput: csv\n\nInput:\n(Eli Turner, age, 28)\n(Eli Turner, city, Denver)\nOutput: tuple\n\nInput:\n<person>\n  <name>Luna Green</name>\n  <age>30</age>\n  <city>Phoenix</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Sebastian Hill\n  age: 30\n  city: Austin\nOutput: yaml\n\nInput:\n{\"name\": \"Stella Clark\", \"age\": 29, \"city\": \"Minneapolis\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\n|Index|name|address|state|business direction|\n|---|---|---|---|---|\n|1|Sunset Meadows Farm|789 Oak Avenue|California|agriculture|\nOutput: ",
+        "label": "table"
+    },
+    {
+        "uid": 61,
+        "task": "format_convert",
+        "task_type": "transfer",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Michael Brown|35|Chicago|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Paisley Turner,33,Kansas City\nOutput: csv\n\nInput:\n(Caleb Adams, age, 28)\n(Caleb Adams, city, Atlanta)\nOutput: tuple\n\nInput:\n<person>\n  <name>Luna Green</name>\n  <age>30</age>\n  <city>Phoenix</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Nathan Young\n  age: 31\n  city: Salt Lake City\nOutput: yaml\n\nInput:\n{\"name\": \"Alexander Young\", \"age\": 29, \"city\": \"San Diego\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\nIndex,name,address,state,business direction\n1,Comet Concert Hall,789 Shooting Star Boulevard,Pennsylvania,live performances\nOutput: ",
+        "label": "csv"
+    },
+    {
+        "uid": 62,
+        "task": "format_convert",
+        "task_type": "transfer",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Andrew Adams|34|Charlotte|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Mason Lee,29,San Francisco\nOutput: csv\n\nInput:\n(Ava Hill, age, 31)\n(Ava Hill, city, Portland)\nOutput: tuple\n\nInput:\n<person>\n  <name>Alexander Young</name>\n  <age>29</age>\n  <city>San Diego</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Skylar Martinez\n  age: 33\n  city: Philadelphia\nOutput: yaml\n\nInput:\n{\"name\": \"Caleb Adams\", \"age\": 28, \"city\": \"Atlanta\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\n(Sunbeam Concert Hall, address, 789 Sunrise Street)\n(Sunbeam Concert Hall, state, Arizona)\n(Sunbeam Concert Hall, business direction, concert performances)\nOutput: ",
+        "label": "tuple"
+    },
+    {
+        "uid": 63,
+        "task": "format_convert",
+        "task_type": "transfer",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Evelyn Scott|31|New Orleans|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Amelia Jackson,27,Los Angeles\nOutput: csv\n\nInput:\n(Eleanor Parker, age, 34)\n(Eleanor Parker, city, Nashville)\nOutput: tuple\n\nInput:\n<person>\n  <name>Victoria Roberts</name>\n  <age>27</age>\n  <city>Detroit</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Zoey Adams\n  age: 35\n  city: Seattle\nOutput: yaml\n\nInput:\n{\"name\": \"Jackson Rodriguez\", \"age\": 29, \"city\": \"Portland\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\n<company>\n  <name>Skyline Adventure Park</name>\n  <address>789 Summit Drive</address>\n  <state>Colorado</state>\n  <business_direction>outdoor recreation</business_direction>\n</company>\nOutput: ",
+        "label": "xml"
+    },
+    {
+        "uid": 64,
+        "task": "format_convert",
+        "task_type": "transfer",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Easton Mitchell|34|Cleveland|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Brooklyn Wilson,35,Tampa\nOutput: csv\n\nInput:\n(Mason Lee, age, 29)\n(Mason Lee, city, San Francisco)\nOutput: tuple\n\nInput:\n<person>\n  <name>Gavin Smith</name>\n  <age>31</age>\n  <city>New Orleans</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Levi Johnson\n  age: 32\n  city: Chicago\nOutput: yaml\n\nInput:\n{\"name\": \"Harper Martinez\", \"age\": 32, \"city\": \"Chicago\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\ncompany:\n  name: Wildwood Equestrian Center\n  address: 567 Elm Street\n  state: Colorado\n  business direction: horse riding\nOutput: ",
+        "label": "yaml"
+    },
+    {
+        "uid": 65,
+        "task": "format_convert",
+        "task_type": "transfer",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Olivia Anderson|27|Miami|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,James Lewis,35,Atlanta\nOutput: csv\n\nInput:\n(Brooklyn Wilson, age, 35)\n(Brooklyn Wilson, city, Tampa)\nOutput: tuple\n\nInput:\n<person>\n  <name>Carter Young</name>\n  <age>31</age>\n  <city>Salt Lake City</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Alexander Harris\n  age: 33\n  city: Philadelphia\nOutput: yaml\n\nInput:\n{\"name\": \"Matthew Martinez\", \"age\": 33, \"city\": \"Denver\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\n{\"name\": \"Moonlight Dance Academy\", \"address\": \"987 Twilight Avenue\", \"state\": \"California\", \"business direction\": \"dance lessons\"}\nOutput: ",
+        "label": "jsonl"
+    },
+    {
+        "uid": 66,
+        "task": "format_convert",
+        "task_type": "transfer",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Sophia Thompson|32|San Diego|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Asher Green,30,Phoenix\nOutput: csv\n\nInput:\n(Mia Green, age, 27)\n(Mia Green, city, Las Vegas)\nOutput: tuple\n\nInput:\n<person>\n  <name>Brooklyn Wilson</name>\n  <age>35</age>\n  <city>Tampa</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Mason Lee\n  age: 29\n  city: San Francisco\nOutput: yaml\n\nInput:\n{\"name\": \"Madison King\", \"age\": 28, \"city\": \"Raleigh\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\n|Index|name|address|state|business_direction|\n|---|---|---|---|---|\n|1|Sunset Acres|123 Oak Avenue|California|retail|\nOutput: ",
+        "label": "table"
+    },
+    {
+        "uid": 67,
+        "task": "format_convert",
+        "task_type": "transfer",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Grayson Anderson|27|Detroit|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Caleb Adams,28,Atlanta\nOutput: csv\n\nInput:\n(Eli Turner, age, 28)\n(Eli Turner, city, Denver)\nOutput: tuple\n\nInput:\n<person>\n  <name>Carter Young</name>\n  <age>31</age>\n  <city>Salt Lake City</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Madelyn White\n  age: 35\n  city: Dallas\nOutput: yaml\n\nInput:\n{\"name\": \"Michael Brown\", \"age\": 35, \"city\": \"Chicago\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\nIndex,name,address,state,business direction\n1,Sunflower Theatre,987 Sunset Lane,Oregon,theater productions\nOutput: ",
+        "label": "csv"
+    },
+    {
+        "uid": 68,
+        "task": "format_convert",
+        "task_type": "transfer",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|William Rodriguez|36|Phoenix|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Scarlett Baker,30,St. Louis\nOutput: csv\n\nInput:\n(Christopher Wright, age, 36)\n(Christopher Wright, city, Orlando)\nOutput: tuple\n\nInput:\n<person>\n  <name>Zoe Carter</name>\n  <age>36</age>\n  <city>Miami</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Jennifer Taylor\n  age: 31\n  city: Seattle\nOutput: yaml\n\nInput:\n{\"name\": \"Lucy Parker\", \"age\": 34, \"city\": \"Nashville\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\n(Riverside Equestrian Center, address, 876 River Lane)\n(Riverside Equestrian Center, state, Texas)\n(Riverside Equestrian Center, business_direction, horse training)\nOutput: ",
+        "label": "tuple"
+    },
+    {
+        "uid": 69,
+        "task": "format_convert",
+        "task_type": "transfer",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Caleb Adams|28|Atlanta|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Abigail Baker,30,Nashville\nOutput: csv\n\nInput:\n(Chloe Turner, age, 33)\n(Chloe Turner, city, Kansas City)\nOutput: tuple\n\nInput:\n<person>\n  <name>Mia Green</name>\n  <age>27</age>\n  <city>Las Vegas</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Matthew Martinez\n  age: 33\n  city: Denver\nOutput: yaml\n\nInput:\n{\"name\": \"Oliver Carter\", \"age\": 36, \"city\": \"Miami\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\n<company>\n  <name>Serenity Stage</name>\n  <address>987 Harmony Lane</address>\n  <state>Washington</state>\n  <business direction>live performances</business direction>\n</company>\nOutput: ",
+        "label": "xml"
+    },
+    {
+        "uid": 70,
+        "task": "format_convert",
+        "task_type": "transfer",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Matthew Martinez|33|Denver|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Aiden Taylor,33,Las Vegas\nOutput: csv\n\nInput:\n(Victoria Roberts, age, 27)\n(Victoria Roberts, city, Detroit)\nOutput: tuple\n\nInput:\n<person>\n  <name>Easton Mitchell</name>\n  <age>34</age>\n  <city>Cleveland</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Charlotte Adams\n  age: 35\n  city: Seattle\nOutput: yaml\n\nInput:\n{\"name\": \"Paisley Turner\", \"age\": 33, \"city\": \"Kansas City\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\ncompany:\n  name: Twilight Theatre\n  address: 321 Sunset Boulevard\n  state: Arizona\n  business direction: live performances\nOutput: ",
+        "label": "yaml"
+    },
+    {
+        "uid": 71,
+        "task": "format_convert",
+        "task_type": "transfer",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Aiden Taylor|33|Las Vegas|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Emilia Carter,36,Miami\nOutput: csv\n\nInput:\n(Madelyn White, age, 35)\n(Madelyn White, city, Dallas)\nOutput: tuple\n\nInput:\n<person>\n  <name>Leo Davis</name>\n  <age>32</age>\n  <city>Indianapolis</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Aria Adams\n  age: 36\n  city: Orlando\nOutput: yaml\n\nInput:\n{\"name\": \"Skylar Martinez\", \"age\": 33, \"city\": \"Philadelphia\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\n{\"name\": \"Golden Harvest Vineyard\", \"address\": \"234 Grape Street\", \"state\": \"California\", \"business_direction\": \"winemaking\"}\nOutput: ",
+        "label": "jsonl"
+    },
+    {
+        "uid": 72,
+        "task": "format_convert",
+        "task_type": "transfer",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Liam Turner|28|Denver|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Madison King,28,Raleigh\nOutput: csv\n\nInput:\n(Ella Turner, age, 32)\n(Ella Turner, city, Indianapolis)\nOutput: tuple\n\nInput:\n<person>\n  <name>Leo Davis</name>\n  <age>32</age>\n  <city>Indianapolis</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: David Wilson\n  age: 29\n  city: Boston\nOutput: yaml\n\nInput:\n{\"name\": \"Ella Turner\", \"age\": 32, \"city\": \"Indianapolis\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\n|Index|name|address|state|business_direction|\n|---|---|---|---|---|\n|1|Skyline Adventure Park|789 Summit Drive|Colorado|outdoor recreation|\nOutput: ",
+        "label": "table"
+    },
+    {
+        "uid": 73,
+        "task": "format_convert",
+        "task_type": "transfer",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Sophia Thompson|32|San Diego|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Leo Davis,32,Indianapolis\nOutput: csv\n\nInput:\n(Paisley Turner, age, 33)\n(Paisley Turner, city, Kansas City)\nOutput: tuple\n\nInput:\n<person>\n  <name>Landon Smith</name>\n  <age>31</age>\n  <city>New Orleans</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Charlotte Adams\n  age: 35\n  city: Seattle\nOutput: yaml\n\nInput:\n{\"name\": \"Evelyn Scott\", \"age\": 31, \"city\": \"New Orleans\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\nIndex,name,address,state,business direction\n1,Sunflower Theatre,987 Sunset Lane,Oregon,theater productions\nOutput: ",
+        "label": "csv"
+    },
+    {
+        "uid": 74,
+        "task": "format_convert",
+        "task_type": "transfer",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Elijah Morgan|36|Pittsburgh|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Alexander Young,29,San Diego\nOutput: csv\n\nInput:\n(Mateo Hill, age, 30)\n(Mateo Hill, city, Austin)\nOutput: tuple\n\nInput:\n<person>\n  <name>Jennifer Taylor</name>\n  <age>31</age>\n  <city>Seattle</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Wyatt Cooper\n  age: 28\n  city: Denver\nOutput: yaml\n\nInput:\n{\"name\": \"Grace Morgan\", \"age\": 30, \"city\": \"St. Louis\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\n(Sunset Meadows Farm, address, 789 Oak Avenue)\n(Sunset Meadows Farm, state, California)\n(Sunset Meadows Farm, business direction, agriculture)\nOutput: ",
+        "label": "tuple"
+    },
+    {
+        "uid": 75,
+        "task": "format_convert",
+        "task_type": "transfer",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Henry Baker|30|St. Louis|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Isabella Wright,31,San Antonio\nOutput: csv\n\nInput:\n(Oliver Carter, age, 36)\n(Oliver Carter, city, Miami)\nOutput: tuple\n\nInput:\n<person>\n  <name>Samuel Powell</name>\n  <age>36</age>\n  <city>Pittsburgh</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Grace Morgan\n  age: 30\n  city: St. Louis\nOutput: yaml\n\nInput:\n{\"name\": \"David Wilson\", \"age\": 29, \"city\": \"Boston\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\n<company>\n  <name>Harmony Valley Vineyard</name>\n  <address>321 Vineyard Lane</address>\n  <state>Oregon</state>\n  <business direction>winery</business direction>\n</company>\nOutput: ",
+        "label": "xml"
+    },
+    {
+        "uid": 76,
+        "task": "format_convert",
+        "task_type": "transfer",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Sofia Mitchell|31|Salt Lake City|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Penelope Wilson,35,Tampa\nOutput: csv\n\nInput:\n(Sophia Thompson, age, 32)\n(Sophia Thompson, city, San Diego)\nOutput: tuple\n\nInput:\n<person>\n  <name>Alexander Harris</name>\n  <age>33</age>\n  <city>Philadelphia</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Sophia Clark\n  age: 30\n  city: Houston\nOutput: yaml\n\nInput:\n{\"name\": \"Asher Green\", \"age\": 30, \"city\": \"Phoenix\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\ncompany:\n  name: Dusk Dance Studio\n  address: 987 Twilight Lane\n  state: Florida\n  business direction: dance classes\nOutput: ",
+        "label": "yaml"
+    },
+    {
+        "uid": 77,
+        "task": "format_convert",
+        "task_type": "transfer",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Isabella Wright|31|San Antonio|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Hudson Davis,32,Indianapolis\nOutput: csv\n\nInput:\n(Lily Martinez, age, 33)\n(Lily Martinez, city, Philadelphia)\nOutput: tuple\n\nInput:\n<person>\n  <name>Penelope Wilson</name>\n  <age>35</age>\n  <city>Tampa</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Audrey Anderson\n  age: 27\n  city: Detroit\nOutput: yaml\n\nInput:\n{\"name\": \"Ian Green\", \"age\": 30, \"city\": \"Phoenix\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\n{\"name\": \"Ocean Breeze Surf School\", \"address\": \"987 Surfside Boulevard\", \"state\": \"California\", \"business direction\": \"surfing lessons\"}\nOutput: ",
+        "label": "jsonl"
+    },
+    {
+        "uid": 78,
+        "task": "format_convert",
+        "task_type": "transfer",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|David Wilson|29|Boston|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Ava Hill,31,Portland\nOutput: csv\n\nInput:\n(Mason Lee, age, 29)\n(Mason Lee, city, San Francisco)\nOutput: tuple\n\nInput:\n<person>\n  <name>Ella Turner</name>\n  <age>32</age>\n  <city>Indianapolis</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Adeline Wright\n  age: 31\n  city: San Diego\nOutput: yaml\n\nInput:\n{\"name\": \"Mason Lee\", \"age\": 29, \"city\": \"San Francisco\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\n|Index|name|address|state|business direction|\n|---|---|---|---|---|\n|1|Moonlight Music Hall|456 Elm Avenue|Texas|live performances|\nOutput: ",
+        "label": "table"
+    },
+    {
+        "uid": 79,
+        "task": "format_convert",
+        "task_type": "transfer",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Alexander Young|29|San Diego|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Avery Turner,27,Charlotte\nOutput: csv\n\nInput:\n(Chloe Turner, age, 33)\n(Chloe Turner, city, Kansas City)\nOutput: tuple\n\nInput:\n<person>\n  <name>Isabella Wright</name>\n  <age>31</age>\n  <city>San Antonio</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Hazel Davis\n  age: 29\n  city: San Francisco\nOutput: yaml\n\nInput:\n{\"name\": \"Ava Adams\", \"age\": 28, \"city\": \"Atlanta\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\nIndex,name,address,state,business_direction\n1,Wilderness Retreat,987 Forest Lane,Oregon,hospitality\nOutput: ",
+        "label": "csv"
+    },
+    {
+        "uid": 80,
+        "task": "format_convert",
+        "task_type": "transfer",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Eleanor Parker|34|Nashville|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Lily Martinez,33,Philadelphia\nOutput: csv\n\nInput:\n(Ava Hill, age, 31)\n(Ava Hill, city, Portland)\nOutput: tuple\n\nInput:\n<person>\n  <name>Layla Adams</name>\n  <age>36</age>\n  <city>Orlando</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Gabriel Rodriguez\n  age: 29\n  city: Portland\nOutput: yaml\n\nInput:\n{\"name\": \"Sofia Mitchell\", \"age\": 31, \"city\": \"Salt Lake City\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\n(Eclipse Theater, address, 456 Eclipse Street)\n(Eclipse Theater, state, Louisiana)\n(Eclipse Theater, business direction, live performances)\nOutput: ",
+        "label": "tuple"
+    },
+    {
+        "uid": 81,
+        "task": "format_convert",
+        "task_type": "transfer",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Matthew Martinez|33|Denver|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Eli Turner,28,Denver\nOutput: csv\n\nInput:\n(Chloe Turner, age, 33)\n(Chloe Turner, city, Kansas City)\nOutput: tuple\n\nInput:\n<person>\n  <name>Sarah Johnson</name>\n  <age>28</age>\n  <city>Los Angeles</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Asher Jackson\n  age: 27\n  city: Los Angeles\nOutput: yaml\n\nInput:\n{\"name\": \"Ian Green\", \"age\": 30, \"city\": \"Phoenix\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\n<company>\n  <name>Pinecrest Ski Resort</name>\n  <address>432 Ski Slope Road</address>\n  <state>Colorado</state>\n  <business direction>ski resort</business direction>\n</company>\nOutput: ",
+        "label": "xml"
+    },
+    {
+        "uid": 82,
+        "task": "format_convert",
+        "task_type": "transfer",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Lincoln Johnson|32|Chicago|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Landon Smith,31,New Orleans\nOutput: csv\n\nInput:\n(Landon Smith, age, 31)\n(Landon Smith, city, New Orleans)\nOutput: tuple\n\nInput:\n<person>\n  <name>Paisley Turner</name>\n  <age>33</age>\n  <city>Kansas City</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Logan Perez\n  age: 33\n  city: Kansas City\nOutput: yaml\n\nInput:\n{\"name\": \"Riley Turner\", \"age\": 27, \"city\": \"Charlotte\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\ncompany:\n  name: Sunset Symphony Hall\n  address: 654 Sunrise Boulevard\n  state: Texas\n  business direction: orchestral performances\nOutput: ",
+        "label": "yaml"
+    },
+    {
+        "uid": 83,
+        "task": "format_convert",
+        "task_type": "transfer",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Sophia Clark|30|Houston|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Paisley Turner,33,Kansas City\nOutput: csv\n\nInput:\n(Sophia Thompson, age, 32)\n(Sophia Thompson, city, San Diego)\nOutput: tuple\n\nInput:\n<person>\n  <name>Aria Adams</name>\n  <age>36</age>\n  <city>Orlando</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Ava Adams\n  age: 28\n  city: Atlanta\nOutput: yaml\n\nInput:\n{\"name\": \"Nathan Young\", \"age\": 31, \"city\": \"Salt Lake City\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\n{\"name\": \"Eclipse Theater\", \"address\": \"456 Eclipse Street\", \"state\": \"Louisiana\", \"business direction\": \"live performances\"}\nOutput: ",
+        "label": "jsonl"
+    },
+    {
+        "uid": 84,
+        "task": "format_convert",
+        "task_type": "transfer",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Joseph Scott|33|San Antonio|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Lincoln Johnson,32,Chicago\nOutput: csv\n\nInput:\n(Luna Green, age, 30)\n(Luna Green, city, Phoenix)\nOutput: tuple\n\nInput:\n<person>\n  <name>Gavin Smith</name>\n  <age>31</age>\n  <city>New Orleans</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Oliver Carter\n  age: 36\n  city: Miami\nOutput: yaml\n\nInput:\n{\"name\": \"Paisley Turner\", \"age\": 33, \"city\": \"Kansas City\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\n|Index|name|address|state|business direction|\n|---|---|---|---|---|\n|1|Sunset Circus|654 Sunset Boulevard|Kentucky|circus performances|\nOutput: ",
+        "label": "table"
+    },
+    {
+        "uid": 85,
+        "task": "format_convert",
+        "task_type": "transfer",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Lucas White|35|Dallas|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Penelope Wilson,35,Tampa\nOutput: csv\n\nInput:\n(Elijah Morgan, age, 36)\n(Elijah Morgan, city, Pittsburgh)\nOutput: tuple\n\nInput:\n<person>\n  <name>Jameson Baker</name>\n  <age>34</age>\n  <city>Houston</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Caleb Adams\n  age: 28\n  city: Atlanta\nOutput: yaml\n\nInput:\n{\"name\": \"Mia Green\", \"age\": 27, \"city\": \"Las Vegas\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\nIndex,name,address,state,business direction\n1,Aurora Playhouse,789 Aurora Avenue,Illinois,live performances\nOutput: ",
+        "label": "csv"
+    },
+    {
+        "uid": 86,
+        "task": "format_convert",
+        "task_type": "transfer",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Nora Clark|29|Minneapolis|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Paisley Turner,33,Kansas City\nOutput: csv\n\nInput:\n(Mateo Hill, age, 30)\n(Mateo Hill, city, Austin)\nOutput: tuple\n\nInput:\n<person>\n  <name>Audrey Anderson</name>\n  <age>27</age>\n  <city>Detroit</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Skylar Martinez\n  age: 33\n  city: Philadelphia\nOutput: yaml\n\nInput:\n{\"name\": \"Ella Turner\", \"age\": 32, \"city\": \"Indianapolis\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\n(Harmony Valley Vineyard, address, 321 Vineyard Lane)\n(Harmony Valley Vineyard, state, Oregon)\n(Harmony Valley Vineyard, business direction, winery)\nOutput: ",
+        "label": "tuple"
+    },
+    {
+        "uid": 87,
+        "task": "format_convert",
+        "task_type": "transfer",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Henry Thompson|32|San Diego|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Luna Green,30,Phoenix\nOutput: csv\n\nInput:\n(Penelope Wilson, age, 35)\n(Penelope Wilson, city, Tampa)\nOutput: tuple\n\nInput:\n<person>\n  <name>Caleb Adams</name>\n  <age>28</age>\n  <city>Atlanta</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Sarah Johnson\n  age: 28\n  city: Los Angeles\nOutput: yaml\n\nInput:\n{\"name\": \"Luna Green\", \"age\": 30, \"city\": \"Phoenix\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\n<company>\n  <name>Zenith Theater</name>\n  <address>321 Summit Street</address>\n  <state>Wyoming</state>\n  <business direction>live performances</business direction>\n</company>\nOutput: ",
+        "label": "xml"
+    },
+    {
+        "uid": 88,
+        "task": "format_convert",
+        "task_type": "transfer",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Victoria Roberts|27|Detroit|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Chloe Turner,33,Kansas City\nOutput: csv\n\nInput:\n(Adeline Wright, age, 31)\n(Adeline Wright, city, San Diego)\nOutput: tuple\n\nInput:\n<person>\n  <name>Eleanor Parker</name>\n  <age>34</age>\n  <city>Nashville</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Stella Clark\n  age: 29\n  city: Minneapolis\nOutput: yaml\n\nInput:\n{\"name\": \"Lucas White\", \"age\": 35, \"city\": \"Dallas\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\ncompany:\n  name: Whispering Pines Campground\n  address: 654 Campground Lane\n  state: Michigan\n  business direction: camping\nOutput: ",
+        "label": "yaml"
+    },
+    {
+        "uid": 89,
+        "task": "format_convert",
+        "task_type": "transfer",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Grayson Anderson|27|Detroit|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Grayson Anderson,27,Detroit\nOutput: csv\n\nInput:\n(Audrey Anderson, age, 27)\n(Audrey Anderson, city, Detroit)\nOutput: tuple\n\nInput:\n<person>\n  <name>Henry Cook</name>\n  <age>34</age>\n  <city>Cleveland</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Lily Martinez\n  age: 33\n  city: Philadelphia\nOutput: yaml\n\nInput:\n{\"name\": \"Wyatt Cooper\", \"age\": 28, \"city\": \"Denver\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\n{\"name\": \"Celestial Symphony Hall\", \"address\": \"321 Galaxy Lane\", \"state\": \"Minnesota\", \"business direction\": \"live performances\"}\nOutput: ",
+        "label": "jsonl"
+    },
+    {
+        "uid": 90,
+        "task": "format_convert",
+        "task_type": "transfer",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Landon Smith|31|New Orleans|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Benjamin Lee,35,Tampa\nOutput: csv\n\nInput:\n(Nathan Young, age, 31)\n(Nathan Young, city, Salt Lake City)\nOutput: tuple\n\nInput:\n<person>\n  <name>Isabella Walker</name>\n  <age>28</age>\n  <city>Austin</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Amelia Jackson\n  age: 27\n  city: Los Angeles\nOutput: yaml\n\nInput:\n{\"name\": \"Lily Martinez\", \"age\": 33, \"city\": \"Philadelphia\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\n|Index|name|address|state|business direction|\n|---|---|---|---|---|\n|1|Sunrise Comedy Club|321 Laughter Lane|Illinois|stand-up comedy shows|\nOutput: ",
+        "label": "table"
+    },
+    {
+        "uid": 91,
+        "task": "format_convert",
+        "task_type": "transfer",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Brooklyn Wilson|35|Tampa|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Aria Adams,36,Orlando\nOutput: csv\n\nInput:\n(Sophia Thompson, age, 32)\n(Sophia Thompson, city, San Diego)\nOutput: tuple\n\nInput:\n<person>\n  <name>James Lewis</name>\n  <age>35</age>\n  <city>Atlanta</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Bentley Jackson\n  age: 27\n  city: Los Angeles\nOutput: yaml\n\nInput:\n{\"name\": \"Liam Turner\", \"age\": 28, \"city\": \"Denver\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\nIndex,name,address,state,business direction\n1,Dusk Dance Studio,987 Twilight Lane,Florida,dance classes\nOutput: ",
+        "label": "csv"
+    },
+    {
+        "uid": 92,
+        "task": "format_convert",
+        "task_type": "transfer",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Oliver Carter|36|Miami|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Grace Morgan,30,St. Louis\nOutput: csv\n\nInput:\n(Logan Perez, age, 33)\n(Logan Perez, city, Kansas City)\nOutput: tuple\n\nInput:\n<person>\n  <name>Abigail Baker</name>\n  <age>30</age>\n  <city>Nashville</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: David Wilson\n  age: 29\n  city: Boston\nOutput: yaml\n\nInput:\n{\"name\": \"Matthew Martinez\", \"age\": 33, \"city\": \"Denver\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\n(Sunset Symphony Hall, address, 654 Sunrise Boulevard)\n(Sunset Symphony Hall, state, Texas)\n(Sunset Symphony Hall, business direction, orchestral performances)\nOutput: ",
+        "label": "tuple"
+    },
+    {
+        "uid": 93,
+        "task": "format_convert",
+        "task_type": "transfer",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Wyatt Cooper|28|Denver|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Sebastian Hill,30,Austin\nOutput: csv\n\nInput:\n(Asher Green, age, 30)\n(Asher Green, city, Phoenix)\nOutput: tuple\n\nInput:\n<person>\n  <name>William Rodriguez</name>\n  <age>36</age>\n  <city>Phoenix</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Henry Baker\n  age: 30\n  city: St. Louis\nOutput: yaml\n\nInput:\n{\"name\": \"Nora Clark\", \"age\": 29, \"city\": \"Minneapolis\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\n<company>\n  <name>Serenity Spa Retreat</name>\n  <address>876 Relaxation Avenue</address>\n  <state>Hawaii</state>\n  <business direction>wellness</business direction>\n</company>\nOutput: ",
+        "label": "xml"
+    },
+    {
+        "uid": 94,
+        "task": "format_convert",
+        "task_type": "transfer",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Julian Lewis|28|Raleigh|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Gabriel Rodriguez,29,Portland\nOutput: csv\n\nInput:\n(Sofia Mitchell, age, 31)\n(Sofia Mitchell, city, Salt Lake City)\nOutput: tuple\n\nInput:\n<person>\n  <name>Zoey Adams</name>\n  <age>35</age>\n  <city>Seattle</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Elijah Morgan\n  age: 36\n  city: Pittsburgh\nOutput: yaml\n\nInput:\n{\"name\": \"Layla Adams\", \"age\": 36, \"city\": \"Orlando\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\ncompany:\n  name: Sunbeam Concert Hall\n  address: 789 Sunrise Street\n  state: Arizona\n  business direction: concert performances\nOutput: ",
+        "label": "yaml"
+    },
+    {
+        "uid": 95,
+        "task": "format_convert",
+        "task_type": "transfer",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Penelope Wilson|35|Tampa|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Charlotte Adams,35,Seattle\nOutput: csv\n\nInput:\n(Abigail Baker, age, 30)\n(Abigail Baker, city, Nashville)\nOutput: tuple\n\nInput:\n<person>\n  <name>Stella Clark</name>\n  <age>29</age>\n  <city>Minneapolis</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Scarlett Baker\n  age: 30\n  city: St. Louis\nOutput: yaml\n\nInput:\n{\"name\": \"Sarah Johnson\", \"age\": 28, \"city\": \"Los Angeles\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\n{\"name\": \"Lunar Music Center\", \"address\": \"654 Crescent Avenue\", \"state\": \"Ohio\", \"business direction\": \"live performances\"}\nOutput: ",
+        "label": "jsonl"
+    },
+    {
+        "uid": 96,
+        "task": "format_convert",
+        "task_type": "transfer",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Bentley Jackson|27|Los Angeles|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Asher Green,30,Phoenix\nOutput: csv\n\nInput:\n(Alexander Young, age, 29)\n(Alexander Young, city, San Diego)\nOutput: tuple\n\nInput:\n<person>\n  <name>Emilia Carter</name>\n  <age>36</age>\n  <city>Miami</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Carter Young\n  age: 31\n  city: Salt Lake City\nOutput: yaml\n\nInput:\n{\"name\": \"Grace Morgan\", \"age\": 30, \"city\": \"St. Louis\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\n|Index|name|address|state|business direction|\n|---|---|---|---|---|\n|1|Moonlight Dance Academy|987 Twilight Avenue|California|dance lessons|\nOutput: ",
+        "label": "table"
+    },
+    {
+        "uid": 97,
+        "task": "format_convert",
+        "task_type": "transfer",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Elijah Morgan|36|Pittsburgh|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Asher Jackson,27,Los Angeles\nOutput: csv\n\nInput:\n(Violet Morgan, age, 36)\n(Violet Morgan, city, Pittsburgh)\nOutput: tuple\n\nInput:\n<person>\n  <name>Olivia Anderson</name>\n  <age>27</age>\n  <city>Miami</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Madelyn White\n  age: 35\n  city: Dallas\nOutput: yaml\n\nInput:\n{\"name\": \"Charlotte Adams\", \"age\": 35, \"city\": \"Seattle\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\nIndex,name,address,state,business direction\n1,Mystic Lake Ranch,123 Maple Road,Montana,tourism\nOutput: ",
+        "label": "csv"
+    },
+    {
+        "uid": 98,
+        "task": "format_convert",
+        "task_type": "transfer",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Joseph Scott|33|San Antonio|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Henry Baker,30,St. Louis\nOutput: csv\n\nInput:\n(Andrew Adams, age, 34)\n(Andrew Adams, city, Charlotte)\nOutput: tuple\n\nInput:\n<person>\n  <name>Violet Morgan</name>\n  <age>36</age>\n  <city>Pittsburgh</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Paisley Turner\n  age: 33\n  city: Kansas City\nOutput: yaml\n\nInput:\n{\"name\": \"Scarlett Baker\", \"age\": 34, \"city\": \"Houston\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\n(Dawn Art Studio, address, 321 Sunshine Drive)\n(Dawn Art Studio, state, New Jersey)\n(Dawn Art Studio, business direction, art classes)\nOutput: ",
+        "label": "tuple"
+    },
+    {
+        "uid": 99,
+        "task": "format_convert",
+        "task_type": "transfer",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Avery Turner|27|Charlotte|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Ava Adams,28,Atlanta\nOutput: csv\n\nInput:\n(Bentley Jackson, age, 27)\n(Bentley Jackson, city, Los Angeles)\nOutput: tuple\n\nInput:\n<person>\n  <name>Grayson Anderson</name>\n  <age>27</age>\n  <city>Detroit</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Sebastian Hill\n  age: 30\n  city: Austin\nOutput: yaml\n\nInput:\n{\"name\": \"Lincoln Johnson\", \"age\": 32, \"city\": \"Chicago\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\n<company>\n  <name>Metropolis Music Hall</name>\n  <address>456 Metro Avenue</address>\n  <state>Texas</state>\n  <business direction>live performances</business direction>\n</company>\nOutput: ",
+        "label": "xml"
+    },
+    {
+        "uid": 100,
+        "task": "format_convert",
+        "task_type": "transfer",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Gavin Smith|31|New Orleans|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Carter Young,31,Salt Lake City\nOutput: csv\n\nInput:\n(Caleb Adams, age, 28)\n(Caleb Adams, city, Atlanta)\nOutput: tuple\n\nInput:\n<person>\n  <name>Sofia Mitchell</name>\n  <age>34</age>\n  <city>Cleveland</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Madison King\n  age: 28\n  city: Raleigh\nOutput: yaml\n\nInput:\n{\"name\": \"Skylar Martinez\", \"age\": 33, \"city\": \"Philadelphia\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\ncompany:\n  name: Moonlight Dance Academy\n  address: 987 Twilight Avenue\n  state: California\n  business direction: dance lessons\nOutput: ",
+        "label": "yaml"
+    },
+    {
+        "uid": 101,
+        "task": "format_convert",
+        "task_type": "transfer",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Wyatt Cooper|28|Denver|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Sofia Mitchell,34,Cleveland\nOutput: csv\n\nInput:\n(Mason Lee, age, 29)\n(Mason Lee, city, San Francisco)\nOutput: tuple\n\nInput:\n<person>\n  <name>Bentley Jackson</name>\n  <age>27</age>\n  <city>Los Angeles</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Charlotte Adams\n  age: 35\n  city: Seattle\nOutput: yaml\n\nInput:\n{\"name\": \"Brooklyn Wilson\", \"age\": 35, \"city\": \"Tampa\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\n{\"name\": \"Starstruck Theater\", \"address\": \"123 Stardust Lane\", \"state\": \"Missouri\", \"business direction\": \"theater plays\"}\nOutput: ",
+        "label": "jsonl"
+    },
+    {
+        "uid": 102,
+        "task": "format_convert",
+        "task_type": "transfer",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Asher Green|30|Phoenix|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Emilia Carter,36,Miami\nOutput: csv\n\nInput:\n(Asher Jackson, age, 27)\n(Asher Jackson, city, Los Angeles)\nOutput: tuple\n\nInput:\n<person>\n  <name>Levi Johnson</name>\n  <age>32</age>\n  <city>Chicago</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Julian Lewis\n  age: 28\n  city: Raleigh\nOutput: yaml\n\nInput:\n{\"name\": \"Liam Turner\", \"age\": 28, \"city\": \"Denver\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\n|Index|name|address|state|business direction|\n|---|---|---|---|---|\n|1|Ocean Breeze Surf School|987 Surfside Boulevard|California|surfing lessons|\nOutput: ",
+        "label": "table"
+    },
+    {
+        "uid": 103,
+        "task": "format_convert",
+        "task_type": "transfer",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Grayson Anderson|27|Detroit|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,William Rodriguez,36,Phoenix\nOutput: csv\n\nInput:\n(Zoey Adams, age, 35)\n(Zoey Adams, city, Seattle)\nOutput: tuple\n\nInput:\n<person>\n  <name>Amelia Jackson</name>\n  <age>27</age>\n  <city>Los Angeles</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Liam Turner\n  age: 28\n  city: Denver\nOutput: yaml\n\nInput:\n{\"name\": \"Evelyn Scott\", \"age\": 31, \"city\": \"New Orleans\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\nIndex,name,address,state,business direction\n1,Ocean Breeze Surf School,987 Surfside Boulevard,California,surfing lessons\nOutput: ",
+        "label": "csv"
+    },
+    {
+        "uid": 104,
+        "task": "format_convert",
+        "task_type": "transfer",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Ava Adams|28|Atlanta|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Zoe Carter,36,Miami\nOutput: csv\n\nInput:\n(Isabella Walker, age, 28)\n(Isabella Walker, city, Austin)\nOutput: tuple\n\nInput:\n<person>\n  <name>Andrew Adams</name>\n  <age>34</age>\n  <city>Charlotte</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Christopher Wright\n  age: 36\n  city: Orlando\nOutput: yaml\n\nInput:\n{\"name\": \"Samuel Powell\", \"age\": 36, \"city\": \"Pittsburgh\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\n(Moonlight Music Hall, address, 456 Elm Avenue)\n(Moonlight Music Hall, state, Texas)\n(Moonlight Music Hall, business direction, live performances)\nOutput: ",
+        "label": "tuple"
+    },
+    {
+        "uid": 105,
+        "task": "format_convert",
+        "task_type": "transfer",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Scarlett Baker|30|St. Louis|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Christopher Wright,36,Orlando\nOutput: csv\n\nInput:\n(Eli Turner, age, 28)\n(Eli Turner, city, Denver)\nOutput: tuple\n\nInput:\n<person>\n  <name>Henry Cook</name>\n  <age>34</age>\n  <city>Cleveland</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Sophia Clark\n  age: 30\n  city: Houston\nOutput: yaml\n\nInput:\n{\"name\": \"Nora Clark\", \"age\": 29, \"city\": \"Minneapolis\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\n<company>\n  <name>Dawn Concert Hall</name>\n  <address>987 Sunrise Lane</address>\n  <state>Colorado</state>\n  <business direction>live performances</business direction>\n</company>\nOutput: ",
+        "label": "xml"
+    },
+    {
+        "uid": 106,
+        "task": "format_convert",
+        "task_type": "transfer",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Sophia Thompson|32|San Diego|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Zoe Carter,36,Miami\nOutput: csv\n\nInput:\n(Violet Morgan, age, 36)\n(Violet Morgan, city, Pittsburgh)\nOutput: tuple\n\nInput:\n<person>\n  <name>Nora Clark</name>\n  <age>29</age>\n  <city>Minneapolis</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Daniel Thomas\n  age: 34\n  city: Philadelphia\nOutput: yaml\n\nInput:\n{\"name\": \"Victoria Roberts\", \"age\": 27, \"city\": \"Detroit\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\ncompany:\n  name: Aurora Playhouse\n  address: 789 Aurora Avenue\n  state: Illinois\n  business direction: live performances\nOutput: ",
+        "label": "yaml"
+    },
+    {
+        "uid": 107,
+        "task": "format_convert",
+        "task_type": "transfer",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Nora Clark|29|Minneapolis|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Layla Adams,36,Orlando\nOutput: csv\n\nInput:\n(Asher Green, age, 30)\n(Asher Green, city, Phoenix)\nOutput: tuple\n\nInput:\n<person>\n  <name>Adeline Wright</name>\n  <age>31</age>\n  <city>San Diego</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Elijah Morgan\n  age: 36\n  city: Pittsburgh\nOutput: yaml\n\nInput:\n{\"name\": \"Emily Davis\", \"age\": 32, \"city\": \"San Francisco\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\n{\"name\": \"Moonrise Opera House\", \"address\": \"456 Starlight Avenue\", \"state\": \"Georgia\", \"business direction\": \"opera shows\"}\nOutput: ",
+        "label": "jsonl"
+    },
+    {
+        "uid": 108,
+        "task": "format_convert",
+        "task_type": "transfer",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Nova Baker|34|Houston|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Gabriel Rodriguez,29,Portland\nOutput: csv\n\nInput:\n(Mateo Hill, age, 30)\n(Mateo Hill, city, Austin)\nOutput: tuple\n\nInput:\n<person>\n  <name>Zoe Adams</name>\n  <age>35</age>\n  <city>Seattle</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Sarah Johnson\n  age: 28\n  city: Los Angeles\nOutput: yaml\n\nInput:\n{\"name\": \"Aiden Taylor\", \"age\": 33, \"city\": \"Las Vegas\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\n|Index|name|address|state|business direction|\n|---|---|---|---|---|\n|1|Sunset Circus|654 Sunset Boulevard|Kentucky|circus performances|\nOutput: ",
+        "label": "table"
+    },
+    {
+        "uid": 109,
+        "task": "format_convert",
+        "task_type": "transfer",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Bentley Jackson|27|Los Angeles|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Layla Adams,36,Orlando\nOutput: csv\n\nInput:\n(Nora Clark, age, 29)\n(Nora Clark, city, Minneapolis)\nOutput: tuple\n\nInput:\n<person>\n  <name>Ian Green</name>\n  <age>30</age>\n  <city>Phoenix</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Skylar Martinez\n  age: 33\n  city: Philadelphia\nOutput: yaml\n\nInput:\n{\"name\": \"Landon Smith\", \"age\": 31, \"city\": \"New Orleans\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\nIndex,name,address,state,business direction\n1,Starlight Theater,789 Broadway Street,New York,live performances\nOutput: ",
+        "label": "csv"
+    },
+    {
+        "uid": 110,
+        "task": "format_convert",
+        "task_type": "transfer",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Eleanor Parker|34|Nashville|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Grace Morgan,30,St. Louis\nOutput: csv\n\nInput:\n(Levi Johnson, age, 32)\n(Levi Johnson, city, Chicago)\nOutput: tuple\n\nInput:\n<person>\n  <name>Grace Morgan</name>\n  <age>30</age>\n  <city>St. Louis</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Evelyn Scott\n  age: 31\n  city: New Orleans\nOutput: yaml\n\nInput:\n{\"name\": \"Chloe Turner\", \"age\": 33, \"city\": \"Kansas City\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\n(Cosmic Theater, address, 123 Galaxy Lane)\n(Cosmic Theater, state, Tennessee)\n(Cosmic Theater, business direction, live performances)\nOutput: ",
+        "label": "tuple"
+    },
+    {
+        "uid": 111,
+        "task": "format_convert",
+        "task_type": "transfer",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|David Wilson|29|Boston|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Layla Adams,36,Orlando\nOutput: csv\n\nInput:\n(Jackson Rodriguez, age, 29)\n(Jackson Rodriguez, city, Portland)\nOutput: tuple\n\nInput:\n<person>\n  <name>Paisley Turner</name>\n  <age>33</age>\n  <city>Kansas City</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Audrey Anderson\n  age: 27\n  city: Detroit\nOutput: yaml\n\nInput:\n{\"name\": \"Penelope Wilson\", \"age\": 35, \"city\": \"Tampa\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\n<company>\n  <name>Lunar Music Center</name>\n  <address>654 Crescent Avenue</address>\n  <state>Ohio</state>\n  <business direction>live performances</business direction>\n</company>\nOutput: ",
+        "label": "xml"
+    },
+    {
+        "uid": 112,
+        "task": "format_convert",
+        "task_type": "transfer",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Benjamin Lee|35|Tampa|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Violet Morgan,36,Pittsburgh\nOutput: csv\n\nInput:\n(Mia Green, age, 27)\n(Mia Green, city, Las Vegas)\nOutput: tuple\n\nInput:\n<person>\n  <name>Aria Adams</name>\n  <age>36</age>\n  <city>Orlando</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Ian Green\n  age: 30\n  city: Phoenix\nOutput: yaml\n\nInput:\n{\"name\": \"David Wilson\", \"age\": 29, \"city\": \"Boston\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\ncompany:\n  name: Midnight Music Lounge\n  address: 123 Twilight Street\n  state: Colorado\n  business direction: live music performances\nOutput: ",
+        "label": "yaml"
+    },
+    {
+        "uid": 113,
+        "task": "format_convert",
+        "task_type": "transfer",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Jack Lewis|28|Raleigh|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Zachary Turner,33,Las Vegas\nOutput: csv\n\nInput:\n(Henry Thompson, age, 32)\n(Henry Thompson, city, San Diego)\nOutput: tuple\n\nInput:\n<person>\n  <name>Nathan Young</name>\n  <age>31</age>\n  <city>Salt Lake City</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: David Wilson\n  age: 29\n  city: Boston\nOutput: yaml\n\nInput:\n{\"name\": \"Isabella Walker\", \"age\": 28, \"city\": \"Austin\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\n{\"name\": \"Dawn Art Studio\", \"address\": \"321 Sunshine Drive\", \"state\": \"New Jersey\", \"business direction\": \"art classes\"}\nOutput: ",
+        "label": "jsonl"
+    },
+    {
+        "uid": 114,
+        "task": "format_convert",
+        "task_type": "transfer",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Carter Young|31|Salt Lake City|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Andrew Adams,34,Charlotte\nOutput: csv\n\nInput:\n(Violet Morgan, age, 36)\n(Violet Morgan, city, Pittsburgh)\nOutput: tuple\n\nInput:\n<person>\n  <name>Joshua Campbell</name>\n  <age>29</age>\n  <city>Minneapolis</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Olivia Anderson\n  age: 27\n  city: Miami\nOutput: yaml\n\nInput:\n{\"name\": \"Mason Lee\", \"age\": 29, \"city\": \"San Francisco\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\n|Index|name|address|state|business direction|\n|---|---|---|---|---|\n|1|Crimson Opera House|789 Sunrise Street|New York|opera performances|\nOutput: ",
+        "label": "table"
+    },
+    {
+        "uid": 115,
+        "task": "format_convert",
+        "task_type": "transfer",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Lucas White|35|Dallas|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Henry Cook,34,Cleveland\nOutput: csv\n\nInput:\n(Henry Baker, age, 30)\n(Henry Baker, city, St. Louis)\nOutput: tuple\n\nInput:\n<person>\n  <name>Lucas White</name>\n  <age>35</age>\n  <city>Dallas</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Jackson Rodriguez\n  age: 29\n  city: Portland\nOutput: yaml\n\nInput:\n{\"name\": \"Nova Baker\", \"age\": 34, \"city\": \"Houston\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\nIndex,name,address,state,business direction\n1,Dawn Concert Hall,987 Sunrise Lane,Colorado,live performances\nOutput: ",
+        "label": "csv"
+    },
+    {
+        "uid": 116,
+        "task": "format_convert",
+        "task_type": "transfer",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Mateo Hill|30|Austin|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Alexander Harris,33,Philadelphia\nOutput: csv\n\nInput:\n(Bentley Jackson, age, 27)\n(Bentley Jackson, city, Los Angeles)\nOutput: tuple\n\nInput:\n<person>\n  <name>Nora Clark</name>\n  <age>29</age>\n  <city>Minneapolis</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Harper Martinez\n  age: 32\n  city: Chicago\nOutput: yaml\n\nInput:\n{\"name\": \"Isabella Walker\", \"age\": 28, \"city\": \"Austin\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\n(Sunbeam Concert Hall, address, 789 Sunrise Street)\n(Sunbeam Concert Hall, state, Arizona)\n(Sunbeam Concert Hall, business direction, concert performances)\nOutput: ",
+        "label": "tuple"
+    },
+    {
+        "uid": 117,
+        "task": "format_convert",
+        "task_type": "transfer",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Emily Davis|32|San Francisco|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Skylar Martinez,33,Philadelphia\nOutput: csv\n\nInput:\n(Zoe Carter, age, 36)\n(Zoe Carter, city, Miami)\nOutput: tuple\n\nInput:\n<person>\n  <name>Olivia Anderson</name>\n  <age>27</age>\n  <city>Miami</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Isabella Wright\n  age: 31\n  city: San Antonio\nOutput: yaml\n\nInput:\n{\"name\": \"Grace Morgan\", \"age\": 30, \"city\": \"St. Louis\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\n<company>\n  <name>Rainbow Theatre</name>\n  <address>987 Rainbow Road</address>\n  <state>New Jersey</state>\n  <business direction>live performances</business direction>\n</company>\nOutput: ",
+        "label": "xml"
+    },
+    {
+        "uid": 118,
+        "task": "format_convert",
+        "task_type": "transfer",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Sophia Clark|30|Houston|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Emilia Carter,36,Miami\nOutput: csv\n\nInput:\n(Stella Clark, age, 29)\n(Stella Clark, city, Minneapolis)\nOutput: tuple\n\nInput:\n<person>\n  <name>Matthew Martinez</name>\n  <age>33</age>\n  <city>Denver</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Bentley Jackson\n  age: 27\n  city: Los Angeles\nOutput: yaml\n\nInput:\n{\"name\": \"David Wilson\", \"age\": 29, \"city\": \"Boston\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\ncompany:\n  name: Crimson Opera House\n  address: 789 Sunrise Street\n  state: New York\n  business direction: opera performances\nOutput: ",
+        "label": "yaml"
+    },
+    {
+        "uid": 119,
+        "task": "format_convert",
+        "task_type": "transfer",
+        "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Logan Perez|33|Kansas City|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,Emily Davis,32,San Francisco\nOutput: csv\n\nInput:\n(Aria Adams, age, 36)\n(Aria Adams, city, Orlando)\nOutput: tuple\n\nInput:\n<person>\n  <name>Christopher Wright</name>\n  <age>36</age>\n  <city>Orlando</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Liam Turner\n  age: 28\n  city: Denver\nOutput: yaml\n\nInput:\n{\"name\": \"Mia Green\", \"age\": 27, \"city\": \"Las Vegas\"}\nOutput: jsonl\n\n",
+        "prompt": "Input:\n{\"name\": \"Serenity Spa Retreat\", \"address\": \"876 Relaxation Avenue\", \"state\": \"Hawaii\", \"business direction\": \"wellness\"}\nOutput: ",
+        "label": "jsonl"
+    }
+]
