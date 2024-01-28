@@ -1,5 +1,6 @@
 
-### Copying Ability
+## Copying Ability
+### Natural Language Completion
 **NaturalLanguageCopyiny**
 ```
 {
@@ -14,7 +15,7 @@
 }
 ```
 
-
+### Dictionary Search
 **DictSearchCopying**
 ```
 {
@@ -60,8 +61,8 @@
 }
 ```
 
-### Learning Ability
-
+## Learning Ability
+### Classifier
 **CheckOrder**
 ```
 {
@@ -74,6 +75,31 @@
 }
 ```
 
+**CheckDuplication**
+```
+{
+    "uid": 0,
+    "task": "check_repeated_content",
+    "task_type": "character",
+    "examples": "Input: W, D, 5, 1, 2, 2, E\nOutput: True\n\nInput: 0, b, m, p, t, H, b\nOutput: True\n\nInput: M, 5, 6, 6, s, O\nOutput: True\n\nInput: r, 5, d, Z, e, I, 5\nOutput: True\n\nInput: s, 5, n, n, I\nOutput: True\n\nInput: A, N, M, D, g\nOutput: False\n\nInput: c, e, A\nOutput: False\n\nInput: T, x, H, O, T\nOutput: True\n\n",
+    "prompt": "Input: l, F, l, H\nOutput:",
+    "label": true
+}
+```
+
+**CheckFormat**
+```
+{
+    "uid": 0,
+    "task": "format_convert",
+    "task_type": "normal",
+    "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Ava Hill|31|Portland|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,David Wilson,29,Boston\nOutput: csv\n\nInput:\n(Landon Smith, age, 31)\n(Landon Smith, city, New Orleans)\nOutput: tuple\n\nInput:\n<person>\n  <name>Alexander Harris</name>\n  <age>33</age>\n  <city>Philadelphia</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Charlotte Adams\n  age: 35\n  city: Seattle\nOutput: yaml\n\nInput:\n{\"name\": \"Grace Morgan\", \"age\": 30, \"city\": \"St. Louis\"}\nOutput: jsonl\n\n",
+    "prompt": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Brooklyn Wilson|35|Tampa|\nOutput: ",
+    "label": "table"
+}
+```
+
+### Generation
 **GenerateCharacerOrder**
 ```
 {
@@ -110,17 +136,6 @@
 }
 ```
 
-**CheckDuplication**
-```
-{
-    "uid": 0,
-    "task": "check_repeated_content",
-    "task_type": "character",
-    "examples": "Input: W, D, 5, 1, 2, 2, E\nOutput: True\n\nInput: 0, b, m, p, t, H, b\nOutput: True\n\nInput: M, 5, 6, 6, s, O\nOutput: True\n\nInput: r, 5, d, Z, e, I, 5\nOutput: True\n\nInput: s, 5, n, n, I\nOutput: True\n\nInput: A, N, M, D, g\nOutput: False\n\nInput: c, e, A\nOutput: False\n\nInput: T, x, H, O, T\nOutput: True\n\n",
-    "prompt": "Input: l, F, l, H\nOutput:",
-    "label": true
-}
-```
 
 **GenerateCharacterDuplication**
 ```
@@ -180,18 +195,6 @@
     "examples": "Input: up, down, up\nOutput: up: 2, down: 1\n\nInput: down, down, down, down\nOutput: up: 0, down: 4\n\nInput: \nOutput: up: 0, down: 0\n\nInput: down\nOutput: up: 0, down: 1\n\nInput: down, down, down, up, down\nOutput: up: 1, down: 4\n\nInput: down, down, up, up, down, up, up\nOutput: up: 4, down: 3\n\nInput: down, down, up, up, up\nOutput: up: 3, down: 2\n\nInput: \nOutput: up: 0, down: 0\n\n",
     "prompt": "Input: \nOutput: ",
     "label": "up: 0, down: 0"
-}
-```
-
-**CheckFormat**
-```
-{
-    "uid": 0,
-    "task": "format_convert",
-    "task_type": "normal",
-    "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Ava Hill|31|Portland|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,David Wilson,29,Boston\nOutput: csv\n\nInput:\n(Landon Smith, age, 31)\n(Landon Smith, city, New Orleans)\nOutput: tuple\n\nInput:\n<person>\n  <name>Alexander Harris</name>\n  <age>33</age>\n  <city>Philadelphia</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Charlotte Adams\n  age: 35\n  city: Seattle\nOutput: yaml\n\nInput:\n{\"name\": \"Grace Morgan\", \"age\": 30, \"city\": \"St. Louis\"}\nOutput: jsonl\n\n",
-    "prompt": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Brooklyn Wilson|35|Tampa|\nOutput: ",
-    "label": "table"
 }
 ```
 
