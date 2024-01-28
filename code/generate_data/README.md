@@ -59,3 +59,70 @@
     "label": "35183"
 }
 ```
+
+### Learning Ability
+
+**CheckOrder**
+```
+{
+    "uid": 0,
+    "task": "check_order",
+    "task_type": "character",
+    "examples": "Input: \nString1: l, 6, h, v, Y\nString2: Y, v, h, 6, l\nOutput: True\n\nInput: \nString1: b, R, 2, 1, 5\nString2: 5, 1, 2, R, b\nOutput: True\n\nInput: \nString1: E, W, c, 1, Z\nString2: Z, 1, c, W, E\nOutput: True\n\nInput: \nString1: j, f, i, Y, Q\nString2: Q, Y, i, f, j\nOutput: True\n\nInput: \nString1: S, b, H, p, t\nString2: t, p, H, b, S\nOutput: True\n\nInput: \nString1: m, p, A, i, R\nString2: R, i, A, p, m\nOutput: True\n\nInput: \nString1: H, 9, D, z, m\nString2: H, 9, D, z, m\nOutput: False\n\nInput: \nString1: 6, 5, O, M, s\nString2: 6, 5, O, M, s\nOutput: False\n\n",
+    "prompt": "Input: \nString1: 1, l, H, F, E\nString2: E, F, H, l, 1\nOutput:",
+    "label": true
+}
+```
+
+**GenerateCharacerOrder**
+```
+{
+    "uid": 0,
+    "task": "keep_order",
+    "task_type": "character",
+    "examples": "Input: h, l, v, Y, 5, b\nOutput: h, l, v, Y, 5, b\n\nInput: 2, 1, 5, D, E, W, c, y, Z, C, j\nOutput: 2, 1, 5, D, E, W, c, y, Z, C, j\n\nInput: Q, E, S, b, H, p, t, 0, m, u, A, i, R\nOutput: Q, E, S, b, H, p, t, 0, m, u, A, i, R\n\nInput: H, 9, D, m, L, 6, 5, O, u, M\nOutput: H, 9, D, m, L, 6, 5, O, u, M\n\nInput: c, G, p, 2, k, T, Y, 7, O, 5\nOutput: c, G, p, 2, k, T, Y, 7, O, 5\n\n",
+    "prompt": "Input: 1, l, H, F, E, 8\nOutput:",
+    "label": "1, l, H, F, E, 8"
+}
+```
+
+**GenerateWordOrder**
+```
+{
+    "uid": 239,
+    "task": "specify_order",
+    "task_type": "word",
+    "examples": "Input: knee, surround, focus, winner, wonder\nOutput: winner, focus, knee, surround, wonder\n\nInput: activity, brief, wonder, anger, leave\nOutput: anger, wonder, activity, brief, leave\n\nInput: market, forever, will, curve, world\nOutput: curve, will, market, forever, world\n\nInput: pain, leading, drag, shoot, medicine\nOutput: shoot, drag, pain, leading, medicine\n\nInput: view, band, confidence, focus, mixture\nOutput: focus, confidence, view, band, mixture\n\n",
+    "prompt": "Input: shopping, drama, care, start, passenger\nOutput:",
+    "label": "start, care, shopping, drama, passenger"
+}
+```
+
+**GenerateSentenceOrder**
+```
+{
+    "uid": 178,
+    "task": "reversed_order",
+    "task_type": "sentence",
+    "examples": "Input: Socrates tells him that he is preparing to go to court against the charges of Meletus on the grounds of impiety.\nIt is the first album in Dickinson's solo career that was released after he had officially left Iron Maiden (although he rejoined again in 1999).\nThe southern wall of the hall's addition has six window openings.\nOutput: The southern wall of the hall's addition has six window openings.\nIt is the first album in Dickinson's solo career that was released after he had officially left Iron Maiden (although he rejoined again in 1999).\nSocrates tells him that he is preparing to go to court against the charges of Meletus on the grounds of impiety.\n\nInput: The databases contain specific information about a particular voter (party affiliation, frequency of voting, contributions, volunteerism, etc.) with other activities and habits available from commercial data brokers.\nRangitoto College has a socio-economic decile rating of 10 (step Z), meaning it draws its school community from areas of highest socio-economic strata when compared to other New Zealand schools.\nEventually, Dobson joins Gallagher and they inform Russell Williams of all the evidence they found against him.\nMary's Hospital Lacor (also known as Lacor Hospital) in Uganda.\nOutput: Mary's Hospital Lacor (also known as Lacor Hospital) in Uganda.\nEventually, Dobson joins Gallagher and they inform Russell Williams of all the evidence they found against him.\nRangitoto College has a socio-economic decile rating of 10 (step Z), meaning it draws its school community from areas of highest socio-economic strata when compared to other New Zealand schools.\nThe databases contain specific information about a particular voter (party affiliation, frequency of voting, contributions, volunteerism, etc.) with other activities and habits available from commercial data brokers.\n\nInput: The last round of the championship was held in January 2017 at Madras Motorsports Race Track in Chennai.\nIn 2001, the Band had to take on a co-manager.\nAll who attend our rites will receive kites from the second tier of Tit Alberto who brought the Saute Chapeau.\nOutput: All who attend our rites will receive kites from the second tier of Tit Alberto who brought the Saute Chapeau.\nIn 2001, the Band had to take on a co-manager.\nThe last round of the championship was held in January 2017 at Madras Motorsports Race Track in Chennai.\n\nInput: Kristy confess and they attempt to kiss but they were stopped by her mother.\nHe served as DeWitt Clinton's running mate in the 1812 election, but Clinton and Ingersoll were defeated by James Madison and Elbridge Gerry.\nHydroponics projects globally tend to be overly optimistic but there are downsides to producing expensive crops in a population that cannot afford to buy them.\nHe was born and raised in Chennai, Tamil Nadu, India.\nOutput: He was born and raised in Chennai, Tamil Nadu, India.\nHydroponics projects globally tend to be overly optimistic but there are downsides to producing expensive crops in a population that cannot afford to buy them.\nHe served as DeWitt Clinton's running mate in the 1812 election, but Clinton and Ingersoll were defeated by James Madison and Elbridge Gerry.\nKristy confess and they attempt to kiss but they were stopped by her mother.\n\nInput: This however leads to the main dilemma of the dialogue when the two cannot come to a satisfactory conclusion.\nThis edition was nearly published by Parker Brothers in the mid-1970s; when it was not, the designers founded Eon Productions, Inc.\nThe periodic contracting and relaxing propels the jellyfish through the water, allowing it to escape predation or catch its prey.\nOutput: The periodic contracting and relaxing propels the jellyfish through the water, allowing it to escape predation or catch its prey.\nThis edition was nearly published by Parker Brothers in the mid-1970s; when it was not, the designers founded Eon Productions, Inc.\nThis however leads to the main dilemma of the dialogue when the two cannot come to a satisfactory conclusion.\n\n",
+    "prompt": "Input: United States\", two of the first cases to appear before the United States Supreme Court.\nClub\"s Will Harris, the series was successful and had a large fan base because it aired on all three major television networks in the 1970s.\nIn 1838, the PCUSA divided along theological lines due to the Old School–New School Controversy.\n\"In June 2018, a lower court judge issued an order protecting the files, which concern the appointment of estate trustees and would ordinarily be available for public inspection.\".\nOutput:",
+    "label": "\"In June 2018, a lower court judge issued an order protecting the files, which concern the appointment of estate trustees and would ordinarily be available for public inspection.\".\nIn 1838, the PCUSA divided along theological lines due to the Old School–New School Controversy.\nClub\"s Will Harris, the series was successful and had a large fan base because it aired on all three major television networks in the 1970s.\nUnited States\", two of the first cases to appear before the United States Supreme Court."
+}
+```
+
+**CheckDuplication**
+```
+{
+    "uid": 0,
+    "task": "check_repeated_content",
+    "task_type": "character",
+    "examples": "Input: W, D, 5, 1, 2, 2, E\nOutput: True\n\nInput: 0, b, m, p, t, H, b\nOutput: True\n\nInput: M, 5, 6, 6, s, O\nOutput: True\n\nInput: r, 5, d, Z, e, I, 5\nOutput: True\n\nInput: s, 5, n, n, I\nOutput: True\n\nInput: A, N, M, D, g\nOutput: False\n\nInput: c, e, A\nOutput: False\n\nInput: T, x, H, O, T\nOutput: True\n\n",
+    "prompt": "Input: l, F, l, H\nOutput:",
+    "label": true
+}
+```
+
+**GenerateCharacterDuplication**
+
+
+
