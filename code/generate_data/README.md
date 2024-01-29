@@ -25,6 +25,7 @@ Utilization.
 In 1734, a 30-kilometer-long channel was built in the Caotan of Yinmachang to divert water for irrigation. In the c6803ea75c870d0e Basin, 5 reservoirs, including the Shuangta Reservoir, the Danghe Reservoir and the Chijinxia Reservoir, have a water storage capacity of 1 million cubic kilometers. Reservoir above the foot. The alluvial plain in the middle and lower reaches is an agricultural area, and the river runoff decreases year by year due to the increase of irrigation diversion. Historically, the c6803ea7
 ```
 *max_gen_len*: 12 tokens
+*split_token*: " ", ",", ".", "!", ":", ")", "\"", "\'", "\n"
 
 ### Dictionary Search
 **DictSearchCopying**
@@ -62,8 +63,29 @@ In 1734, a 30-kilometer-long channel was built in the Caotan of Yinmachang to di
 
 *prompt*
 ```
-
+0aede0 : Rangitoto College opened in 1956, with an initial roll of 180 Year 9 and 10 students (then known as Forms 3 and 4).
+097944 : Arsamosata shrank to a medium-sized town and some of its population probably migrated to Harput, the new main capital of the region.
+063fb5 : In 1858 Justus went to Shwekyin to find appropriate locations for posting native preachers; he contracted a jungle fever there, and died on 31 March 1858.
+c5f3b8 : On August 15, a convention in Atlanta, Georgia, representing 17 presbyteries, encouraged all presbyteries who had not done so to renounce the General Assembly's jurisdiction.
+6aae02 : She began in 2010 during a period when Metcalfe experimented with doom metal textures and home studio equipment, and gradually moved towards noise, experimental and abstract compositions.
+5baa0d : Moreover, cloudy days are often warm and the precipitations are concentrated in the warmest months, which are July, August and September.
+79bbc3 : In this period, the band won several prizes and established records.
+71df7d : In winning the race for a fifth consecutive year, she equalled the feat of Golden Miller, who won five Cheltenham Gold Cups in the 1930s.
+340b02 : Nevertheless, it has been suggested that regulation of CDC6 is one of several redundant mechanisms that prevent re-replication of the DNA in eukaryotic cells.
+5f1cf9 : Naming cities such the "joy of" or "happiness of" was a Orontid (and later Artaxiad) practice that recalled the Achaemenid royal discourse.
+7a4e5b : It also provided the impetus for the launch of a new project and debut album for the pair, "Project One".
+594c14 : The latter split over slavery in 1858.
+912baa : Electric fish were again reported millennia later by ancient Greek, Roman and Arabic naturalists and physicians.
+839b94 : For 10 years, Underhill was a master housewright for Colonial Williamsburg.
+b2c766 : The Upper Kirby YMCA Extension is located in Upper Kirby .
+7a934e : In June 2022 the Oromo Liberation Front besieged the town and heavy gunfire was reported.
+ab7a16 : To overcome Socrates' objection to his second definition of piety, Euthyphro amends his definition.
+2ed45e : Euthyphro uses Zeus as evidence for his notions of piety while disregarding Uranus and Cronus, for example.
+a60813 : Retinoic acid produced by dendritic cells induces upregulation of LPAM-1 on these cells.
+1740b6 : During this time, members (particularly drummers) were constantly joining and leaving the band.
+71df7d :
 ```
+*max_gen_len*: 75 tokens
 
 **NumberStringCopying**
 ```
@@ -86,6 +108,14 @@ In 1734, a 30-kilometer-long channel was built in the Caotan of Yinmachang to di
 }
 ```
 
+
+*prompt*
+```
+
+```
+*max_gen_len*:  tokens
+
+
 ## Learning Ability
 ### Classifier
 **CheckOrder**
@@ -99,6 +129,11 @@ In 1734, a 30-kilometer-long channel was built in the Caotan of Yinmachang to di
     "label": true
 }
 ```
+*prompt*
+```
+
+```
+*max_gen_len*:  tokens
 
 **CheckDuplication**
 ```
@@ -111,6 +146,11 @@ In 1734, a 30-kilometer-long channel was built in the Caotan of Yinmachang to di
     "label": true
 }
 ```
+*prompt*
+```
+
+```
+*max_gen_len*:  tokens
 
 **CheckFormat**
 ```
@@ -123,6 +163,11 @@ In 1734, a 30-kilometer-long channel was built in the Caotan of Yinmachang to di
     "label": "table"
 }
 ```
+*prompt*
+```
+
+```
+*max_gen_len*:  tokens
 
 ### Generation
 **GenerateCharacerOrder**
@@ -136,6 +181,11 @@ In 1734, a 30-kilometer-long channel was built in the Caotan of Yinmachang to di
     "label": "1, l, H, F, E, 8"
 }
 ```
+*prompt*
+```
+
+```
+*max_gen_len*:  tokens
 
 **GenerateWordOrder**
 ```
@@ -148,6 +198,11 @@ In 1734, a 30-kilometer-long channel was built in the Caotan of Yinmachang to di
     "label": "start, care, shopping, drama, passenger"
 }
 ```
+*prompt*
+```
+
+```
+*max_gen_len*:  tokens
 
 **GenerateSentenceOrder**
 ```
@@ -160,6 +215,11 @@ In 1734, a 30-kilometer-long channel was built in the Caotan of Yinmachang to di
     "label": "\"In June 2018, a lower court judge issued an order protecting the files, which concern the appointment of estate trustees and would ordinarily be available for public inspection.\".\nIn 1838, the PCUSA divided along theological lines due to the Old School–New School Controversy.\nClub\"s Will Harris, the series was successful and had a large fan base because it aired on all three major television networks in the 1970s.\nUnited States\", two of the first cases to appear before the United States Supreme Court."
 }
 ```
+*prompt*
+```
+
+```
+*max_gen_len*:  tokens
 
 
 **GenerateCharacterDuplication**
@@ -173,6 +233,11 @@ In 1734, a 30-kilometer-long channel was built in the Caotan of Yinmachang to di
     "label": "1, H, l"
 }
 ```
+*prompt*
+```
+
+```
+*max_gen_len*:  tokens
 
 **GenerateWordDuplication**
 ```
@@ -185,6 +250,11 @@ In 1734, a 30-kilometer-long channel was built in the Caotan of Yinmachang to di
     "label": "travel, flower, guest, guitar, series"
 }
 ```
+*prompt*
+```
+
+```
+*max_gen_len*:  tokens
 
 **GenerateSentenceDuplication**
 ```
@@ -197,6 +267,11 @@ In 1734, a 30-kilometer-long channel was built in the Caotan of Yinmachang to di
     "label": "As the pie charts show, in 1881, the most popular trades were agriculture, domestic services and working with animals."
 }
 ```
+*prompt*
+```
+
+```
+*max_gen_len*:  tokens
 
 **RelationAnalysis**
 ```
@@ -209,6 +284,11 @@ In 1734, a 30-kilometer-long channel was built in the Caotan of Yinmachang to di
     "task_type": "relation"
 }
 ```
+*prompt*
+```
+
+```
+*max_gen_len*:  tokens
 
 
 **CountNavigationAnalysis**
@@ -222,6 +302,11 @@ In 1734, a 30-kilometer-long channel was built in the Caotan of Yinmachang to di
     "label": "up: 0, down: 0"
 }
 ```
+*prompt*
+```
+
+```
+*max_gen_len*:  tokens
 
 **GenerateOutputFormat**
 ```
@@ -235,6 +320,11 @@ In 1734, a 30-kilometer-long channel was built in the Caotan of Yinmachang to di
     "ans_content": "Kim raises 320+430=<<320+430=750>>750 dollars.\nMaryam raises 400+300=<<400+300=700>>700 dollars.\nThey raise 750+430+400+700=<<750+430+400+700=2280>>2280 dollars.\n#### 2280"
 }
 ```
+*prompt*
+```
+
+```
+*max_gen_len*:  tokens
 
 **GenerateFormatConversion**
 ```
@@ -247,6 +337,11 @@ In 1734, a 30-kilometer-long channel was built in the Caotan of Yinmachang to di
     "label": "Index,name,age,city\n1,Brooklyn Wilson,35,Tampa\n\n"
 }
 ```
+*prompt*
+```
+
+```
+*max_gen_len*:  tokens
 
 **ListNumber**
 ```
@@ -259,3 +354,8 @@ In 1734, a 30-kilometer-long channel was built in the Caotan of Yinmachang to di
     "label": "[63, 99]"
 }
 ```
+*prompt*
+```
+
+```
+*max_gen_len*:  tokens
