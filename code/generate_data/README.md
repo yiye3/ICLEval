@@ -290,7 +290,9 @@ Input:
 |1|Brooklyn Wilson|35|Tampa|
 Output:
 ```
-*max_gen_len*:  tokens
+*max_gen_len*:  `5 tokens`
+
+*split_token*: `"\n"`
 
 ### Generation
 **GenerateCharacerOrder**
@@ -306,9 +308,27 @@ Output:
 ```
 *prompt*
 ```
+Input: h, l, v, Y, 5, b
+Output: h, l, v, Y, 5, b
 
+Input: 2, 1, 5, D, E, W, c, y, Z, C, j
+Output: 2, 1, 5, D, E, W, c, y, Z, C, j
+
+Input: Q, E, S, b, H, p, t, 0, m, u, A, i, R
+Output: Q, E, S, b, H, p, t, 0, m, u, A, i, R
+
+Input: H, 9, D, m, L, 6, 5, O, u, M
+Output: H, 9, D, m, L, 6, 5, O, u, M
+
+Input: c, G, p, 2, k, T, Y, 7, O, 5
+Output: c, G, p, 2, k, T, Y, 7, O, 5
+
+Input: 1, l, H, F, E, 8
+Output:
 ```
-*max_gen_len*:  tokens
+*max_gen_len*:  `50 tokens` 
+
+*split_token*: `"\n"` 
 
 **GenerateWordOrder**
 ```
@@ -323,9 +343,28 @@ Output:
 ```
 *prompt*
 ```
+Input: knee, surround, focus, winner, wonder
+Output: winner, focus, knee, surround, wonder
+
+Input: activity, brief, wonder, anger, leave
+Output: anger, wonder, activity, brief, leave
+
+Input: market, forever, will, curve, world
+Output: curve, will, market, forever, world
+
+Input: pain, leading, drag, shoot, medicine
+Output: shoot, drag, pain, leading, medicine
+
+Input: view, band, confidence, focus, mixture
+Output: focus, confidence, view, band, mixture
+
+Input: shopping, drama, care, start, passenger
+Output:
 
 ```
-*max_gen_len*:  tokens
+*max_gen_len*:  `50 tokens` 
+
+*split_token*: `"\n"` 
 
 **GenerateSentenceOrder**
 ```
@@ -342,8 +381,9 @@ Output:
 ```
 
 ```
-*max_gen_len*:  tokens
+*max_gen_len*:  `256`
 
+*split_token*: `"\nInput:"`
 
 **GenerateCharacterDuplication**
 ```
@@ -358,9 +398,27 @@ Output:
 ```
 *prompt*
 ```
+Input: p, S, b, b, S, p, S, b, b, b
+Output: p, S, b
 
+Input: Y, 2, k, Y, T, Y, k, T, p, 2, 2
+Output: Y, 2, k, T, p
+
+Input: E, E, t, s, E, t, t, t, s, E, E
+Output: E, t, s
+
+Input: A, T, H, A, H, H, T, A, H, O, O, A, T, H, O, A, A, O
+Output: A, T, H, O
+
+Input: b, P, R, l, l, l, v, v, R, l, b, P, R, P, P
+Output: b, P, R, l, v
+
+Input: 1, H, H, H, 1, l, 1, 1, l, 1, 1, l, l
+Output:
 ```
-*max_gen_len*:  tokens
+*max_gen_len*:  `30`
+
+*split_token*: `"\n"`
 
 **GenerateWordDuplication**
 ```
@@ -375,9 +433,27 @@ Output:
 ```
 *prompt*
 ```
+Input: card, card, passenger, development, natural, development, passenger, natural, natural, development, development, development, development, passenger
+Output: card, passenger, development, natural
 
+Input: display, golf, mirror, signature, signature, signature, baseball, baseball, dust, mirror, mirror, golf, golf, golf, golf, baseball
+Output: display, golf, mirror, signature, baseball, dust
+
+Input: independence, stupid, independence, stupid, animal, animal, animal, advance, advance, stupid
+Output: independence, stupid, animal, advance
+
+Input: field, silly, field, instruction, price, price, silly, silly, instruction, instruction, field, price, field
+Output: field, silly, instruction, price
+
+Input: branch, noise, personal, branch, second, second, second, second, branch, second, personal
+Output: branch, noise, personal, second
+
+Input: travel, flower, guest, guitar, series, guitar, guest, series, guitar, guitar, travel, flower, travel, guitar
+Output:
 ```
-*max_gen_len*:  tokens
+*max_gen_len*:  `30`
+
+*split_token*: `"\n"`
 
 **GenerateSentenceDuplication**
 ```
@@ -392,9 +468,64 @@ Output:
 ```
 *prompt*
 ```
+Input: All who attend our rites will receive kites from the second tier of Tit Alberto who brought the Saute Chapeau.
+65,000 H-1B visas were made available each fiscal year, out of which employers could apply through Labor Condition Applications.
+Festersen scored the first goal of the match and celebrated it by holding up a mask in front of his face.
+Medical ethics and impacts of attempts to silence researchers.
+"Speed Buggy" was developed with the working titles "Speed Bug" and "Speed Buggs".
+Medical ethics and impacts of attempts to silence researchers.
+Medical ethics and impacts of attempts to silence researchers.
+Output: Medical ethics and impacts of attempts to silence researchers.
 
+Input: The town is bordered by the Königstuhl (568 m), the Gaisberg (375 m) and the Heiligenberg (445 m) mountains.
+They set up an emergency hospital in a vacant monastery.
+They set up an emergency hospital in a vacant monastery.
+They set up an emergency hospital in a vacant monastery.
+Currently Kadamtala is mainly a residential area, but still there exist significant number of private small scaled industrial infrastructures.
+Released later that same year, the fourth album "Beloved" was their first album to sell over 1 million copies.
+Output: They set up an emergency hospital in a vacant monastery.
+
+Input: When the Vanier Cup was staged as an official national championship in 1965, the trophy was retired.
+Before being cancelled, it continued to air regularly until August 31, 1974.
+Before being cancelled, it continued to air regularly until August 31, 1974.
+The game was inducted into the Academy of Adventure Gaming Arts &amp; Design Adventure Gaming Hall of Fame in 1997.
+Headhunterz released his work on Scantraxx through his own sub-label, Scantraxx Reloaded, but in 2013 he started his own record label, "HARD with STYLE".
+The hall was constructed at a cost of .
+Before being cancelled, it continued to air regularly until August 31, 1974.
+CBS Radio Houston which houses KHMX, KILT-AM, KILT-FM, KLOL, KKHH, KIKK, is also located in Upper Kirby.
+Output: Before being cancelled, it continued to air regularly until August 31, 1974.
+
+Input: The Palexpo was then expanded three times: in 1987 with Hall 5, in 1995 with Hall 7, and in 2003 with Hall 6 built above the A1 motorway.
+Looscan Neighborhood Library of Houston Public Library.
+Looscan Neighborhood Library of Houston Public Library.
+He solely filmed the video using a movie camera and included various youth from his prior Dublin lifestyle project.
+Looscan Neighborhood Library of Houston Public Library.
+The COS1° was branded under Oshan, Changan's affordable premium brand, a sub-brand that focuses on building passenger vehicles which was separated from the Oshang brand.
+In 1833 the missionary to Burma, Jonathan Wade, on his medical furlough spent the year at the Institution giving instructions to the future missionaries.
+Takamoto was less involved with the series due to the trust he had for storyboard and animation artist Bob Singer.
+Output: Looscan Neighborhood Library of Houston Public Library.
+
+Input: Penmynydd is located on Anglesey off the north west coast of Wales, situated on a slight hill on the B5420 road between Menai Bridge and Llangefni, at.
+The Palexpo was then expanded three times: in 1987 with Hall 5, in 1995 with Hall 7, and in 2003 with Hall 6 built above the A1 motorway.
+Nevertheless, it has been suggested that regulation of CDC6 is one of several redundant mechanisms that prevent re-replication of the DNA in eukaryotic cells.
+Penmynydd is located on Anglesey off the north west coast of Wales, situated on a slight hill on the B5420 road between Menai Bridge and Llangefni, at.
+Penmynydd is located on Anglesey off the north west coast of Wales, situated on a slight hill on the B5420 road between Menai Bridge and Llangefni, at.
+The northwest flows through Shule Gorge, Naliu Gorge and Liugou Gorge into the Changmabao Basin.
+Iron had traditionally been produced in the area.
+Output: Penmynydd is located on Anglesey off the north west coast of Wales, situated on a slight hill on the B5420 road between Menai Bridge and Llangefni, at.
+
+Input: Political information is obviously important here, but consumer preferences can play a role as well.
+As the pie charts show, in 1881, the most popular trades were agriculture, domestic services and working with animals.
+As the pie charts show, in 1881, the most popular trades were agriculture, domestic services and working with animals.
+As the pie charts show, in 1881, the most popular trades were agriculture, domestic services and working with animals.
+It is the twelfth track on their fourteenth studio album, "Songs of Experience", and was released as its third single on 23 April 2018.
+Flora includes sugar cane and tamarind, which are typically served as local dishes.
+"The Woodwright's Shop" teaches the art of traditional woodworking, using hand tools and human-powered machines.
+Output:
 ```
-*max_gen_len*:  tokens
+*max_gen_len*:  `50`
+
+*split_token*: `"\n"`
 
 **RelationAnalysis**
 ```
