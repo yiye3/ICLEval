@@ -379,7 +379,50 @@ Output:
 ```
 *prompt*
 ```
+Input: Socrates tells him that he is preparing to go to court against the charges of Meletus on the grounds of impiety.
+It is the first album in Dickinson's solo career that was released after he had officially left Iron Maiden (although he rejoined again in 1999).
+The southern wall of the hall's addition has six window openings.
+Output: The southern wall of the hall's addition has six window openings.
+It is the first album in Dickinson's solo career that was released after he had officially left Iron Maiden (although he rejoined again in 1999).
+Socrates tells him that he is preparing to go to court against the charges of Meletus on the grounds of impiety.
 
+Input: The databases contain specific information about a particular voter (party affiliation, frequency of voting, contributions, volunteerism, etc.) with other activities and habits available from commercial data brokers.
+Rangitoto College has a socio-economic decile rating of 10 (step Z), meaning it draws its school community from areas of highest socio-economic strata when compared to other New Zealand schools.
+Eventually, Dobson joins Gallagher and they inform Russell Williams of all the evidence they found against him.
+Mary's Hospital Lacor (also known as Lacor Hospital) in Uganda.
+Output: Mary's Hospital Lacor (also known as Lacor Hospital) in Uganda.
+Eventually, Dobson joins Gallagher and they inform Russell Williams of all the evidence they found against him.
+Rangitoto College has a socio-economic decile rating of 10 (step Z), meaning it draws its school community from areas of highest socio-economic strata when compared to other New Zealand schools.
+The databases contain specific information about a particular voter (party affiliation, frequency of voting, contributions, volunteerism, etc.) with other activities and habits available from commercial data brokers.
+
+Input: The last round of the championship was held in January 2017 at Madras Motorsports Race Track in Chennai.
+In 2001, the Band had to take on a co-manager.
+All who attend our rites will receive kites from the second tier of Tit Alberto who brought the Saute Chapeau.
+Output: All who attend our rites will receive kites from the second tier of Tit Alberto who brought the Saute Chapeau.
+In 2001, the Band had to take on a co-manager.
+The last round of the championship was held in January 2017 at Madras Motorsports Race Track in Chennai.
+
+Input: Kristy confess and they attempt to kiss but they were stopped by her mother.
+He served as DeWitt Clinton's running mate in the 1812 election, but Clinton and Ingersoll were defeated by James Madison and Elbridge Gerry.
+Hydroponics projects globally tend to be overly optimistic but there are downsides to producing expensive crops in a population that cannot afford to buy them.
+He was born and raised in Chennai, Tamil Nadu, India.
+Output: He was born and raised in Chennai, Tamil Nadu, India.
+Hydroponics projects globally tend to be overly optimistic but there are downsides to producing expensive crops in a population that cannot afford to buy them.
+He served as DeWitt Clinton's running mate in the 1812 election, but Clinton and Ingersoll were defeated by James Madison and Elbridge Gerry.
+Kristy confess and they attempt to kiss but they were stopped by her mother.
+
+Input: This however leads to the main dilemma of the dialogue when the two cannot come to a satisfactory conclusion.
+This edition was nearly published by Parker Brothers in the mid-1970s; when it was not, the designers founded Eon Productions, Inc.
+The periodic contracting and relaxing propels the jellyfish through the water, allowing it to escape predation or catch its prey.
+Output: The periodic contracting and relaxing propels the jellyfish through the water, allowing it to escape predation or catch its prey.
+This edition was nearly published by Parker Brothers in the mid-1970s; when it was not, the designers founded Eon Productions, Inc.
+This however leads to the main dilemma of the dialogue when the two cannot come to a satisfactory conclusion.
+
+Input: United States", two of the first cases to appear before the United States Supreme Court.
+Club"s Will Harris, the series was successful and had a large fan base because it aired on all three major television networks in the 1970s.
+In 1838, the PCUSA divided along theological lines due to the Old School–New School Controversy.
+"In June 2018, a lower court judge issued an order protecting the files, which concern the appointment of estate trustees and would ordinarily be available for public inspection.".
+Output:
 ```
 *max_gen_len*:  `256`
 
