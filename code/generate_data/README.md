@@ -86,7 +86,9 @@ a60813 : Retinoic acid produced by dendritic cells induces upregulation of LPAM-
 1740b6 : During this time, members (particularly drummers) were constantly joining and leaving the band.
 71df7d :
 ```
-*max_gen_len*: 75 tokens
+*max_gen_len*: `75 tokens`
+
+*split_token*: `"\n"`
 
 **NumberStringCopying**
 ```
@@ -112,10 +114,19 @@ a60813 : Retinoic acid produced by dendritic cells induces upregulation of LPAM-
 
 *prompt*
 ```
-
+87 ☽ 487 ☀ 984 ☀ 19 ☽ 915 ☀ 691 ☀ 64 ☀ 77 ☽ 43 ☀ 926 ☀ 76 ⚝ 564 ☽ 704 ☽ 847 ☽ 854 ☀ 203 ☽ 3 ☀ 470 ☀ 132 ☽ 718 ☽ 46 ☽ 84 ⚝ 80 ⛱  : 35180
+87 ☽ 487 ☀ 984 ☀ 19 ☽ 912 ☀ 691 ☀ 64 ☀ 77 ☽ 43 ☀ 926 ☀ 76 ⚝ 564 ☽ 704 ☽ 847 ☽ 854 ☀ 203 ☽ 3 ☀ 470 ☀ 132 ☽ 718 ☽ 46 ☽ 84 ⚝ 80 ⛱  : 35183
+87 ☽ 487 ☀ 987 ☀ 19 ☽ 915 ☀ 691 ☀ 64 ☀ 77 ☽ 43 ☀ 926 ☀ 76 ⚝ 564 ☽ 704 ☽ 847 ☽ 854 ☀ 203 ☽ 3 ☀ 470 ☀ 132 ☽ 768 ☽ 46 ☽ 84 ⚝ 80 ⛱  : 35133
+85 ☽ 487 ☀ 984 ☀ 19 ☽ 915 ☀ 691 ☀ 64 ☀ 77 ☽ 43 ☀ 926 ☀ 76 ⚝ 564 ☽ 704 ☽ 847 ☽ 854 ☀ 203 ☽ 3 ☀ 471 ☀ 132 ☽ 718 ☽ 46 ☽ 84 ⚝ 80 ⛱  : 35179
+87 ☽ 487 ☀ 984 ☀ 19 ☽ 925 ☀ 691 ☀ 64 ☀ 77 ☽ 43 ☀ 926 ☀ 76 ⚝ 564 ☽ 704 ☽ 847 ☽ 854 ☀ 203 ☽ 3 ☀ 470 ☀ 132 ☽ 718 ☽ 46 ☽ 84 ⚝ 80 ⛱  : 35170
+87 ☽ 487 ☀ 984 ☀ 19 ☽ 915 ☀ 691 ☀ 64 ☀ 77 ☽ 43 ☀ 926 ☀ 76 ⚝ 564 ☽ 704 ☽ 847 ☽ 854 ☀ 203 ☽ 3 ☀ 470 ☀ 132 ☽ 778 ☽ 46 ☽ 84 ⚝ 80 ⛱  : 35120
+87 ☽ 487 ☀ 984 ☀ 14 ☽ 915 ☀ 691 ☀ 64 ☀ 77 ☽ 43 ☀ 926 ☀ 76 ⚝ 564 ☽ 704 ☽ 847 ☽ 854 ☀ 203 ☽ 3 ☀ 470 ☀ 132 ☽ 718 ☽ 46 ☽ 84 ⚝ 80 ⛱  : 35175
+87 ☽ 987 ☀ 984 ☀ 19 ☽ 915 ☀ 691 ☀ 64 ☀ 77 ☽ 43 ☀ 926 ☀ 76 ⚝ 564 ☽ 704 ☽ 847 ☽ 854 ☀ 203 ☽ 3 ☀ 470 ☀ 132 ☽ 718 ☽ 46 ☽ 84 ⚝ 80 ⛱  : 34680
+87 ☽ 487 ☀ 984 ☀ 19 ☽ 912 ☀ 691 ☀ 64 ☀ 77 ☽ 43 ☀ 926 ☀ 76 ⚝ 564 ☽ 704 ☽ 847 ☽ 854 ☀ 203 ☽ 3 ☀ 470 ☀ 132 ☽ 718 ☽ 46 ☽ 84 ⚝ 80 ⛱  :
 ```
-*max_gen_len*:  tokens
+*max_gen_len*:  `10 tokens`
 
+*split_token*: `"\n"`
 
 ## Learning Ability
 ### Classifier
@@ -132,9 +143,54 @@ a60813 : Retinoic acid produced by dendritic cells induces upregulation of LPAM-
 ```
 *prompt*
 ```
+Input: 
+String1: l, 6, h, v, Y
+String2: Y, v, h, 6, l
+Output: True
 
+Input: 
+String1: b, R, 2, 1, 5
+String2: 5, 1, 2, R, b
+Output: True
+
+Input: 
+String1: E, W, c, 1, Z
+String2: Z, 1, c, W, E
+Output: True
+
+Input: 
+String1: j, f, i, Y, Q
+String2: Q, Y, i, f, j
+Output: True
+
+Input: 
+String1: S, b, H, p, t
+String2: t, p, H, b, S
+Output: True
+
+Input: 
+String1: m, p, A, i, R
+String2: R, i, A, p, m
+Output: True
+
+Input: 
+String1: H, 9, D, z, m
+String2: H, 9, D, z, m
+Output: False
+
+Input: 
+String1: 6, 5, O, M, s
+String2: 6, 5, O, M, s
+Output: False
+
+Input: 
+String1: 1, l, H, F, E
+String2: E, F, H, l, 1
+Output:
 ```
-*max_gen_len*:  tokens
+*max_gen_len*:  `5 tokens`
+
+*split_token*: `"\n"`
 
 **CheckDuplication**
 ```
@@ -149,9 +205,36 @@ a60813 : Retinoic acid produced by dendritic cells induces upregulation of LPAM-
 ```
 *prompt*
 ```
+Input: W, D, 5, 1, 2, 2, E
+Output: True
 
+Input: 0, b, m, p, t, H, b
+Output: True
+
+Input: M, 5, 6, 6, s, O
+Output: True
+
+Input: r, 5, d, Z, e, I, 5
+Output: True
+
+Input: s, 5, n, n, I
+Output: True
+
+Input: A, N, M, D, g
+Output: False
+
+Input: c, e, A
+Output: False
+
+Input: T, x, H, O, T
+Output: True
+
+Input: l, F, l, H
+Output:
 ```
-*max_gen_len*:  tokens
+*max_gen_len*:  `5 tokens`
+
+*split_token*: `"\n"`
 
 **CheckFormat**
 ```
@@ -160,13 +243,52 @@ a60813 : Retinoic acid produced by dendritic cells induces upregulation of LPAM-
     "task": "format_convert",
     "task_type": "normal",
     "examples": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Ava Hill|31|Portland|\nOutput: table\n\nInput:\nIndex,name,age,city\n1,David Wilson,29,Boston\nOutput: csv\n\nInput:\n(Landon Smith, age, 31)\n(Landon Smith, city, New Orleans)\nOutput: tuple\n\nInput:\n<person>\n  <name>Alexander Harris</name>\n  <age>33</age>\n  <city>Philadelphia</city>\n</person>\nOutput: xml\n\nInput:\nperson:\n  name: Charlotte Adams\n  age: 35\n  city: Seattle\nOutput: yaml\n\nInput:\n{\"name\": \"Grace Morgan\", \"age\": 30, \"city\": \"St. Louis\"}\nOutput: jsonl\n\n",
-    "prompt": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Brooklyn Wilson|35|Tampa|\nOutput: ",
+    "prompt": "Input:\n|Index|name|age|city|\n|---|---|---|---|\n|1|Brooklyn Wilson|35|Tampa|\nOutput:",
     "label": "table"
 }
 ```
 *prompt*
 ```
+Input:
+|Index|name|age|city|
+|---|---|---|---|
+|1|Ava Hill|31|Portland|
+Output: table
 
+Input:
+Index,name,age,city
+1,David Wilson,29,Boston
+Output: csv
+
+Input:
+(Landon Smith, age, 31)
+(Landon Smith, city, New Orleans)
+Output: tuple
+
+Input:
+<person>
+  <name>Alexander Harris</name>
+  <age>33</age>
+  <city>Philadelphia</city>
+</person>
+Output: xml
+
+Input:
+person:
+  name: Charlotte Adams
+  age: 35
+  city: Seattle
+Output: yaml
+
+Input:
+{"name": "Grace Morgan", "age": 30, "city": "St. Louis"}
+Output: jsonl
+
+Input:
+|Index|name|age|city|
+|---|---|---|---|
+|1|Brooklyn Wilson|35|Tampa|
+Output:
 ```
 *max_gen_len*:  tokens
 
