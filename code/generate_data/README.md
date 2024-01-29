@@ -14,6 +14,17 @@
     "count": 6
 }
 ```
+*prompt*
+```
+The c6803ea75c870d0e is the second largest inland river in Gansu Province, China, and one of the three major inland river systems in the Hexi Corridor.
+Water system.
+The c6803ea75c870d0e system is composed of the main stream Changma River, Shiyou River, Baiyang River, Tashi River and Dang River.The main stream originates from the Shaguolinamujimu Mountains  between the South Tuolai Mountains and the South Shule Mountains in the western part of the Qilian Mountains. Most of the water comes from 347 glaciers with a total area of 29.45 square kilometers in the upstream catchment. The northwest flows through Shule Gorge, Naliu Gorge and Liugou Gorge into the Changmabao Basin. After exiting Changma Gorge, it forms the largest alluvial fan in the Hexi Corridor, the Changma alluvial fan, and flows along the fan edge to Guazhou through the west turn of Yumen City. The Shuangta Reservoir in the county flows into the Anxi-Dunhuang Basin, flows westward to the Changma Reservoir in Yumen City, and enters the Hala Lake in the Lop Nor desert after the confluence of Dang River in Dunhuang City. The upper reaches of Changma Reservoir are the upper reaches, the flat land of the Hexi Corridor from Changma Gorge to Shuangta Reservoir is the middle reaches, and the lower reaches of the Shuangta Reservoir to the Lop Nor desert are the lower reaches.
+Hydrology.
+The c6803ea75c870d0e has a total length of 861 kilometers, with a water-bearing section of about 770 kilometers in summer and 540 kilometers in winter, with a catchment area of 20,197 square kilometers and a drainage area of 102,300 square kilometers, with an average flow of 28.8m3/s and the maximum flow rate is 1,620m3/s. The river runoff in the c6803ea75c870d0e Basin is 1,548 million cubic meters, of which the Changma River is 994 million cubic meters and the Danghe River is 453 million cubic meters. The groundwater recharge in the c6803ea75c870d0e Basin accounts for 29.1%, the glacier recharge accounts for 31.4%, and the rainfall recharge accounts for 39.5%.
+Utilization.
+In 1734, a 30-kilometer-long channel was built in the Caotan of Yinmachang to divert water for irrigation. In the c6803ea75c870d0e Basin, 5 reservoirs, including the Shuangta Reservoir, the Danghe Reservoir and the Chijinxia Reservoir, have a water storage capacity of 1 million cubic kilometers. Reservoir above the foot. The alluvial plain in the middle and lower reaches is an agricultural area, and the river runoff decreases year by year due to the increase of irrigation diversion. Historically, the c6803ea7
+```
+*max_gen_len*: 12 tokens
 
 ### Dictionary Search
 **DictSearchCopying**
@@ -47,6 +58,11 @@
     "prompt": "71df7d",
     "label": "In winning the race for a fifth consecutive year, she equalled the feat of Golden Miller, who won five Cheltenham Gold Cups in the 1930s."
 }
+```
+
+*prompt*
+```
+
 ```
 
 **NumberStringCopying**
