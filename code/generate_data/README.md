@@ -523,7 +523,7 @@ Flora includes sugar cane and tamarind, which are typically served as local dish
 "The Woodwright's Shop" teaches the art of traditional woodworking, using hand tools and human-powered machines.
 Output:
 ```
-*max_gen_len*:  `50`
+*max_gen_len*:  `60`
 
 *split_token*: `"\n"`
 
@@ -540,9 +540,61 @@ Output:
 ```
 *prompt*
 ```
+Input:
+blue_mantis_362 and taupe_bonobo_396 are friends.
+Query: Who are the frinds of lavender_lion_728?
+Output: None
 
+Input:
+beige_bat_678 and yellow_ladybug_906 are friends.
+dandelion_dog_108 and maroon_cow_234 are friends.
+Query: Who are the frinds of dandelion_dog_108?
+Output: maroon_cow_234
+
+Input:
+fuchsia_bear_15 and turquoise_narwhale_975 are friends.
+brown_duck_771 and fuchsia_bear_15 are friends.
+fuchsia_bear_15 and chartreuse_pig_243 are friends.
+brown_duck_771 and turquoise_narwhale_975 are friends.
+Query: Who are the frinds of chartreuse_pig_243?
+Output: fuchsia_bear_15
+
+Input:
+dandelion_coyote_628 and grey_bear_225 are friends.
+dandelion_coyote_628 and purple_bee_959 are friends.
+dandelion_coyote_628 and blue_cougar_546 are friends.
+blue_cougar_546 and green_bonobo_963 are friends.
+dandelion_coyote_628 and maroon_seahorse_996 are friends.
+green_bonobo_963 and grey_bear_225 are friends.
+blue_cougar_546 and grey_bear_225 are friends.
+blue_cougar_546 and purple_bee_959 are friends.
+purple_bee_959 and maroon_seahorse_996 are friends.
+grey_bear_225 and maroon_seahorse_996 are friends.
+Query: Who are the frinds of maroon_seahorse_996?
+Output: dandelion_coyote_628, purple_bee_959, grey_bear_225
+
+Input:
+orange_ocelot_187 and purple_jellyfish_432 are friends.
+taupe_hydra_858 and chestnut_goose_453 are friends.
+Query: Who are the frinds of taupe_hydra_858?
+Output: chestnut_goose_453
+
+Input:
+umber_emu_588 and pink_baboon_823 are friends.
+violet_lobster_885 and pink_baboon_823 are friends.
+orange_alpaca_795 and umber_emu_588 are friends.
+mauve_squirrel_890 and pink_baboon_823 are friends.
+violet_lobster_885 and umber_emu_588 are friends.
+mauve_squirrel_890 and umber_emu_588 are friends.
+orange_alpaca_795 and pink_baboon_823 are friends.
+violet_lobster_885 and orange_alpaca_795 are friends.
+mauve_squirrel_890 and orange_alpaca_795 are friends.
+Query: Who are the frinds of violet_lobster_885?
+Output:
 ```
-*max_gen_len*:  tokens
+*max_gen_len*:  `60`
+
+*split_token*: `"\nInput:"`
 
 
 **CountNavigationAnalysis**
@@ -552,15 +604,42 @@ Output:
     "task": "count_or_navigation",
     "task_type": "count-easy",
     "examples": "Input: up, down, up\nOutput: up: 2, down: 1\n\nInput: down, down, down, down\nOutput: up: 0, down: 4\n\nInput: \nOutput: up: 0, down: 0\n\nInput: down\nOutput: up: 0, down: 1\n\nInput: down, down, down, up, down\nOutput: up: 1, down: 4\n\nInput: down, down, up, up, down, up, up\nOutput: up: 4, down: 3\n\nInput: down, down, up, up, up\nOutput: up: 3, down: 2\n\nInput: \nOutput: up: 0, down: 0\n\n",
-    "prompt": "Input: \nOutput: ",
+    "prompt": "Input: \nOutput:",
     "label": "up: 0, down: 0"
 }
 ```
 *prompt*
 ```
+Input: up, down, up
+Output: up: 2, down: 1
 
+Input: down, down, down, down
+Output: up: 0, down: 4
+
+Input: 
+Output: up: 0, down: 0
+
+Input: down
+Output: up: 0, down: 1
+
+Input: down, down, down, up, down
+Output: up: 1, down: 4
+
+Input: down, down, up, up, down, up, up
+Output: up: 4, down: 3
+
+Input: down, down, up, up, up
+Output: up: 3, down: 2
+
+Input: 
+Output: up: 0, down: 0
+
+Input: 
+Output:
 ```
-*max_gen_len*:  tokens
+*max_gen_len*:  `30`
+
+*split_token*: `"\n"`
 
 **GenerateOutputFormat**
 ```
