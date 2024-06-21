@@ -1,7 +1,7 @@
 # In-Context-Learning-Evaluation
 
 ## ICLEval data
-We put the data of in-context learning tasks at `../data/tasks_data`
+We put the data of this benchmark at `../data/tasks_data`
 
 You can also generate these data by yourself using the code from `../code/generate_data` and the raw data from `../data/origin_data`.
 
