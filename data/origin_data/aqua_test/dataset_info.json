@@ -1,0 +1,56 @@
+{
+  "builder_name": "aqua",
+  "citation": "[Wang Ling, Dani Yogatama, Chris Dyer, and Phil Blunsom. \n(2017) Program Induction by Rationale Generation: Learning to Solve and Explain Algebraic Word Problems. \nIn Proc. ACL.](https://arxiv.org/pdf/1705.04146.pdf)\n",
+  "config_name": "aqua",
+  "dataset_size": 41392734,
+  "description": "  The dataset consists of about 100,000 algebraic word problems with natural language rationales. Each problem is a json object consisting of four parts:\n\n * `question` - A natural language definition of the problem to solve\n * `options` - 5 possible options (A, B, C, D and E), among which one is correct\n * `rationale` - A natural language description of the solution to the problem\n * `correct` - The correct option\n",
+  "download_checksums": {},
+  "download_size": 0,
+  "features": {
+    "question": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "options": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "rationale": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "correct": {
+      "dtype": "string",
+      "_type": "Value"
+    }
+  },
+  "homepage": "Waiting to be added",
+  "license": "LICENSE-2.0",
+  "size_in_bytes": 41392734,
+  "splits": {
+    "train": {
+      "name": "train",
+      "num_bytes": 41163455,
+      "num_examples": 97467,
+      "dataset_name": "aqua"
+    },
+    "validation": {
+      "name": "validation",
+      "num_bytes": 115568,
+      "num_examples": 254,
+      "dataset_name": "aqua"
+    },
+    "test": {
+      "name": "test",
+      "num_bytes": 113711,
+      "num_examples": 254,
+      "dataset_name": "aqua"
+    }
+  },
+  "version": {
+    "version_str": "0.0.1",
+    "major": 0,
+    "minor": 0,
+    "patch": 1
+  }
+}

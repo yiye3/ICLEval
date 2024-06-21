@@ -1,0 +1,60 @@
+{"name": "Sunset Acres", "address": "123 Oak Avenue", "state": "California", "business_direction": "retail"}
+{"name": "Meadowland Farms", "address": "789 Maple Drive", "state": "New York", "business_direction": "agriculture"}
+{"name": "Wilderness Retreat", "address": "987 Forest Lane", "state": "Oregon", "business_direction": "hospitality"}
+{"name": "Harmony Gardens", "address": "456 Cherry Lane", "state": "Florida", "business_direction": "landscaping"}
+{"name": "Mountain View Ranch", "address": "321 Pine Road", "state": "Colorado", "business_direction": "ecotourism"}
+{"name": "Ocean Breeze Farm", "address": "654 Beach Avenue", "state": "Hawaii", "business_direction": "aquaculture"}
+{"name": "Golden Harvest Vineyard", "address": "234 Grape Street", "state": "California", "business_direction": "winemaking"}
+{"name": "Riverside Equestrian Center", "address": "876 River Lane", "state": "Texas", "business_direction": "horse training"}
+{"name": "Urban Oasis Nursery", "address": "543 Elm Court", "state": "New York", "business_direction": "plant nursery"}
+{"name": "Skyline Adventure Park", "address": "789 Summit Drive", "state": "Colorado", "business_direction": "outdoor recreation"}
+{"name": "Sunset Meadows Farm", "address": "789 Oak Avenue", "state": "California", "business direction": "agriculture"}
+{"name": "Mystic Lake Ranch", "address": "123 Maple Road", "state": "Montana", "business direction": "tourism"}
+{"name": "Harmony Valley Vineyard", "address": "321 Vineyard Lane", "state": "Oregon", "business direction": "winery"}
+{"name": "Wildwood Equestrian Center", "address": "567 Elm Street", "state": "Colorado", "business direction": "horse riding"}
+{"name": "Silver Creek Golf Club", "address": "234 Golf Course Drive", "state": "Arizona", "business direction": "golf course"}
+{"name": "Serenity Spa Retreat", "address": "876 Relaxation Avenue", "state": "Hawaii", "business direction": "wellness"}
+{"name": "Pinecrest Ski Resort", "address": "432 Ski Slope Road", "state": "Colorado", "business direction": "ski resort"}
+{"name": "Ocean Breeze Surf School", "address": "987 Surfside Boulevard", "state": "California", "business direction": "surfing lessons"}
+{"name": "Whispering Pines Campground", "address": "654 Campground Lane", "state": "Michigan", "business direction": "camping"}
+{"name": "Starlight Theater", "address": "789 Broadway Street", "state": "New York", "business direction": "live performances"}
+{"name": "Sunset Opera House", "address": "123 Main Street", "state": "California", "business direction": "live performances"}
+{"name": "Moonlight Music Hall", "address": "456 Elm Avenue", "state": "Texas", "business direction": "live performances"}
+{"name": "Starry Sky Theater", "address": "789 Milky Way", "state": "Florida", "business direction": "live performances"}
+{"name": "Twilight Theatre", "address": "321 Sunset Boulevard", "state": "Arizona", "business direction": "live performances"}
+{"name": "Dawn Concert Hall", "address": "987 Sunrise Lane", "state": "Colorado", "business direction": "live performances"}
+{"name": "Midnight Stage", "address": "654 Nightfall Avenue", "state": "Georgia", "business direction": "live performances"}
+{"name": "Aurora Playhouse", "address": "789 Aurora Avenue", "state": "Illinois", "business direction": "live performances"}
+{"name": "Eclipse Theater", "address": "456 Eclipse Street", "state": "Louisiana", "business direction": "live performances"}
+{"name": "Northern Lights Arena", "address": "123 Aurora Boulevard", "state": "Michigan", "business direction": "live performances"}
+{"name": "Celestial Symphony Hall", "address": "321 Galaxy Lane", "state": "Minnesota", "business direction": "live performances"}
+{"name": "Rainbow Theatre", "address": "987 Rainbow Road", "state": "New Jersey", "business direction": "live performances"}
+{"name": "Lunar Music Center", "address": "654 Crescent Avenue", "state": "Ohio", "business direction": "live performances"}
+{"name": "Solar Stage", "address": "321 Sunlight Street", "state": "Oregon", "business direction": "live performances"}
+{"name": "Comet Concert Hall", "address": "789 Shooting Star Boulevard", "state": "Pennsylvania", "business direction": "live performances"}
+{"name": "Cosmic Theater", "address": "123 Galaxy Lane", "state": "Tennessee", "business direction": "live performances"}
+{"name": "Metropolis Music Hall", "address": "456 Metro Avenue", "state": "Texas", "business direction": "live performances"}
+{"name": "Nebula Playhouse", "address": "789 Stardust Street", "state": "Utah", "business direction": "live performances"}
+{"name": "Serenity Stage", "address": "987 Harmony Lane", "state": "Washington", "business direction": "live performances"}
+{"name": "Galactic Opera House", "address": "654 Cosmos Boulevard", "state": "Wisconsin", "business direction": "live performances"}
+{"name": "Zenith Theater", "address": "321 Summit Street", "state": "Wyoming", "business direction": "live performances"}
+{"name": "Starlight Stage", "address": "456 Moonlight Avenue", "state": "California", "business direction": "concerts"}
+{"name": "Crimson Opera House", "address": "789 Sunrise Street", "state": "New York", "business direction": "opera performances"}
+{"name": "Dusk Dance Studio", "address": "987 Twilight Lane", "state": "Florida", "business direction": "dance classes"}
+{"name": "Sunset Symphony Hall", "address": "654 Sunrise Boulevard", "state": "Texas", "business direction": "orchestral performances"}
+{"name": "Moonbeam Theatre", "address": "321 Starlight Drive", "state": "Nevada", "business direction": "live plays"}
+{"name": "Stardust Cabaret", "address": "789 Galaxy Avenue", "state": "Ohio", "business direction": "cabaret shows"}
+{"name": "Midnight Music Lounge", "address": "123 Twilight Street", "state": "Colorado", "business direction": "live music performances"}
+{"name": "Sunflower Theatre", "address": "987 Sunset Lane", "state": "Oregon", "business direction": "theater productions"}
+{"name": "Eclipse Arts Center", "address": "456 Starry Boulevard", "state": "Michigan", "business direction": "art exhibitions"}
+{"name": "Moonlight Arena", "address": "654 Moonshine Avenue", "state": "Tennessee", "business direction": "sports events"}
+{"name": "Sunrise Comedy Club", "address": "321 Laughter Lane", "state": "Illinois", "business direction": "stand-up comedy shows"}
+{"name": "Starry Night Dance Company", "address": "789 Stardust Street", "state": "Louisiana", "business direction": "dance performances"}
+{"name": "Twilight Gallery", "address": "987 Moonbeam Drive", "state": "Washington", "business direction": "art gallery"}
+{"name": "Moonrise Opera House", "address": "456 Starlight Avenue", "state": "Georgia", "business direction": "opera shows"}
+{"name": "Sunset Circus", "address": "654 Sunset Boulevard", "state": "Kentucky", "business direction": "circus performances"}
+{"name": "Starstruck Theater", "address": "123 Stardust Lane", "state": "Missouri", "business direction": "theater plays"}
+{"name": "Sunbeam Concert Hall", "address": "789 Sunrise Street", "state": "Arizona", "business direction": "concert performances"}
+{"name": "Moonlight Dance Academy", "address": "987 Twilight Avenue", "state": "California", "business direction": "dance lessons"}
+{"name": "Dawn Art Studio", "address": "321 Sunshine Drive", "state": "New Jersey", "business direction": "art classes"}
+{"name": "Starshine Stadium", "address": "456 Galaxy Lane", "state": "Florida", "business direction": "sports games"}
