@@ -37,7 +37,7 @@ def _load_tokenizer(tok_path, name):
 
 def load_model_and_tokenizer(model_name):
     device = torch.device("cuda:0")
-    model_path = "your_path/LLaMA/%s" % model_name
+    model_path = "your_path/%s" % model_name
 
     print("loading model and tokenizer from <%s>"%model_path)
     # load tokenizer
