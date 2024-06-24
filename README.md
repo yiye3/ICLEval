@@ -22,6 +22,6 @@ If you find this dataset useful, please consider citing our paper:
   title={ICLEval: Evaluating In-Context Learning Ability of Large Language Models},
   author={Wentong Chen, Yankai Lin,  ZhenHao Zhou, HongYun Huang, Yantao Jia, Zhao Cao, Ji-Rong Wen},
   year={2024},
-  journal={},
+  journal={arXiv preprint arXiv:2406.14955},
 }
 ```
