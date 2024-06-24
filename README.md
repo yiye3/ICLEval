@@ -1,5 +1,6 @@
 # In-Context-Learning-Evaluation
 
+![examples](.assets/main-example.svg)
 ## ICLEval data
 We put the data of this benchmark at `../data/tasks_data`
 
@@ -12,6 +13,7 @@ You can evaluate the models' in-context abilities using the code from `../code/m
 1) replace the `your_path` in line 40 of `../code/model_evaluation/run_icl_eval.py` with your own models' path.
 2) execute `python run_icl_eval.py`.
 
+![results](.assets/main-results.png)
 
 ## Citation Information
 
